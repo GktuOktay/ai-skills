@@ -1,0 +1,64 @@
+---
+name: AI Text Humanizer
+description: Yapay zeka tarafından üretilen metinleri daha doğal, akıcı ve insansı bir tona dönüştürme rehberi.
+alwaysApply: false
+---
+
+# AI Text Humanizer Guidelines
+
+This skill provides techniques for modifying AI-generated text to make it sound natural, engaging, and genuinely human. AI often defaults to recognizable patterns and vocabulary that feel robotic or overly academic.
+
+## 1. Avoid AI Tropes and Clichés
+
+Language models tend to overuse certain dramatic or transitional words. Actively identify and replace them.
+
+**Words to Avoid (The "AI Blacklist"):**
+- Delve, dive into
+- Tapestry, rich tapestry
+- Testament to
+- Landscape (e.g., "the digital landscape")
+- Paradigm shift
+- Unleash
+- Embark on a journey
+- "It is important to note that..."
+- "In conclusion..."
+
+**Strategy:** Rewrite the sentence to state the fact directly without the metaphorical fluff.
+
+## 2. Write in Active Voice
+
+Passive voice makes writing feel distant, formal, and confusing. Active voice is direct and energetic.
+
+*   **Passive (AI default):** *The new feature was designed by our team to ensure user satisfaction is maximized.*
+*   **Active (Human):** *Our team designed the new feature to maximize user satisfaction.*
+*   **Rule:** Subject + Verb + Object.
+
+## 3. Vary Sentence Length and Structure
+
+AI text often has a monotonous rhythm because it generates sentences of similar lengths. Human writing breathes; it has rhythm.
+
+*   Use short, punchy sentences for emphasis.
+*   Use longer, complex sentences to explain nuanced ideas.
+*   **Example Rhythm:** *This is a short sentence. Here is another one. Then, just when you expect a third short sentence, you encounter a longer, more elaborate structure that connects multiple ideas together seamlessly. It feels natural. It feels alive.*
+
+## 4. Adopt a Conversational Tone
+
+Write as if you are explaining a concept to a smart colleague over coffee.
+
+*   **Use Contractions:** Use *don't, can't, it's, you're* instead of *do not, cannot, it is, you are*.
+*   **Ask Rhetorical Questions:** Engage the reader occasionally (e.g., *Sound familiar?*).
+*   **Embrace Imperfections:** Minor conversational transitions (like starting a sentence with 'And' or 'But') are perfectly fine and often preferred.
+
+## 5. Simplify Complex Concepts
+
+AI often overwrites, adding unnecessary clauses to sound authoritative. Humanizing means making it understandable.
+
+*   **Cut the fluff:** If a word doesn't add meaning, delete it.
+*   **Use Analogies:** Explain complex technical or abstract concepts using relatable real-world comparisons.
+*   **Show, Don't Tell:** Instead of saying "Our software is highly efficient," describe a scenario: "Tasks that took hours now take minutes."
+
+### Editing Checklist
+- [ ] Are there any words from the "AI Blacklist"?
+- [ ] Is the primary voice active?
+- [ ] Is there a mix of short, medium, and long sentences?
+- [ ] Does it read like something a real person would say aloud?

@@ -43,6 +43,21 @@ Sen bir orkestratörsün. Kullanıcının doküman oluşturma, dönüştürme ve
 - Fizibilite raporu veya teknik değerlendirme istendiğinde
 - Stakeholder analizi, süreç akışı veya BPMN çizimi yapılırken
 
+### 6. `make-plan`
+**Ne Zaman Çağır:**
+- Kapsamlı bir projenin planlaması yapılacağında
+- Görev kırılımı (task breakdown), efor tahmini ve milestone'lar oluşturulacağında
+
+### 7. `humanizer`
+**Ne Zaman Çağır:**
+- AI tarafından üretilmiş gibi duran aşırı resmi veya basmakalıp metinleri düzeltmek gerektiğinde
+- Yazılan içeriklerin daha doğal, konuşma diline yakın ve akıcı olması istendiğinde
+
+### 8. `standup`
+**Ne Zaman Çağır:**
+- Günlük stand-up toplantıları için ilerleme özeti yazılırken
+- Dün yapılanlar, bugün yapılacaklar ve bloker'ların (engeller) raporu hazırlanırken
+
 ---
 
 ## Orkestrasyon Kuralları

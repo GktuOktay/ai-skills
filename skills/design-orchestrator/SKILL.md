@@ -49,6 +49,37 @@ Sen bir orkestratörsün. Kullanıcının tasarım, UI/UX, animasyon veya görse
 - Feature backlog oluşturma veya önceliklendirme yapılırken
 - Rakip analizi sonrası "biz ne ekleyelim" sorusu geldiğinde
 
+### 6. `apple-design`
+**Ne Zaman Çağır:**
+- iOS, macOS veya visionOS projesi tasarlanırken
+- Apple Human Interface Guidelines (HIG) standartları sorulduğunda
+- SwiftUI tasarım ve navigasyon mimarisi konuşulurken
+
+### 7. `high-end-visual-design`
+**Ne Zaman Çağır:**
+- Lüks, premium veya çok yüksek kaliteli bir UI hedeflendiğinde
+- Glassmorphism, ince detaylar ve mikro-etkileşimler istendiğinde
+
+### 8. `onboarding`
+**Ne Zaman Çağır:**
+- Yeni kullanıcı deneyimi (FTUE) veya karşılama akışı tasarlanırken
+- Boş durumlar (empty states) ve izin isteme (permission requests) tasarlanırken
+
+### 9. `prototype`
+**Ne Zaman Çağır:**
+- Hızlı prototipleme veya MVP süreçleri planlanırken
+- Fikirden koda hızlı geçiş stratejisi gerektiğinde
+
+### 10. `brandkit`
+**Ne Zaman Çağır:**
+- Marka kimliği (renkler, fontlar, logo kullanımı) oluşturulurken veya korunurken
+- Marka ses tonu (tone of voice) belirlenirken
+
+### 11. `copywriting`
+**Ne Zaman Çağır:**
+- UI içerikleri (microcopy), hata mesajları, buton metinleri yazılırken
+- Pazarlama metinleri veya kullanıcıyı yönlendiren metinler oluşturulurken
+
 ---
 
 ## Orkestrasyon Kuralları
