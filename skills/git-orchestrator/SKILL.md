@@ -43,6 +43,11 @@ Sen bir orkestratörsün. Kullanıcının Git, GitHub/GitLab, branch yönetimi, 
 - Changelog oluşturulacağı zaman
 - Etiket (tag) atılacağı zaman
 
+### 6. `change-tracker`
+**Ne Zaman Çağır:**
+- Kod yazıldıkça `CHANGELOG.md` dosyasının "Keep a Changelog" formatına göre güncellenmesi gerektiğinde
+- Geliştirme esnasında yapılan işlerin sürekli olarak bir markdown dokümanına işlenmesi (live changelog) istendiğinde
+
 ---
 
 ## Orkestrasyon Kuralları

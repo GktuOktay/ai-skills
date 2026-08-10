@@ -81,6 +81,11 @@ Sen bir orkestratörsün. Kullanıcının talebini analiz et ve aşağıdaki alt
 - Projedeki TODO'lar, kod borçları (technical debt) veya GitHub/GitLab issue'ları taranırken
 - Issue'ları önceliklendirme ve çözüme kavuşturma süreci planlanırken
 
+### 13. `change-tracker`
+**Ne Zaman Çağır:**
+- Kod yazılırken, yapılan değişikliklerin sürekli olarak Markdown (Changelog) dosyasına kaydedilmesi gerektiğinde
+- Geliştirme sürecinde canlı bir sürüm/tarihçe takibi istendiğinde
+
 ---
 
 ## Orkestrasyon Kuralları
