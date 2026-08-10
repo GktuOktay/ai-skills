@@ -21,17 +21,16 @@ You are an orchestrator. Analyze the user's request, determine which of the sub-
 
 ### 2. `testing-master`
 **When to Invoke:**
-- When asked to "write tests", "unit test", "integration test", or "e2e test"
-- When there is a request to increase test coverage
-- When a TDD (Test Driven Development) approach is requested
-- When existing tests need to be reviewed
+- When basic unit tests or Test Driven Development (TDD) is requested during active coding
+- When writing minimal inline tests for a single function or component
+- *(Note: For comprehensive test suites, E2E, or performance testing, use the `test-orchestrator` instead)*
 
 ### 3. `db-architect-security`
 **When to Invoke:**
 - When database schema design or modification is requested
 - When SQL query writing or optimization is needed
-- When data security, access control, or encryption topics are discussed
-- When planning a migration
+- When planning a database migration
+- *(Note: For API security, client security, or deep pentesting, use the `security-orchestrator` instead)*
 
 ### 4. `swift-architecture-auditor`
 **When to Invoke:**
