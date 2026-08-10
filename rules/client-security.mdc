@@ -1,0 +1,25 @@
+---
+description: Perform Frontend & Client-Side Security Audits (DOM XSS, Storage, CORS, CSP, Sensitive Data in JS)
+globs: "**/*.{js,ts,jsx,tsx,vue,html,css,svelte,mjs,cjs}"
+---
+
+# Client-Side & Frontend Security Sub-Skill
+
+When invoked standalone or by `security-orchestrator`, systematically audit frontend and client-side code:
+
+## 1. DOM-based XSS (Cross-Site Scripting)
+- Check dangerous DOM sinks: `dangerouslySetInnerHTML`, `innerHTML`, `document.write()`, `eval()`, `v-html`.
+- Verify user input passing into client-side dynamic evaluation or unescaped HTML injection.
+
+## 2. Insecure Client Storage & Secrets
+- Check for sensitive data (Tokens, Passwords, PII, API Keys) stored in `localStorage`, `sessionStorage`, or `document.cookie` without `HttpOnly` flags.
+
+## 3. Client-Side Authentication & Routing Bypass
+- Check if critical UI components or admin views rely solely on client-side state (e.g. `isLoggedIn`, `isAdmin` in React/Vue state) without backend verification.
+
+## 4. Open Redirects & Clickjacking
+- Audit dynamic client-side redirects (`window.location.href = userInput`) for open redirect vulnerabilities.
+- Check frame options & Content Security Policy (CSP) headers against Clickjacking.
+
+## 5. Web Security Headers & CSP
+- Verify Content Security Policy (CSP), CORS (`Access-Control-Allow-Origin`), and Resource Sharing rules.

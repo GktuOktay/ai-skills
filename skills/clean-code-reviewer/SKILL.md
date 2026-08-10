@@ -1,0 +1,33 @@
+---
+name: clean-code-reviewer
+description: "Kullanıcı clean-code-reviewer ile ilgili işlemler yapmak istediğinde bu yeteneği kullan."
+metadata:
+  version: 1.0.0
+---
+
+# Clean Code & Advanced Code Reviewer
+
+This skill eliminates technical debt and maximizes maintainability, readability, and code quality through deep code reviews and refactoring patterns.
+
+## 🧹 Refactoring Principles
+
+### 1. SOLID & Clean Code Standards
+- **Single Responsibility (SRP):** Split overloaded files/functions into modular components.
+- **DRY (Don't Repeat Yourself):** Abstract duplicate code into reusable helpers or hooks.
+- **KISS & YAGNI:** Avoid over-engineering; simplify overly complex abstractions.
+
+### 2. Complexity Reduction & Naming
+- **Cyclomatic Complexity:** Flatten nested `if/else` loops using guard clauses and early returns.
+- **Self-Documenting Naming:** Replace vague variables (`data`, `temp`, `x`) with intention-revealing names.
+
+### 3. Type Safety & Error Handling
+- Enforce strict TypeScript types; remove `any` and introduce type guards.
+- Standardize error handling using central error boundaries or Result patterns.
+
+## Output Template
+
+1. 🔍 **Code Review Findings:** Code strengths and anti-patterns / technical debt detected.
+2. 🔄 **Refactoring Proposal (Before / After):**
+   - **Before:** Problematic code.
+   - **After:** Refactored, production-ready Clean Code.
+3. ⚡ **Impact & Benefits:** Performance, readability, and maintenance advantages gained.

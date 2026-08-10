@@ -1,0 +1,31 @@
+---
+description: Perform OWASP Top 10 security audit and vulnerability assessment on code
+globs: "**/*.{js,ts,jsx,tsx,py,go,java,php,rb,c,cpp}"
+---
+
+# Security Audit & Vulnerability Testing Sub-Skill
+
+When invoked standalone or by `security-orchestrator`, systematically audit against OWASP Top 10 risk vectors:
+
+## 1. Injection Vulnerabilities (SQLi, Command Injection, XSS)
+- Check for unescaped user inputs in raw SQL queries, shell commands (`exec`, `eval`), and HTML rendering.
+- Verify ORM parameterized queries or sanitized template strings are used.
+
+## 2. Broken Authentication & Session Management
+- Ensure passwords are hashed with strong algorithms (Argon2, bcrypt, scrypt).
+- Verify JWT tokens have strict signature checks, expiration (`exp`), and secure storage flags (`HttpOnly`, `SameSite=Strict`, `Secure`).
+
+## 3. Sensitive Data Exposure & Crypto Audit
+- Ensure proper encryption for data at rest and in transit (TLS 1.3, AES-256-GCM).
+- Flag weak algorithms (MD5, SHA1, ECB mode encryption).
+
+## 4. Broken Access Control (IDOR & Privilege Escalation)
+- Verify endpoint authorization middleware on every private route.
+- Test for Insecure Direct Object References (IDOR) on entity IDs (e.g. `/api/users/:id`).
+
+## 5. Security Misconfigurations
+- Check CORS configurations for overly permissive wildcards (`Access-Control-Allow-Origin: *` with credentials).
+- Ensure debug modes are disabled for production builds.
+
+## Output Requirements
+Return identified risks categorized with Severity levels: **[CRITICAL]**, **[HIGH]**, **[MEDIUM]**, **[LOW]**, specifying file path, line numbers, Proof of Concept, and remediation code.

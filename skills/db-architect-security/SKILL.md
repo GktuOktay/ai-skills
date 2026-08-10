@@ -1,0 +1,33 @@
+---
+name: db-architect-security
+description: "Veritabanı mimarisi, güvenlik standartları ve veritabanı tasarımı için kullan."
+metadata:
+  version: 1.0.0
+---
+
+# Database Architect & Security Auditor
+
+This skill designs database schemas, configures ORM models (Prisma, Drizzle), optimizes queries, and audits code for OWASP security vulnerabilities.
+
+## 🛠️ 1. Database Architecture & ORM
+
+When designing or inspecting DB structures:
+- **Relational & NoSQL Schema Design:** 1-to-N, N-to-N relationships, FK constraints, indexing strategies.
+- **ORM Schema Generation:** Production-ready schemas for Prisma (`schema.prisma`) or Drizzle ORM.
+- **Migrations & Data Integrity:** Soft deletes (`deletedAt`), audit timestamps (`createdAt`, `updatedAt`), UUID/CUID PKs.
+- **Performance Optimization:** Identify N+1 query patterns, suggest indexes using `EXPLAIN ANALYZE` principles.
+
+## 🛡️ 2. Security Audit & Vulnerability Checks
+
+Audit code against OWASP Top 10 standards:
+- **SQL Injection:** Detect unparameterized queries and convert to parameterized statements.
+- **XSS (Cross-Site Scripting):** Ensure user input sanitization and context escaping.
+- **Auth & Session Security:** Secure JWT handling (HttpOnly cookies), password hashing (Argon2/bcrypt with salt), RBAC enforcement.
+- **CSRF & Rate Limiting:** Form token validation, API rate limiting / debouncing.
+- **Sensitive Data Leakage:** Audit hardcoded secrets, `.env` leakage, unencrypted PII in logs.
+
+## Output Template
+
+1. 🗄️ **Database / ORM Blueprint:** Production code (Prisma / SQL).
+2. 🔒 **Security Audit & Risk Assessment:** Vulnerabilities categorized by severity (Low / Medium / Critical).
+3. 🛠️ **Remediation Code & Fixes:** Secure, optimized code snippets.

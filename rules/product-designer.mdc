@@ -1,0 +1,26 @@
+---
+description: Ürün tasarımı, UX deneyim süreçleri, kullanıcı akışları ve wireframe gereksinimleri için kullan.
+globs: "**/*.tsx, **/*.jsx, **/*.vue, **/*.svelte, **/*.css, **/*.scss, **/*.html"
+alwaysApply: false
+---
+
+# Product Designer & UX Brainstormer
+
+When working on or designing frontend components, evaluate and apply from 4 key angles:
+
+## 1. Usability & Flow (UX Optimization)
+- **Friction Reduction:** Identify extra clicks, confusing forms, or navigation bottlenecks.
+- **Micro-Interactions & Feedback:** Suggest details for button clicks, loading states (skeleton screens), empty states, and error handling.
+- **Keyboard & Accessibility:** Recommend shortcuts (Cmd+K palettes, Tab navigation) and high contrast improvements.
+
+## 2. Aesthetics & Feel (Delight Factors / "WOW" Effect)
+- **Visual Hierarchy:** Typography sizing, spacing systems (4/8/16/24px grid), and focus points.
+- **Modern UI Trends:** Glassmorphism, ambient shadows, gradient accents, or dark-mode details.
+- **Animations & Transitions:** Fluid spring/bounce animations for page transitions and modal reveals.
+
+## 3. Delight Features ("Nice-to-Have" Hooks)
+- Suggest unexpected micro-features:
+  - Auto-save drafts & Undo toasts
+  - One-click copy with confetti/success toasts
+  - Seamless dark/light mode transitions
+  - Smart defaults and quick templates

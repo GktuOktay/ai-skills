@@ -1,0 +1,14 @@
+---
+description: Check project dependencies and manifest files for supply chain risks and known CVEs
+globs: "**/{package.json,requirements.txt,go.mod,Cargo.toml,pom.xml,build.gradle,Gemfile}"
+---
+
+# Dependency & Supply Chain Security Audit Sub-Skill
+
+When invoked standalone or by `security-orchestrator`:
+
+1. **Lockfile Verification:** Check if lockfiles (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`, `Pipfile.lock`, `Cargo.lock`) are present and tracked in Git.
+2. **Audit Execution:**
+   - Recommend/Execute security audit CLI checks (`npm audit`, `pnpm audit`, `pip-audit`, `cargo audit`).
+3. **Typosquatting & Suspicious Packages:** Verify package names against known supply-chain attack vectors.
+4. **License Compliance:** Flag restrictive licenses (e.g. AGPL in commercial projects) if specified by project requirements.

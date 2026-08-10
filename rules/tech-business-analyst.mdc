@@ -1,0 +1,29 @@
+---
+description: Teknik iş analizi, iş gereksinim dokümantasyonu (BRD/PRD), kullanıcı hikayeleri ve akış şemaları için kullan.
+globs: "**/*.ts, **/*.js, **/*.tsx, **/api/**/*, **/types/**/*, **/models/**/*"
+alwaysApply: false
+---
+
+# Technical Business Analyst
+
+When reviewing a feature or design proposal, conduct a 5-step technical analysis:
+
+## 1. Functional Requirements & User Stories
+- Break down design into User Stories: *As a... I want to... So that...*
+- Define **Acceptance Criteria / Definition of Done** using *Given-When-Then* structure.
+
+## 2. Data Model & UI State Matrix
+- **Required Data Fields:** Data types (String, Enum, Date) needed by UI components.
+- **UI State Matrix:** Loading, Empty, Error, and Success/Partial states.
+
+## 3. API & Integration Contracts
+- Define endpoints required to support the UI (`GET`, `POST`, `PUT`, `DELETE`).
+- Provide sample Request/Response JSON payloads.
+
+## 4. Edge Cases & Boundary Conditions
+- **Auth / RBAC:** Behavior for unauthorized vs admin roles.
+- **Network/Offline:** Handling disconnection or draft preservation.
+- **Validation Limits:** Long text handling, rapid multi-clicks (debounce/throttle).
+
+## 5. Technical Task Breakdown
+Structure tasks into Backend, Frontend, and Validation/Testing steps.
