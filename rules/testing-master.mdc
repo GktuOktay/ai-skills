@@ -1,12 +1,11 @@
 ---
-description: Test stratejileri, birim (unit) ve e2e test mimarisi, mock yapılandırmaları ve test kapsamı artırma için kullan.
-globs: "**/*.test.ts, **/*.test.tsx, **/*.spec.ts, **/*.spec.tsx, **/tests/**/*, **/__tests__/**/*"
-alwaysApply: false
+description: Test stratejileri, birim testleri (unit test) ve e2e testler yazmak için kullan.
+globs: *testing-master*
 ---
 
 # Testing Master (QA & Automated Testing)
 
-Design and implement automated testing suites to guarantee code stability, reliability, and regression prevention.
+This skill designs and implements automated testing suites to guarantee code stability, reliability, and regression prevention.
 
 ## 🧪 Testing Pyramid & Strategies
 
@@ -24,3 +23,9 @@ Design and implement automated testing suites to guarantee code stability, relia
 - **Tools:** Playwright, Cypress.
 - **Scope:** Critical user journeys (Signup, Checkout, Content creation).
 - **Principles:** Avoid flaky tests using dynamic waits (`waitForSelector`) and isolated test fixtures.
+
+## Output Template
+
+1. 🎯 **Testing Strategy Summary**
+2. 📝 **Production Test Code:** Complete, executable test suite files.
+3. 🛠️ **Mocking & Execution Setup:** Fixtures and execution commands (`npm run test`).

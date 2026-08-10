@@ -1,7 +1,6 @@
 ---
-name: design-orchestrator
-description: "UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör. Gerektiğinde alt skill'leri otomatik çağırır."
-alwaysApply: false
+description: UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör. Gerektiğinde alt skill'leri otomatik çağırır.
+globs: *design-orchestrator*
 ---
 
 # Design Orchestrator — Design Processes Manager

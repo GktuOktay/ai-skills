@@ -1,6 +1,6 @@
 ---
-name: imagegen-frontend
-description: "Frontend projeleri için yapay zeka görsel oluşturma ve entegrasyon rehberi: web kahraman görselleri, mobil uygulama varlıkları, kullanıcı arayüzü çizimleri, ikonlar ve pazarlama görselleri."
+description: Frontend projeleri için yapay zeka görsel oluşturma ve entegrasyon rehberi: web kahraman görselleri, mobil uygulama varlıkları, kullanıcı arayüzü çizimleri, ikonlar ve pazarlama görselleri.
+globs: *imagegen-frontend*
 ---
 
 # Image Generation for Frontend — Web & Mobile

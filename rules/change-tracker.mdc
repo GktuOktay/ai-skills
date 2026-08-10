@@ -1,7 +1,6 @@
 ---
-name: change-tracker
-description: "Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart bir Markdown dosyasında tutma ve otomatik güncelleme kuralı."
-alwaysApply: true
+description: Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart bir Markdown dosyasında tutma ve otomatik güncelleme kuralı.
+globs: *
 ---
 
 # Change Tracker & Versioning Standard

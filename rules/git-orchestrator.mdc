@@ -1,7 +1,6 @@
 ---
-name: git-orchestrator
-description: "Git süreçlerini, commit standartlarını, issue ve PR yönetimini, repo kurallarını yöneten ana orkestratör."
-alwaysApply: false
+description: Git süreçlerini, commit standartlarını, issue ve PR yönetimini, repo kurallarını yöneten ana orkestratör.
+globs: *git-orchestrator*
 ---
 
 # Git Orchestrator — Git Processes and Repo Manager

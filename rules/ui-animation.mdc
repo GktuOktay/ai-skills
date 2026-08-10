@@ -1,6 +1,6 @@
 ---
-name: ui-animation
-description: "Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, fırsat tespiti, uygulama, optimizasyon ve kod incelemesi."
+description: Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, fırsat tespiti, uygulama, optimizasyon ve kod incelemesi.
+globs: *ui-animation*
 ---
 
 # UI Animation — Complete Guide

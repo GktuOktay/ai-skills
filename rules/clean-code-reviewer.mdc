@@ -1,12 +1,11 @@
 ---
-description: Derin kod incelemesi (Code Review), Clean Code ve SOLID prensipleri denetimi, kod karmaşıklığı azaltma ve teknik borç temizliği için kullan.
-globs: "**/*.ts, **/*.tsx, **/*.js, **/*.jsx, **/*.py, **/*.go"
-alwaysApply: false
+description: Kullanıcı clean-code-reviewer ile ilgili işlemler yapmak istediğinde bu yeteneği kullan.
+globs: *clean-code-reviewer*
 ---
 
 # Clean Code & Advanced Code Reviewer
 
-Eliminate technical debt and maximize maintainability, readability, and code quality through deep code reviews and refactoring patterns.
+This skill eliminates technical debt and maximizes maintainability, readability, and code quality through deep code reviews and refactoring patterns.
 
 ## 🧹 Refactoring Principles
 
@@ -22,3 +21,11 @@ Eliminate technical debt and maximize maintainability, readability, and code qua
 ### 3. Type Safety & Error Handling
 - Enforce strict TypeScript types; remove `any` and introduce type guards.
 - Standardize error handling using central error boundaries or Result patterns.
+
+## Output Template
+
+1. 🔍 **Code Review Findings:** Code strengths and anti-patterns / technical debt detected.
+2. 🔄 **Refactoring Proposal (Before / After):**
+   - **Before:** Problematic code.
+   - **After:** Refactored, production-ready Clean Code.
+3. ⚡ **Impact & Benefits:** Performance, readability, and maintenance advantages gained.

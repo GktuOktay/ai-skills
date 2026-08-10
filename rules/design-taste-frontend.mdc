@@ -1,6 +1,6 @@
 ---
-name: design-taste-frontend
-description: "Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları, bileşen stilleri ve görsel kalite standartları."
+description: Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları, bileşen stilleri ve görsel kalite standartları.
+globs: *design-taste-frontend*
 ---
 
 # Design Taste — Frontend

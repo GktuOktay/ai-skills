@@ -1,7 +1,6 @@
 ---
-name: docs-orchestrator
-description: "Doküman ve dosya üretim süreçlerini yöneten orkestratör. PDF, Word, Excel, PowerPoint ve teknik analiz dokümanları için alt skill'leri otomatik çağırır."
-alwaysApply: false
+description: Doküman ve dosya üretim süreçlerini yöneten orkestratör. PDF, Word, Excel, PowerPoint ve teknik analiz dokümanları için alt skill'leri otomatik çağırır.
+globs: *docs-orchestrator*
 ---
 
 # Docs Orchestrator — Document Processes Manager

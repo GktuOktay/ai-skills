@@ -1,7 +1,6 @@
 ---
-name: code-orchestrator
-description: "Kod yazma, güvenlik, test ve mimari süreçlerini yöneten ana orkestratör. Gerektiğinde alt skill'leri otomatik çağırır."
-alwaysApply: false
+description: Kod yazma, güvenlik, test ve mimari süreçlerini yöneten ana orkestratör. Gerektiğinde alt skill'leri otomatik çağırır.
+globs: *code-orchestrator*
 ---
 
 # Code Orchestrator — Code Processes Manager
