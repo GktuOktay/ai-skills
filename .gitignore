@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.cursor/
+analyze_skills.py
+inspect_cursor.py
+link_cursor_skills.py
