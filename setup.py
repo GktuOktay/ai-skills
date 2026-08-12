@@ -38,7 +38,7 @@ def parse_language_preference():
     return "en"
 
 def run_build_rules(lang):
-    title = "[1/6] Compiling Cursor rules (build_cursor_rules.py)..." if lang == "en" else "[1/6] Cursor kurallari derleniyor (build_cursor_rules.py)..."
+    title = "[1/7] Compiling Cursor rules (build_cursor_rules.py)..." if lang == "en" else "[1/7] Cursor kurallari derleniyor (build_cursor_rules.py)..."
     print(title)
     base_dir = os.path.dirname(os.path.abspath(__file__))
     build_script = os.path.join(base_dir, "scripts", "build_cursor_rules.py")
@@ -51,7 +51,7 @@ def run_build_rules(lang):
             print(f"  [WARN] Cursor rule build error: {res.stderr}")
 
 def generate_copilot_instructions(base_dir, lang):
-    title = "[2/6] Generating GitHub Copilot instructions (.github/copilot-instructions.md)..." if lang == "en" else "[2/6] GitHub Copilot talimatlari uretiliyor (.github/copilot-instructions.md)..."
+    title = "[2/7] Generating GitHub Copilot instructions (.github/copilot-instructions.md)..." if lang == "en" else "[2/7] GitHub Copilot talimatlari uretiliyor (.github/copilot-instructions.md)..."
     print(title)
     github_dir = os.path.join(base_dir, ".github")
     os.makedirs(github_dir, exist_ok=True)
@@ -81,7 +81,7 @@ def generate_copilot_instructions(base_dir, lang):
     return copilot_file
 
 def generate_agents_md(base_dir, copilot_file, lang):
-    title = "[3/6] Generating Generic AGENTS.md and Windsurf (.windsurfrules)..." if lang == "en" else "[3/6] Generic AGENTS.md ve Windsurf (.windsurfrules) uretiliyor..."
+    title = "[3/7] Generating Generic AGENTS.md and Windsurf (.windsurfrules)..." if lang == "en" else "[3/7] Generic AGENTS.md ve Windsurf (.windsurfrules) uretiliyor..."
     print(title)
     agents_file = os.path.join(base_dir, "AGENTS.md")
     windsurf_file = os.path.join(base_dir, ".windsurfrules")
@@ -89,6 +89,15 @@ def generate_agents_md(base_dir, copilot_file, lang):
     shutil.copyfile(copilot_file, windsurf_file)
     msg = "  [OK] AGENTS.md and .windsurfrules generated." if lang == "en" else "  [OK] AGENTS.md ve .windsurfrules uretildi."
     print(msg)
+
+def run_build_agent_folders(base_dir, lang):
+    title = "[4/7] Structuring agent-specific folders (agents/)..." if lang == "en" else "[4/7] Agent-ozel klasor yapisi olusturuluyor (agents/)..."
+    print(title)
+    agent_script = os.path.join(base_dir, "scripts", "build_agent_folders.py")
+    if os.path.exists(agent_script):
+        subprocess.run([sys.executable, agent_script], capture_output=True, text=True)
+        msg = "  [OK] Agent-specific folders structured under agents/." if lang == "en" else "  [OK] Agent klasor yapisi agents/ altinda kuruldu."
+        print(msg)
 
 def setup_link(target_path, source_path, app_name):
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
@@ -154,16 +163,17 @@ def main():
     run_build_rules(lang)
     copilot_file = generate_copilot_instructions(base_dir, lang)
     generate_agents_md(base_dir, copilot_file, lang)
+    run_build_agent_folders(base_dir, lang)
 
-    title4 = "\n[4/6] Linking project-level Agent rules/skills..." if lang == "en" else "\n[4/6] Proje seviyesi Agent baglantilari kuruluyor..."
-    print(title4)
+    title5 = "\n[5/7] Linking project-level Agent rules/skills..." if lang == "en" else "\n[5/7] Proje seviyesi Agent baglantilari kuruluyor..."
+    print(title5)
     setup_link(os.path.join(base_dir, ".cursor", "rules"), rules_src, "Cursor Project Rules (.cursor/rules)")
     setup_link(os.path.join(base_dir, ".agents", "skills"), skills_src, "Antigravity Project Skills (.agents/skills)")
     setup_link(os.path.join(base_dir, ".claude", "skills"), skills_src, "Claude Code Project Skills (.claude/skills)")
     setup_link(os.path.join(base_dir, ".codex", "skills"), skills_src, "Codex Project Skills (.codex/skills)")
 
-    title5 = "\n[5/6] Configuring global Agent skills & rules..." if lang == "en" else "\n[5/6] Global Agent yetenek ve kural baglantilari yapilandiriliyor..."
-    print(title5)
+    title6 = "\n[6/7] Configuring global Agent skills & rules..." if lang == "en" else "\n[6/7] Global Agent yetenek ve kural baglantilari yapilandiriliyor..."
+    print(title6)
     link_individual_skills(skills_src, os.path.join(home, ".cursor", "skills-cursor"), "Cursor Global Skills (~/.cursor/skills-cursor)", lang)
     setup_link(os.path.join(home, ".cursor", "rules"), rules_src, "Cursor Global Rules (~/.cursor/rules)")
     setup_link(os.path.join(home, ".gemini", "config", "skills"), skills_src, "Antigravity Global (~/.gemini/config/skills)")
@@ -177,7 +187,7 @@ def main():
     msg_copilot = "  [OK] GitHub Copilot Global Instructions (~/.github/copilot-instructions.md) created." if lang == "en" else "  [OK] GitHub Copilot Global Talimati (~/.github/copilot-instructions.md) olusturuldu."
     print(msg_copilot)
 
-    final_msg = "\n[6/6] CONGRATULATIONS! Universal AI Agent setup complete for all agents." if lang == "en" else "\n[6/6] TEBRIKLER! Tum AI Agent'lar icin evrensel kurulum tamamlandi."
+    final_msg = "\n[7/7] CONGRATULATIONS! Universal AI Agent setup complete for all agents." if lang == "en" else "\n[7/7] TEBRIKLER! Tum AI Agent'lar icin evrensel kurulum tamamlandi."
     print(final_msg)
 
 if __name__ == "__main__":

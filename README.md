@@ -61,6 +61,48 @@ graph TD
     ACR --> Final["Üretim Seviyesinde Tamamlanmış Çıktı"]
 ```
 
+### Proje Yapısı
+```text
+ai-skills/
+├── .github/                       # GitHub templates & Copilot global instructions
+│   ├── ISSUE_TEMPLATE/
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── copilot-instructions.md
+├── agents/                        # Agent-specific modular configurations
+│   ├── antigravity/               # Antigravity (Gemini) skills
+│   ├── claude-code/               # Claude Code skills
+│   ├── codex/                     # OpenAI Codex skills
+│   ├── copilot/                   # GitHub Copilot instructions
+│   ├── cursor/                    # Cursor rules (.mdc) & skills
+│   └── windsurf/                  # Windsurf / Cascade rules
+├── docs/                          # Clean documentation folder
+│   ├── INSTALL.md                 # Türkçe Kurulum Kılavuzu
+│   ├── INSTALL_EN.md              # English Installation Guide
+│   ├── CREDITS.md                 # Türkçe Atıflar & Teşekkürler
+│   ├── CREDITS_EN.md              # English Acknowledgements & Credits
+│   ├── CONTRIBUTING.md            # Katkıda Bulunma Rehberi
+│   └── CODE_OF_CONDUCT.md         # Topluluk Kuralları
+├── skills/                        # 63+ Modular AI Agent Skills (SKILL.md)
+│   ├── anti-sycophancy/
+│   ├── master-orchestrator/
+│   ├── code-orchestrator/
+│   └── ...
+├── rules/                         # Compiled Cursor Rules (.mdc)
+│   ├── anti-sycophancy.mdc
+│   ├── master-orchestrator.mdc
+│   └── ...
+├── scripts/                       # Internal build & utility scripts
+│   ├── build_agent_folders.py
+│   ├── build_cursor_rules.py
+│   └── update_skill_descriptions.py
+├── AGENTS.md                      # Universal Agents definition
+├── .windsurfrules                 # Windsurf / Cascade rules
+├── LICENSE                        # MIT License
+├── README.md                      # Varsayılan Türkçe Ana Sayfa
+├── README_EN.md                    # İngilizce Ana Sayfa
+└── setup.py                       # Etkileşimli Evrensel Kurulum Sihirbazı
+```
+
 ---
 
 ## 🌟 Evrensel Agent Uyum Matrisi
