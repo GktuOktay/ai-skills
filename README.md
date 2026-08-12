@@ -15,6 +15,7 @@ Kütüphanedeki yetenekler aşağıdaki ana alanlarda yapay zeka asistanlarını
 
 - 🏗️ **Yazılım Mimarisi & Kodlama**: `code-orchestrator`, `clean-code-reviewer`, `swift-architecture-auditor`, `schema`, `mcp-builder`, `smart-explore`
 - 🛡️ **Güvenlik & Penetrasyon Testleri**: `security-orchestrator`, `api-pentest`, `client-security`, `db-architect-security`, `secret-scanner`, `dependency-audit`
+- 🎯 **Eleştirel Düşünce & Anti-Sycophancy**: `anti-sycophancy` *(Hatalı yönlendirmelere yapıcı itiraz, dalkavukluk ve boş övgü engelleme)*
 - 🎨 **UI/UX & Görsel Tasarım**: `design-orchestrator`, `apple-design`, `high-end-visual-design`, `design-taste-frontend`, `ui-animation`, `imagegen-frontend`, `image-to-code`
 - 🧪 **Test & Kalite Güvence**: `test-orchestrator`, `unit-test-architect`, `e2e-tester`, `performance-tester`, `smoke-monkey-tester`, `testing-master`
 - 🌿 **Git & Sürüm Yönetimi**: `git-orchestrator`, `git-conventional-commits`, `git-pr-reviewer`, `git-issue-manager`, `git-repo-setup`, `version-bump`, `change-tracker`
