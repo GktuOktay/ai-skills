@@ -145,6 +145,22 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ---
 
+## 🙏 Acknowledgements & Credits
+
+We extend our deep gratitude to the open-source creators and maintainers whose work inspired and paved the way for this library:
+
+- **[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** - Cursor Rules ecosystem & anti-sycophancy code discipline.
+- **[0xcjl/anti-sycophancy](https://github.com/0xcjl/anti-sycophancy)** - Three-layer anti-sycophancy defense & ArXiv *"Ask Don't Tell"* research.
+- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** - Addy Osmani's production-grade engineering principles.
+- **[anthropics/skills](https://github.com/anthropics/skills)** - Official Anthropic `SKILL.md` format standard.
+- **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Socratic clarification gate.
+- **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Adversarial code review & showstopper auditing.
+- **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem system stress testing.
+
+For full attribution details, please see **[CREDITS.md](CREDITS.md)**.
+
+---
+
 ## 📄 License
 
 This project is open-source under the [MIT License](LICENSE).
