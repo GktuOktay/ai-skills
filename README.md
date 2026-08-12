@@ -1,71 +1,71 @@
-# 🧠 Universal AI Agent Skills & Rules Library
+# 🧠 Evrensel AI Agent Yetenek & Kural Kütüphanesi
 
-[English](README.md) | [Türkçe](README_TR.md)
+[Türkçe](README.md) | [English](README_EN.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Platform: Antigravity](https://img.shields.io/badge/Antigravity-Supported-brightgreen.svg)]()
-[![Platform: Cursor](https://img.shields.io/badge/Cursor-Supported-blue.svg)]()
-[![Platform: Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-orange.svg)]()
-[![Platform: GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Supported-purple.svg)]()
-[![Platform: OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-Supported-black.svg)]()
-[![Platform: Windsurf](https://img.shields.io/badge/Windsurf-Supported-teal.svg)]()
+[![Platform: Antigravity](https://img.shields.io/badge/Antigravity-Destekleniyor-brightgreen.svg)]()
+[![Platform: Cursor](https://img.shields.io/badge/Cursor-Destekleniyor-blue.svg)]()
+[![Platform: Claude Code](https://img.shields.io/badge/Claude%20Code-Destekleniyor-orange.svg)]()
+[![Platform: GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Destekleniyor-purple.svg)]()
+[![Platform: OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-Destekleniyor-black.svg)]()
+[![Platform: Windsurf](https://img.shields.io/badge/Windsurf-Destekleniyor-teal.svg)]()
 
-> **Universal Open-Source AI Agent Library** providing production-grade engineering skills, orchestrator agents, anti-sycophancy discipline, and specialized rules for **Antigravity (Gemini)**, **Cursor AI**, **Claude Code**, **GitHub Copilot**, **OpenAI Codex**, and **Windsurf**.
-
----
-
-## 🙏 Acknowledgements & Credits
-
-We extend our deep gratitude to the open-source creators and maintainers whose work inspired and paved the way for this library:
-
-- **[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** - Cursor Rules ecosystem & anti-sycophancy code discipline.
-- **[0xcjl/anti-sycophancy](https://github.com/0xcjl/anti-sycophancy)** - Three-layer anti-sycophancy defense & ArXiv *"Ask Don't Tell"* research.
-- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** - Addy Osmani's production-grade engineering principles.
-- **[anthropics/skills](https://github.com/anthropics/skills)** - Official Anthropic `SKILL.md` format standard.
-- **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Socratic clarification gate.
-- **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Adversarial code review & showstopper auditing.
-- **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem system stress testing.
-
-For full attribution details, see **[CREDITS.md](CREDITS.md)** | **[CREDITS_TR.md](CREDITS_TR.md)**.
+> **Evrensel Açık Kaynak AI Agent Kütüphanesi**; **Antigravity (Gemini)**, **Cursor AI**, **Claude Code**, **GitHub Copilot**, **OpenAI Codex** ve **Windsurf** araçları için üretim seviyesi mühendislik yetenekleri, orkestratör agent'lar ve dalkavukluk önleyici (anti-sycophancy) eleştiri kuralları sunar.
 
 ---
 
-## 🏛️ Architecture & Orchestration Flow
+## 🙏 Atıflar ve Teşekkürler (Acknowledgements & Credits)
 
-This repository features a **Master Orchestrator Engine** that coordinates sub-orchestrators and enforces objective code discipline across all LLM tools:
+Bu kütüphanenin geliştirilmesinde ilham veren ve zemin hazırlayan açık kaynak proje sahiplerine ve araştırmacılara derin teşekkürlerimizi sunarız:
+
+- **[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** - Cursor Rules ekosistemi ve anti-sycophancy kod disiplini standartları.
+- **[0xcjl/anti-sycophancy](https://github.com/0xcjl/anti-sycophancy)** - 3 katmanlı anti-sycophancy savunması ve ArXiv *"Ask Don't Tell"* araştırması.
+- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** - Addy Osmani'nin üretim seviyesi mühendislik ilkeleri.
+- **[anthropics/skills](https://github.com/anthropics/skills)** - Resmi Anthropic `SKILL.md` format standardı.
+- **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Sokratik netleştirme kapısı.
+- **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Hasmane kod incelemesi ve teslim öncesi showstopper denetimi.
+- **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem sistem stres simülasyonu.
+
+Tüm detaylı atıflar için bkz: **[CREDITS.md](CREDITS.md)** | **[CREDITS_EN.md](CREDITS_EN.md)**.
+
+---
+
+## 🏛️ Mimari & Orkestrasyon Akışı
+
+Bu depo, alt orkestratörleri koordine eden ve tüm LLM araçlarında objektif kod disiplinini uygulayan bir **Master Orkestratör Motoru** içerir:
 
 ```mermaid
 graph TD
-    User["User Prompt"] --> MO["master-orchestrator (Central Command Node)"]
+    User["Kullanıcı İsteği"] --> MO["master-orchestrator (Ana Komuta Düğümü)"]
     
-    subgraph "Gates & Quality Control"
-        MO --> AS["anti-sycophancy (Objective Critique Gate)"]
-        MO --> SCG["socratic-clarification-gate (Requirement Inspector)"]
+    subgraph "Kapılar & Kalite Kontrolü"
+        MO --> AS["anti-sycophancy (Objektif Eleştiri Kapısı)"]
+        MO --> SCG["socratic-clarification-gate (Gereksinim İnceleyici)"]
     end
     
-    subgraph "Specialized Sub-Orchestrators"
-        AS --> CO["code-orchestrator (Engineering & Refactoring)"]
-        AS --> DO["design-orchestrator (UI/UX & Aesthetics)"]
-        AS --> SO["security-orchestrator (Security & Pentest)"]
-        AS --> TO["test-orchestrator (QA & Testing)"]
-        AS --> GO["git-orchestrator (Git & Releases)"]
-        AS --> DocO["docs-orchestrator (Business & Analysis)"]
+    subgraph "Uzmanlaşmış Alt Orkestratörler"
+        AS --> CO["code-orchestrator (Mühendislik & Refactoring)"]
+        AS --> DO["design-orchestrator (UI/UX & Estetik)"]
+        AS --> SO["security-orchestrator (Güvenlik & Pentest)"]
+        AS --> TO["test-orchestrator (QA & Testler)"]
+        AS --> GO["git-orchestrator (Git & Sürümler)"]
+        AS --> DocO["docs-orchestrator (İş Analizi & Doküman)"]
     end
     
-    subgraph "Pre-Delivery Audit"
-        CO --> ACR["adversarial-code-reviewer (Showstopper Audit)"]
-        CO --> PM["pre-mortem-stress-test (System Stress Test)"]
+    subgraph "Teslimat Öncesi Denetim"
+        CO --> ACR["adversarial-code-reviewer (Showstopper Denetimi)"]
+        CO --> PM["pre-mortem-stress-test (Sistem Stres Testi)"]
     end
     
-    ACR --> Final["Production-Grade Finalized Output"]
+    ACR --> Final["Üretim Seviyesinde Tamamlanmış Çıktı"]
 ```
 
 ---
 
-## 🌟 Universal Agent Compatibility Matrix
+## 🌟 Evrensel Agent Uyum Matrisi
 
-| AI Agent / IDE | Native Format | Global Path | Workspace Path |
+| AI Agent / IDE | Yerel Format | Global Konum | Proje Konumu |
 | :--- | :--- | :--- | :--- |
 | 🟢 **Antigravity (Gemini)** | `SKILL.md` | `~/.gemini/config/skills` | `.agents/skills` |
 | 🔵 **Cursor AI** | `.mdc` & `skills-cursor` | `~/.cursor/rules` & `skills-cursor` | `.cursor/rules` |
@@ -73,35 +73,37 @@ graph TD
 | 🟣 **GitHub Copilot** | `copilot-instructions.md` | `~/.github/copilot-instructions.md` | `.github/copilot-instructions.md` |
 | 🖤 **OpenAI Codex / CLI** | `SKILL.md` & `AGENTS.md` | `~/.codex/skills` | `.codex/skills` |
 | 🪟 **Windsurf / Cascade** | `.windsurfrules` | - | `.windsurfrules` |
-| 🤖 **Generic AI Agents** | `AGENTS.md` | `~/.agents/skills` | `AGENTS.md` |
+| 🤖 **Jenerik AI Agent'lar** | `AGENTS.md` | `~/.agents/skills` | `AGENTS.md` |
 
 ---
 
-## 🚀 Quick Start & Installation
+## 🚀 Hızlı Kurulum Rehberi
 
-Install and link all skills across all installed AI agents with an interactive setup wizard:
+Etkileşimli kurulum sihirbazı ile tüm yetenekleri tek bir komutla yükleyin:
 
 ```bash
-# 1. Clone the repository
+# 1. Depoyu klonlayın
 git clone https://github.com/GktuOktay/ai-skills.git
 cd ai-skills
 
-# 2. Run universal setup script (Interactive Language Prompt: English / Türkçe)
+# 2. Kurulum betiğini çalıştırın (Etkileşimli Dil Seçimi: Türkçe / English)
 python setup.py
 
-# Or run non-interactively with a language flag:
-python setup.py --lang en
+# Dilerseniz dil parametresi ile doğrudan çalıştırın:
 python setup.py --lang tr
+python setup.py --lang en
 ```
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
+Detaylı kurulum kılavuzu için bkz: **[INSTALL.md](INSTALL.md)** | **[INSTALL_EN.md](INSTALL_EN.md)**.
 
 ---
 
-## 📄 License
+## 🤝 Katkıda Bulunma
 
-This project is open-source under the [MIT License](LICENSE).
+Açık kaynak katkılarınızı bekliyoruz! Lütfen önce [Katkı Rehberi](CONTRIBUTING.md) ve [Topluluk Kurallarını](CODE_OF_CONDUCT.md) inceleyin.
+
+---
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında açık kaynaklıdır.
