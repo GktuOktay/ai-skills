@@ -10,15 +10,15 @@ import shutil
 import subprocess
 
 def run_build_rules():
-    print("[1/3] Cursor kurallari derleniyor (build_cursor_rules.py)...")
+    print("[1/4] Cursor kurallari derleniyor (build_cursor_rules.py)...")
     base_dir = os.path.dirname(os.path.abspath(__file__))
     build_script = os.path.join(base_dir, "build_cursor_rules.py")
     if os.path.exists(build_script):
         res = subprocess.run([sys.executable, build_script], capture_output=True, text=True)
         if res.returncode == 0:
-            print("  [OK] Cursor kurallari basariyla üretildi.")
+            print("  [OK] Cursor kurallari basariyla uretildi.")
         else:
-            print(f"  [UYARI] Cursor kural üretimi hatasi: {res.stderr}")
+            print(f"  [UYARI] Cursor kural uretimi hatasi: {res.stderr}")
     else:
         print("  [ATLANDI] build_cursor_rules.py bulunamadi.")
 
@@ -62,12 +62,16 @@ def main():
 
     run_build_rules()
 
-    print("\n[2/3] Baglantilar yapilandiriliyor...")
+    print("\n[2/4] Proje seviyesi Cursor kurallari baglaniyor (.cursor/rules)...")
+    local_cursor_rules = os.path.join(base_dir, ".cursor", "rules")
+    setup_link(local_cursor_rules, rules_src, "Cursor Proje Rules (.cursor/rules)")
+
+    print("\n[3/4] Global baglantilar yapilandiriliyor...")
     setup_link(os.path.join(home, ".gemini", "config", "skills"), skills_src, "Antigravity (Gemini)")
     setup_link(os.path.join(home, ".claude", "skills"), skills_src, "Claude Code")
-    setup_link(os.path.join(home, ".cursor", "rules"), rules_src, "Cursor Rules")
+    setup_link(os.path.join(home, ".cursor", "rules"), rules_src, "Cursor Global Rules (~/.cursor/rules)")
 
-    print("\n[3/3] Kurulum tamamlandi! Tüm AI yetenekleri ve kurallari global olarak aktif.")
+    print("\n[4/4] Kurulum tamamlandi! Tum AI yetenekleri ve kurallari aktif.")
 
 if __name__ == "__main__":
     main()
