@@ -41,7 +41,7 @@ def run_build_rules(lang):
     title = "[1/6] Compiling Cursor rules (build_cursor_rules.py)..." if lang == "en" else "[1/6] Cursor kurallari derleniyor (build_cursor_rules.py)..."
     print(title)
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    build_script = os.path.join(base_dir, "build_cursor_rules.py")
+    build_script = os.path.join(base_dir, "scripts", "build_cursor_rules.py")
     if os.path.exists(build_script):
         res = subprocess.run([sys.executable, build_script], capture_output=True, text=True)
         if res.returncode == 0:

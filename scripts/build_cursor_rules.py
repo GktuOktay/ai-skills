@@ -4,7 +4,7 @@ import glob
 import re
 
 def convert_skills_to_mdc():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     skills_dir = os.path.join(base_dir, "skills")
     rules_dir = os.path.join(base_dir, "rules")
     
