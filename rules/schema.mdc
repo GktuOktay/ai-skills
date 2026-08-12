@@ -1,5 +1,5 @@
 ---
-description: İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları.
+description: Scalable and secure schema design patterns for relational databases, NoSQL, and APIs. / TR: İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları.
 globs: *schema*
 ---
 

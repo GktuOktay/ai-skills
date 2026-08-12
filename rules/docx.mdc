@@ -1,5 +1,5 @@
 ---
-description: Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için kullan.
+description: Tools for creating, reading, and editing Word (.docx) documents. / TR: Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için yetenek.
 globs: *docx*
 ---
 

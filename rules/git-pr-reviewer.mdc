@@ -1,5 +1,5 @@
 ---
-description: Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartları belirler. Yapıcı geri bildirim ve birleştirme (merge) stratejilerini içerir.
+description: Pull Request (PR) creation and code review standards with constructive feedback and merge strategies. / TR: Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartlar ve yapıcı geri bildirim.
 globs: *git-pr-reviewer*
 ---
 

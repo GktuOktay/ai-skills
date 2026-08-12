@@ -1,5 +1,5 @@
 ---
-description: Proje bağımlılıklarındaki (npm, pip vb.) CVE zafiyetlerinin taranması, supply chain güvenliği ve versiyon güncellemeleri.
+description: Dependency vulnerability auditing (npm, pip, etc.), CVE scanning, and supply chain security. / TR: Proje bağımlılıklarındaki (npm, pip vb.) CVE zafiyetlerinin taranması, supply chain güvenliği ve versiyon güncellemeleri.
 globs: *dependency-audit*
 ---
 

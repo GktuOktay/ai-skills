@@ -1,5 +1,5 @@
 ---
-description: Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları, bileşen stilleri ve görsel kalite standartları.
+description: Frontend design taste guide: typography, color harmonies, spacing, layout patterns, and visual quality standards. / TR: Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları ve görsel kalite standartları.
 globs: *design-taste-frontend*
 ---
 

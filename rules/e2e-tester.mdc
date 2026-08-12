@@ -1,5 +1,5 @@
 ---
-description: Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği.
+description: End-to-end (E2E) user scenario and integration testing with Cypress, Playwright, or Appium. / TR: Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği.
 globs: *e2e-tester*
 ---
 

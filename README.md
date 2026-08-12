@@ -1,5 +1,7 @@
 # 🧠 Universal AI Agent Skills & Rules Library
 
+[English](README.md) | [Türkçe](README_TR.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Platform: Antigravity](https://img.shields.io/badge/Antigravity-Supported-brightgreen.svg)]()
@@ -10,6 +12,22 @@
 [![Platform: Windsurf](https://img.shields.io/badge/Windsurf-Supported-teal.svg)]()
 
 > **Universal Open-Source AI Agent Library** providing production-grade engineering skills, orchestrator agents, anti-sycophancy discipline, and specialized rules for **Antigravity (Gemini)**, **Cursor AI**, **Claude Code**, **GitHub Copilot**, **OpenAI Codex**, and **Windsurf**.
+
+---
+
+## 🙏 Acknowledgements & Credits
+
+We extend our deep gratitude to the open-source creators and maintainers whose work inspired and paved the way for this library:
+
+- **[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** - Cursor Rules ecosystem & anti-sycophancy code discipline.
+- **[0xcjl/anti-sycophancy](https://github.com/0xcjl/anti-sycophancy)** - Three-layer anti-sycophancy defense & ArXiv *"Ask Don't Tell"* research.
+- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** - Addy Osmani's production-grade engineering principles.
+- **[anthropics/skills](https://github.com/anthropics/skills)** - Official Anthropic `SKILL.md` format standard.
+- **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Socratic clarification gate.
+- **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Adversarial code review & showstopper auditing.
+- **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem system stress testing.
+
+For full attribution details, see **[CREDITS.md](CREDITS.md)** | **[CREDITS_TR.md](CREDITS_TR.md)**.
 
 ---
 
@@ -59,105 +77,28 @@ graph TD
 
 ---
 
-## 📚 Complete Skill Catalog (63 Skills)
-
-### 🎯 1. Anti-Sycophancy & Core Discipline
-- **`anti-sycophancy`**: Rejects false validation; enforces objective critique, risk exposure, and constructive alternatives.
-- **`socratic-clarification-gate`**: Prevents premature code generation on ambiguous prompts; asks targeted clarifying questions.
-- **`full-output-enforcement`**: Meta-skill preventing truncated outputs (`...`, `// rest of code unchanged`).
-
-### 🎼 2. Master & Domain Orchestrators
-- **`master-orchestrator`**: Central command node routing tasks to sub-orchestrators while enforcing anti-sycophancy gates.
-- **`code-orchestrator`**: Manages code architecture, refactoring, and code review flows.
-- **`design-orchestrator`**: Coordinates UI/UX design, animations, and frontend aesthetic standards.
-- **`security-orchestrator`**: Coordinates cybersecurity audits, pentesting, and vulnerability scans.
-- **`test-orchestrator`**: Coordinates QA suites, unit testing, E2E scenarios, and load testing.
-- **`git-orchestrator`**: Coordinates commit discipline, PR reviews, issue management, and versioning.
-- **`docs-orchestrator`**: Coordinates technical business analysis, spec writing, and document generation.
-
-### 🛡️ 3. Security & Vulnerability Auditing
-- **`api-pentest`**: Endpoint security, rate limiting, SQL/NoSQL injection prevention, and JWT authorization tests.
-- **`client-security`**: Frontend security, XSS/CSRF prevention, CSP headers, and DOM vulnerability audits.
-- **`secret-scanner`**: Scans codebase for leaked API keys, credentials, certificates, and `.env` misconfigurations.
-- **`dependency-audit`**: Dependency vulnerability auditing (npm, pip, etc.), CVE scanning, and supply chain security.
-- **`db-architect-security`**: Database schema safety, ORM query optimization, and SQL injection prevention.
-
-### 🔍 4. Code Quality & Adversarial Review
-- **`clean-code-reviewer`**: SOLID, DRY, YAGNI, and Addy Osmani production-grade engineering principles.
-- **`adversarial-code-reviewer`**: Pre-delivery "Devil's Advocate" audit for unhandled exceptions, memory leaks, and showstoppers.
-- **`pre-mortem-stress-test`**: Pre-release system stress simulation ("If this system fails, where does it break?").
-- **`swift-architecture-auditor`**: Swift, SwiftUI, MVVM/VIPER/TCA architecture and memory leak auditing.
-
-### 🎨 5. UI/UX & Frontend Excellence
-- **`high-end-visual-design`**: Premium UI principles, glassmorphism, optical alignment, and micro-interactions.
-- **`design-taste-frontend`**: Typography, spacing, color harmonies, and layout patterns for web/mobile.
-- **`apple-design`**: Apple Human Interface Guidelines (HIG) compliance for iOS, macOS, and visionOS.
-- **`ui-animation`**: Web and mobile animation principles, terminology, and performance optimization.
-- **`image-to-code`**: Converts mockups, Figma designs, or screenshots into pixel-perfect responsive code.
-- **`imagegen-frontend`**: AI prompt engineering for web hero images, icons, and UI assets.
-
-### 🧪 6. Testing & Quality Assurance
-- **`unit-test-architect`**: Unit testing guidelines, mock/stub patterns, and edge-case coverage.
-- **`e2e-tester`**: Playwright, Cypress, and Appium end-to-end user scenario testing.
-- **`performance-tester`**: Load testing, memory leak detection, benchmarking, and performance optimization.
-- **`smoke-monkey-tester`**: Chaos testing, random input stress tests, and smoke test suites.
-
-### 🌿 7. Git & Release Management
-- **`git-conventional-commits`**: Enforces Conventional Commits standard and clean branch naming.
-- **`git-pr-reviewer`**: Constructive Pull Request code reviews and merge strategies.
-- **`git-issue-manager`**: Effective issue reporting, feature request templates, and triage labeling.
-- **`git-repo-setup`**: Community repository standards (README, CONTRIBUTING, rules).
-- **`version-bump`**: Semantic versioning and automated release notes generation.
-- **`change-tracker`**: Automated Markdown changelog and version history maintenance.
-
-### 📄 8. Documentation & Product Analysis
-- **`tech-business-analyst`**: Bridges UX concepts into technical specs, data models, and developer task breakdowns.
-- **`product-designer`**: Product design, UX wireframing, and user journey mapping.
-- **`feature-ideator`**: Product feature ideation and backlog planning.
-- **`copywriting`**: Clear CTA, error message, and UI microcopy writing.
-- **`docx` / `pdf` / `pptx` / `xlsx`**: Document generation tools for Word, PDF, PowerPoint, and Excel.
-
-### ⚡ 9. Token Efficiency & Caveman Modes
-- **`caveman` / `cavecrew` / `caveman-commit` / `caveman-compress` / `caveman-review` / `caveman-stats` / `caveman-help`**: Ultra-compressed communication modes cutting context token usage by ~65%.
-
----
-
 ## 🚀 Quick Start & Installation
 
-Install and link all 63 skills and rules across all installed AI agents with a single command:
+Install and link all skills across all installed AI agents with an interactive setup wizard:
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/GktuOktay/ai-skills.git
 cd ai-skills
 
-# 2. Run universal setup script (Windows, macOS, Linux)
+# 2. Run universal setup script (Interactive Language Prompt: English / Türkçe)
 python setup.py
-```
 
-`setup.py` automatically compiles Cursor `.mdc` rules, generates `copilot-instructions.md`, `AGENTS.md`, `.windsurfrules`, and links all skills to global and local agent directories.
+# Or run non-interactively with a language flag:
+python setup.py --lang en
+python setup.py --lang tr
+```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before submitting Pull Requests.
-
----
-
-## 🙏 Acknowledgements & Credits
-
-We extend our deep gratitude to the open-source creators and maintainers whose work inspired and paved the way for this library:
-
-- **[PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** - Cursor Rules ecosystem & anti-sycophancy code discipline.
-- **[0xcjl/anti-sycophancy](https://github.com/0xcjl/anti-sycophancy)** - Three-layer anti-sycophancy defense & ArXiv *"Ask Don't Tell"* research.
-- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** - Addy Osmani's production-grade engineering principles.
-- **[anthropics/skills](https://github.com/anthropics/skills)** - Official Anthropic `SKILL.md` format standard.
-- **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Socratic clarification gate.
-- **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Adversarial code review & showstopper auditing.
-- **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem system stress testing.
-
-For full attribution details, please see **[CREDITS.md](CREDITS.md)**.
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 

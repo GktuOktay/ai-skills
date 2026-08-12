@@ -1,5 +1,5 @@
 ---
-description: PDF belgeleri oluşturmak, okumak ve dönüştürmek için kullan.
+description: Tools for creating, reading, and converting PDF documents. / TR: PDF belgeleri oluşturmak, okumak ve dönüştürmek için yetenek.
 globs: *pdf*
 ---
 

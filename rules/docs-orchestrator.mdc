@@ -1,5 +1,5 @@
 ---
-description: Doküman ve dosya üretim süreçlerini yöneten orkestratör. PDF, Word, Excel, PowerPoint ve teknik analiz dokümanları için alt skill'leri otomatik çağırır.
+description: Documentation orchestrator managing technical specs, business analysis, and PDF/Word/Excel/PowerPoint reports. / TR: Doküman ve dosya üretim süreçlerini yöneten orkestratör. PDF, Word, Excel, PowerPoint ve teknik analiz dokümanları üretir.
 globs: *docs-orchestrator*
 ---
 

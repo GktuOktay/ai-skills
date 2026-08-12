@@ -1,5 +1,5 @@
 ---
-description: GitHub/GitLab issue yönetimi için en iyi uygulamaları sunar. Etkili hata raporları, özellik istekleri yazma ve etiketleme stratejilerini kapsar.
+description: GitHub/GitLab issue management best practices, bug report templates, feature requests, and triage labeling. / TR: GitHub/GitLab issue yönetimi için en iyi uygulamalar. Etkili hata raporları, özellik istekleri yazma ve etiketleme.
 globs: *git-issue-manager*
 ---
 

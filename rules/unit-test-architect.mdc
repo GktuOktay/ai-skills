@@ -1,5 +1,5 @@
 ---
-description: Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi.
+description: Comprehensive unit testing patterns, mock/stub usages, and edge-case scenario coverage. / TR: Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi.
 globs: *unit-test-architect*
 ---
 

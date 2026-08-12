@@ -1,5 +1,5 @@
 ---
-description: iOS, macOS ve visionOS için Apple Human Interface Guidelines (İnsan Arayüzü Yönergeleri) tabanlı uygulama tasarımı ve geliştirme becerisi. Platform standartları, SwiftUI en iyi pratikleri, erişilebilirlik ve App Store onay süreçlerine odaklanır.
+description: Apple Human Interface Guidelines (HIG) design and development standards for iOS, macOS, and visionOS. / TR: iOS, macOS ve visionOS için Apple Human Interface Guidelines (İnsan Arayüzü Yönergeleri) tabanlı uygulama tasarımı ve geliştirme becerisi.
 globs: *apple-design*
 ---
 

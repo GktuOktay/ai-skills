@@ -1,5 +1,5 @@
 ---
-description: MCP (Model Context Protocol) sunucuları geliştirmek ve bağlamak için kullan.
+description: Developing, configuring, and building Model Context Protocol (MCP) servers. / TR: MCP (Model Context Protocol) sunucuları geliştirmek ve bağlamak için yetenek.
 globs: *mcp-builder*
 ---
 

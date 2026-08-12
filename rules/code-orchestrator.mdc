@@ -1,5 +1,5 @@
 ---
-description: Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör.
+description: Main orchestrator managing code architecture, refactoring, clean code principles, and adversarial code reviews. / TR: Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör.
 globs: *code-orchestrator*
 ---
 

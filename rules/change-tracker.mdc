@@ -1,5 +1,5 @@
 ---
-description: Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart bir Markdown dosyasında tutma ve otomatik güncelleme kuralı.
+description: Automated Markdown changelog and version history maintenance during development. / TR: Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart Markdown dosyasında tutma kuralı.
 globs: *
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Ekran görüntüleri, mockup'lar veya tasarım dosyalarını (Figma vb.) analiz ederek piksel mükemmelliğinde, duyarlı (responsive) ve temiz koda dönüştürme stratejisi.
+description: Converts screenshots, mockups, or Figma design files into pixel-perfect, responsive code. / TR: Ekran görüntüleri, mockup'lar veya tasarım dosyalarını (Figma vb.) analiz ederek piksel mükemmelliğinde, duyarlı (responsive) ve temiz koda dönüştürme.
 globs: *image-to-code*
 ---
 

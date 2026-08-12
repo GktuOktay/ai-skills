@@ -1,5 +1,5 @@
 ---
-description: Frontend güvenliği; XSS, CSRF, Content Security Policy (CSP) header'ları ve DOM tabanlı zafiyetlerin engellenmesi.
+description: Frontend security auditing, XSS, CSRF, Content Security Policy (CSP) headers, and DOM vulnerability prevention. / TR: Frontend güvenliği; XSS, CSRF, Content Security Policy (CSP) header'ları ve DOM tabanlı zafiyetlerin engellenmesi.
 globs: *client-security*
 ---
 

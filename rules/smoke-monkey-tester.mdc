@@ -1,5 +1,5 @@
 ---
-description: Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri.
+description: Smoke tests for core functionality and monkey/chaos tests aiming to break the system with randomized inputs. / TR: Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri.
 globs: *smoke-monkey-tester*
 ---
 

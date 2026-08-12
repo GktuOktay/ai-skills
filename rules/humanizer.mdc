@@ -1,5 +1,5 @@
 ---
-description: Yapay zeka tarafından üretilen metinleri daha doğal, akıcı ve insansı bir tona dönüştürme rehberi.
+description: Guides converting AI-generated text into a natural, fluent, and humanized tone. / TR: Yapay zeka tarafından üretilen metinleri daha doğal, akıcı ve insansı bir tona dönüştürme rehberi.
 globs: *humanizer*
 ---
 

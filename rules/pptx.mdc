@@ -1,5 +1,5 @@
 ---
-description: PowerPoint (.pptx) sunumları oluşturmak ve düzenlemek için kullan.
+description: Tools for creating and editing PowerPoint (.pptx) presentations. / TR: PowerPoint (.pptx) sunumları oluşturmak ve düzenlemek için yetenek.
 globs: *pptx*
 ---
 

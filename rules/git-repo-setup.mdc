@@ -1,5 +1,5 @@
 ---
-description: GitHub repo kurulumu ve topluluk standartları için en iyi uygulamaları sunar. README, CONTRIBUTING, kural dosyaları ve repo ayarlarını kapsar.
+description: Community repository standards (README, CONTRIBUTING, rules, license, workflows). / TR: GitHub repo kurulumu ve topluluk standartları için en iyi uygulamalar (README, CONTRIBUTING, kurallar).
 globs: *git-repo-setup*
 ---
 

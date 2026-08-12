@@ -1,5 +1,5 @@
 ---
-description: Yeni yetenekler (Skill) ve entegrasyonlar geliştirmek için kullan.
+description: Developing and building new AI agent skills and integrations. / TR: Yeni yetenekler (Skill) ve entegrasyonlar geliştirmek için yetenek.
 globs: *skill-creator*
 ---
 

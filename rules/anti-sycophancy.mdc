@@ -1,5 +1,5 @@
 ---
-description: Yapay zekanın kullanıcı fikirlerini ve hatalı kod yönlendirmelerini körü körüne onaylamasını engeller. Yapıcı itiraz eder, riskleri gösterir ve doğru alternatifi sunar.
+description: Rejects false validation; enforces objective critique, risk exposure, and constructive code alternatives. / TR: Yapay zekanın kullanıcı fikirlerini ve hatalı kod yönlendirmelerini körü körüne onaylamasını engeller. Yapıcı itiraz eder, riskleri gösterir ve doğru alternatifi sunar.
 globs: *
 ---
 

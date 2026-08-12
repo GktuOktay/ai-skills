@@ -1,5 +1,5 @@
 ---
-description: Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, fırsat tespiti, uygulama, optimizasyon ve kod incelemesi.
+description: UI animation standards: web/mobile motion terminology, opportunity detection, optimization, and code review. / TR: Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi.
 globs: *ui-animation*
 ---
 

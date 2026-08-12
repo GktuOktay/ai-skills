@@ -1,5 +1,5 @@
 ---
-description: Semantik versiyonlama kuralları, otomatik sürüm notu oluşturma ve sürüm yönetimi süreçleri.
+description: Semantic versioning rules, automated release notes generation, and release management. / TR: Semantik versiyonlama kuralları, otomatik sürüm notu oluşturma ve sürüm yönetimi süreçleri.
 globs: *version-bump*
 ---
 

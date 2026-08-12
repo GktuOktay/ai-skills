@@ -1,5 +1,5 @@
 ---
-description: Günlük standup (geliştirme) raporlarını kısa, öz ve yapılandırılmış bir şekilde oluşturma kuralları.
+description: Rules for creating concise, structured daily developer standup reports. / TR: Günlük standup (geliştirme) raporlarını kısa, öz ve yapılandırılmış bir şekilde oluşturma kuralları.
 globs: *standup*
 ---
 

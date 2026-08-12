@@ -1,5 +1,5 @@
 ---
-description: Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri.
+description: Intelligent codebase navigation, finding entry points, and understanding large code architecture. / TR: Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri.
 globs: *smart-explore*
 ---
 

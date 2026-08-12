@@ -1,5 +1,5 @@
 ---
-description: Kullanıcı clean-code-reviewer ile ilgili işlemler yapmak istediğinde bu yeteneği kullan.
+description: Eliminates technical debt using SOLID, DRY, YAGNI, and Addy Osmani production-grade engineering principles. / TR: SOLID, DRY, YAGNI ve Addy Osmani üretim seviyesi mühendislik ilkeleri ile kod kalitesini denetleyen yetenek.
 globs: *clean-code-reviewer*
 ---
 

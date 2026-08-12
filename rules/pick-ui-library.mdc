@@ -1,5 +1,5 @@
 ---
-description: Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir.
+description: UI component library selection guide based on performance, accessibility, and maintenance. / TR: Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir.
 globs: *pick-ui-library*
 ---
 

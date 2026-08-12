@@ -1,5 +1,5 @@
 ---
-description: Test stratejileri, birim testleri (unit test) ve e2e testler yazmak için kullan.
+description: Automated test strategies, unit testing, and E2E testing guidelines. / TR: Test stratejileri, birim testleri (unit test) ve e2e testler yazmak için yetenek.
 globs: *testing-master*
 ---
 

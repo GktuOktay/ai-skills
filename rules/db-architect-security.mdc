@@ -1,5 +1,5 @@
 ---
-description: Veritabanı mimarisi, güvenlik standartları ve veritabanı tasarımı için kullan.
+description: Database schema design, ORM model configuration, query optimization, and database security standards. / TR: Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek.
 globs: *db-architect-security*
 ---
 

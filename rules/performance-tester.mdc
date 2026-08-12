@@ -1,5 +1,5 @@
 ---
-description: Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu.
+description: Load testing, memory leak detection, benchmark analysis, and performance optimization. / TR: Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu.
 globs: *performance-tester*
 ---
 

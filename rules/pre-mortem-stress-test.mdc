@@ -1,5 +1,5 @@
 ---
-description: Mimari ve sistem kararlarında "Bu sistem canlıda patlarsa nereden patlar?" analizi yapan stres testi skill'i.
+description: Performs pre-release system stress simulation and pre-mortem analysis ('If this system fails in production, where does it break?'). / TR: Mimari ve sistem kararlarında 'Bu sistem canlıda patlarsa nereden patlar?' analizi yapan stres testi skill'i.
 globs: *pre-mortem-stress-test*
 ---
 

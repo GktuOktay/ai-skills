@@ -1,5 +1,5 @@
 ---
-description: Yazılan kodu teslim etmeden önce "Şeytanın Avukatı" gözüyle gizli bug, showstopper, bellek kaçağı ve mimari açıkları arayan denetçi.
+description: Acts as a senior 'Devil's Advocate' code auditor inspecting showstoppers, memory leaks, unhandled exceptions, and security gaps before code delivery. / TR: Yazılan kodu teslim etmeden önce 'Şeytanın Avukatı' gözüyle gizli bug, showstopper, bellek kaçağı ve mimari açıkları arayan denetçi.
 globs: *adversarial-code-reviewer*
 ---
 

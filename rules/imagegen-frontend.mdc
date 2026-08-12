@@ -1,5 +1,5 @@
 ---
-description: Frontend projeleri için yapay zeka görsel oluşturma ve entegrasyon rehberi: web kahraman görselleri, mobil uygulama varlıkları, kullanıcı arayüzü çizimleri, ikonlar ve pazarlama görselleri.
+description: AI image generation and integration guide for frontend projects: web hero visuals, UI assets, icons, and marketing graphics. / TR: Frontend projeleri için yapay zeka görsel oluşturma rehberi: web hero görselleri, mobil varlıklar, ikonlar ve pazarlama görselleri.
 globs: *imagegen-frontend*
 ---
 

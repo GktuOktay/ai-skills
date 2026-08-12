@@ -1,5 +1,5 @@
 ---
-description: Kapsamlı test stratejileri, birim testleri (unit), uçtan uca testler (E2E), performans ve yük testlerini yöneten ana orkestratör.
+description: QA & testing orchestrator managing unit tests, E2E user scenarios, load testing, and performance benchmarks. / TR: Kapsamlı test stratejileri, birim testleri (unit), uçtan uca testler (E2E), performans ve yük testlerini yöneten ana orkestratör.
 globs: *test-orchestrator*
 ---
 

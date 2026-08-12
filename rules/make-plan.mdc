@@ -1,5 +1,5 @@
 ---
-description: Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği. İster analizi, risk yönetimi, bağımlılık haritalama ve uygulanabilir aşamalandırma (milestones) süreçlerini içerir.
+description: Detailed project planning, risk management, dependency mapping, and task breakdown. / TR: Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği.
 globs: *make-plan*
 ---
 

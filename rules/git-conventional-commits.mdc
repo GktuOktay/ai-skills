@@ -1,5 +1,5 @@
 ---
-description: Git commit mesajları ve branch isimlendirme standartlarını belirler. Projelerde düzenli ve anlaşılır bir tarihçe oluşturmak için Conventional Commits kurallarını uygular.
+description: Git commit message and branch naming standards following Conventional Commits format. / TR: Git commit mesajları ve branch isimlendirme standartlarını belirler. Conventional Commits kurallarını uygular.
 globs: *git-conventional-commits*
 ---
 

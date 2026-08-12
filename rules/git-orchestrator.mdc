@@ -1,5 +1,5 @@
 ---
-description: Git süreçlerini, commit standartlarını, issue ve PR yönetimini, repo kurallarını yöneten ana orkestratör.
+description: Git orchestrator managing commit standards, issue triage, PR code reviews, and repo rules. / TR: Git süreçlerini, commit standartlarını, issue ve PR yönetimini, repo kurallarını yöneten ana orkestratör.
 globs: *git-orchestrator*
 ---
 

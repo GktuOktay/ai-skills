@@ -1,5 +1,5 @@
 ---
-description: Tüm alt orkestratörleri (Code, Design, Security, Test, Git, Docs) ve eleştirel denetim kapılarını tek noktadan yöneten ana sistem mimarı.
+description: Central command node coordinating all sub-orchestrators (Code, Design, Security, Test, Git, Docs) and anti-sycophancy critique gates. / TR: Tüm alt orkestratörleri (Code, Design, Security, Test, Git, Docs) ve eleştirel denetim kapılarını tek noktadan yöneten ana sistem mimarı.
 globs: *
 ---
 

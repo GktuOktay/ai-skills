@@ -1,5 +1,5 @@
 ---
-description: Web ve mobil uygulamalar için ilk kullanım deneyimi (FTUE), aşamalı bilgilendirme ve kullanıcı karşılama süreçlerinin tasarımı.
+description: First-time user experience (FTUE), progressive disclosure, and onboarding flow design. / TR: Web ve mobil uygulamalar için ilk kullanım deneyimi (FTUE), aşamalı bilgilendirme ve kullanıcı karşılama süreçlerinin tasarımı.
 globs: *onboarding*
 ---
 

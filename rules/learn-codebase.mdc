@@ -1,5 +1,5 @@
 ---
-description: Bilinmeyen veya büyük kod tabanlarını hızlıca anlama, analiz etme ve gezinme yeteneği. Mimari yapıları, veri akışını ve bağımlılıkları sistemli bir şekilde çözme stratejilerini içerir.
+description: Fast codebase learning and architectural exploration strategy for unfamiliar projects. / TR: Bilinmeyen veya büyük kod tabanlarını hızlıca anlama, analiz etme ve gezinme yeteneği.
 globs: *learn-codebase*
 ---
 

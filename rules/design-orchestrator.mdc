@@ -1,5 +1,5 @@
 ---
-description: UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör. Gerektiğinde alt skill'leri otomatik çağırır.
+description: Orchestrator for UI/UX design, animations, visual production, and frontend aesthetic standards. / TR: UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör.
 globs: *design-orchestrator*
 ---
 

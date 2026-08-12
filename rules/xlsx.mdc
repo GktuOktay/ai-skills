@@ -1,5 +1,5 @@
 ---
-description: Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için kullan.
+description: Tools for creating, reading, and computing Excel (.xlsx) spreadsheets. / TR: Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek.
 globs: *xlsx*
 ---
 

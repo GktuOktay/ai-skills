@@ -1,5 +1,5 @@
 ---
-description: Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı.
+description: Prevents premature code generation on ambiguous prompts by asking high-leverage Socratic clarifying questions. / TR: Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı.
 globs: *socratic-clarification-gate*
 ---
 
