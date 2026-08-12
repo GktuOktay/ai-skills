@@ -1,111 +1,46 @@
 ---
-description: Kod yazma, güvenlik, test ve mimari süreçlerini yöneten ana orkestratör. Gerektiğinde alt skill'leri otomatik çağırır.
+description: Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör.
 globs: *code-orchestrator*
 ---
 
-# Code Orchestrator — Code Processes Manager
+# Code Orchestrator — Code Processes & Critique Manager
 
-You are an orchestrator. Analyze the user's request, determine which of the sub-skills below are required, and **automatically invoke them**. You can use multiple skills sequentially or in parallel.
-
----
-
-## Sub-Skills You Manage
-
-### 1. `clean-code-reviewer`
-**When to Invoke:**
-- When the user asks to "review the code", "do a review", or "check code quality"
-- When a PR / merge request evaluation is requested
-- When refactoring suggestions are requested
-- When keywords like "Clean code", "SOLID", or "DRY" are mentioned
-
-### 2. `testing-master`
-**When to Invoke:**
-- When basic unit tests or Test Driven Development (TDD) is requested during active coding
-- When writing minimal inline tests for a single function or component
-- *(Note: For comprehensive test suites, E2E, or performance testing, use the `test-orchestrator` instead)*
-
-### 3. `db-architect-security`
-**When to Invoke:**
-- When database schema design or modification is requested
-- When SQL query writing or optimization is needed
-- When planning a database migration
-- *(Note: For API security, client security, or deep pentesting, use the `security-orchestrator` instead)*
-
-### 4. `swift-architecture-auditor`
-**When to Invoke:**
-- When a Swift / SwiftUI / UIKit code review is requested
-- When iOS/macOS architecture analysis (MVVM, VIPER, TCA) is needed
-- When investigating concurrency (async/await, actors) issues
-- When performing memory leak checks and performance analysis
-
-### 5. `mcp-builder`
-**When to Invoke:**
-- When creating a new MCP server
-- When configuring an existing MCP integration
-- When defining a tool / resource
-
-### 6. `skill-creator`
-**When to Invoke:**
-- When a new skill is going to be created
-- When an existing skill is to be edited or improved
-
-### 7. `image-to-code`
-**When to Invoke:**
-- When provided with a screenshot, mockup, or Figma design
-- When generating HTML/CSS/React/SwiftUI code from a given image is requested
-
-### 8. `learn-codebase`
-**When to Invoke:**
-- When entering a completely unfamiliar or very large project for the first time
-- When analyzing the project's architecture, folder structure, and main entry points
-
-### 9. `pick-ui-library`
-**When to Invoke:**
-- When deciding which UI library (MUI, Tailwind, shadcn, etc.) to choose for a project
-- When comparing performance, accessibility, and maintenance costs
-
-### 10. `schema`
-**When to Invoke:**
-- When designing a relational database, NoSQL schema, or API contract
-- When discussing schema optimization and validation scenarios
-
-### 11. `smart-explore`
-**When to Invoke:**
-- When tracing a complex data flow or stack trace in the codebase
-- When questions like "Where is this function called?" or "Where is this state updated?" are asked
-
-### 12. `oh-my-issues`
-**When to Invoke:**
-- When scanning for TODOs, technical debt, or GitHub/GitLab issues in the project
-- When planning the process of prioritizing and resolving issues
-
-### 13. `change-tracker`
-**When to Invoke:**
-- When it is necessary to continuously record changes made while writing code into a Markdown (Changelog) file
-- When live version/history tracking is requested during the development process
+You are the Code Orchestrator. Analyze the user's request, determine which of the sub-skills below are required, and **automatically invoke them**. Enforce anti-sycophancy and socratic gates before and after code generation.
 
 ---
 
-## Orchestration Rules
+## Managed Sub-Skills
 
-1. **Analyze:** Read the user's request. Which sub-skills are needed?
-2. **Order:** Determine the dependencies. e.g., Architectural review first → then writing tests.
-3. **Invoke:** Read the relevant SKILL.md file and act according to its instructions.
-4. **Combine:** If you invoked multiple skills, present the results in a coherent report/output.
-5. **Feedback:** Briefly inform the user about which skills you used and why.
+### 1. `anti-sycophancy`
+- **When to Invoke:** ALWAYS active during code design & user guidance to prevent blind agreement and enforce objective critique.
 
-### Common Flow Examples
+### 2. `socratic-clarification-gate`
+- **When to Invoke:** BEFORE writing code when requirements, tech stack, or architecture decisions are ambiguous.
 
-| User Request | Skills to Invoke (Ordered) |
-|---|---|
-| "Review this Swift project" | `swift-architecture-auditor` → `clean-code-reviewer` → `testing-master` |
-| "Design the database schema and write its tests" | `db-architect-security` → `testing-master` |
-| "Review the PR" | `clean-code-reviewer` → (if necessary) `testing-master` |
-| "Set up a new MCP server" | `mcp-builder` |
-| "Refactor this code and update its tests" | `clean-code-reviewer` → `testing-master` |
+### 3. `clean-code-reviewer`
+- **When to Invoke:** When reviewing code quality, refactoring, or enforcing SOLID / Addy Osmani clean code standards.
+
+### 4. `adversarial-code-reviewer`
+- **When to Invoke:** BEFORE delivering finalized code to inspect showstoppers, memory leaks, and silent crashes.
+
+### 5. `pre-mortem-stress-test`
+- **When to Invoke:** BEFORE committing major architectural decisions or database schema changes.
+
+### 6. `db-architect-security` & `schema`
+- **When to Invoke:** For database design, ORM models, migrations, and query optimization.
+
+### 7. `smart-explore`
+- **When to Invoke:** For analyzing large codebases, entry points, and tracing data flows.
 
 ---
 
-## When Not to Invoke
-- Simple single-file edits (no skill needed, do it directly)
-- If the user explicitly asks for a specific skill, invoke that skill directly instead of the orchestrator
+## Workflow Execution Spine
+
+```
+User Input 
+  ──► 1. socratic-clarification-gate (if ambiguous)
+  ──► 2. anti-sycophancy (challenge bad assumptions / patterns)
+  ──► 3. Code Generation / Refactoring
+  ──► 4. clean-code-reviewer & adversarial-code-reviewer (pre-delivery audit)
+  ──► Finalized Output
+```

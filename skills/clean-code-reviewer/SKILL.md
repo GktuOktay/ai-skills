@@ -2,31 +2,37 @@
 name: clean-code-reviewer
 description: "Kullanıcı clean-code-reviewer ile ilgili işlemler yapmak istediğinde bu yeteneği kullan."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
-# Clean Code & Advanced Code Reviewer
+# Clean Code & Production-Grade Code Reviewer
 
-This skill eliminates technical debt and maximizes maintainability, readability, and code quality through deep code reviews and refactoring patterns.
+This skill eliminates technical debt and maximizes maintainability, readability, type safety, and production-grade code quality through deep code reviews, Google engineering standards, and refactoring patterns.
 
-## 🧹 Refactoring Principles
+---
+
+## 🧹 Refactoring & Engineering Principles
 
 ### 1. SOLID & Clean Code Standards
 - **Single Responsibility (SRP):** Split overloaded files/functions into modular components.
 - **DRY (Don't Repeat Yourself):** Abstract duplicate code into reusable helpers or hooks.
 - **KISS & YAGNI:** Avoid over-engineering; simplify overly complex abstractions.
 
-### 2. Complexity Reduction & Naming
-- **Cyclomatic Complexity:** Flatten nested `if/else` loops using guard clauses and early returns.
-- **Self-Documenting Naming:** Replace vague variables (`data`, `temp`, `x`) with intention-revealing names.
+### 2. Addy Osmani Production-Grade Standards
+- **Zero Implicit State Mutation:** Never mutate global or private third-party state directly; keep mutations scoped and immutable.
+- **Strict Guard Clauses:** Flatten nested `if/else` loops using early returns and validation gates.
+- **Explicit Error Boundaries:** Never swallow exceptions or return dummy fallbacks silently; handle errors gracefully or propagate.
+- **Type Safety Discipline:** Remove all `any` types; enforce strict TypeScript types and type guards.
 
-### 3. Type Safety & Error Handling
-- Enforce strict TypeScript types; remove `any` and introduce type guards.
-- Standardize error handling using central error boundaries or Result patterns.
+### 3. Complexity Reduction & Naming
+- **Intent-Revealing Naming:** Replace vague variables (`data`, `temp`, `x`) with domain-specific names.
+- **Memory & Resource Safety:** Verify that all subscriptions, timers, and listeners have proper cleanup hooks.
+
+---
 
 ## Output Template
 
-1. 🔍 **Code Review Findings:** Code strengths and anti-patterns / technical debt detected.
+1. 🔍 **Code Review Findings:** Code strengths, anti-patterns, and technical debt detected.
 2. 🔄 **Refactoring Proposal (Before / After):**
    - **Before:** Problematic code.
    - **After:** Refactored, production-ready Clean Code.
