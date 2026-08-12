@@ -13,7 +13,7 @@ Bu depo; **Antigravity (Gemini Agent)**, **Cursor AI** ve **Claude Code** araçl
 
 Kütüphanedeki yetenekler aşağıdaki ana alanlarda yapay zeka asistanlarının otonom ve standartlara uygun çalışmasını sağlar:
 
-- 🏗️ **Yazılım Mimarısı & Kodlama**: `code-orchestrator`, `clean-code-reviewer`, `swift-architecture-auditor`, `schema`, `mcp-builder`, `smart-explore`
+- 🏗️ **Yazılım Mimarisi & Kodlama**: `code-orchestrator`, `clean-code-reviewer`, `swift-architecture-auditor`, `schema`, `mcp-builder`, `smart-explore`
 - 🛡️ **Güvenlik & Penetrasyon Testleri**: `security-orchestrator`, `api-pentest`, `client-security`, `db-architect-security`, `secret-scanner`, `dependency-audit`
 - 🎨 **UI/UX & Görsel Tasarım**: `design-orchestrator`, `apple-design`, `high-end-visual-design`, `design-taste-frontend`, `ui-animation`, `imagegen-frontend`, `image-to-code`
 - 🧪 **Test & Kalite Güvence**: `test-orchestrator`, `unit-test-architect`, `e2e-tester`, `performance-tester`, `smoke-monkey-tester`, `testing-master`
@@ -40,11 +40,12 @@ cd ai-skills
 python setup.py
 ```
 
-`setup.py` otomatik olarak:
+`setup.py` otomatik olarak şu 5 adımı gerçekleştirir:
 1. `build_cursor_rules.py` çalıştırarak `skills/` klasöründen `.mdc` formatında Cursor kuralları (`rules/`) üretir.
-2. **Antigravity** için `~/.gemini/config/skills` konumuna bağ kurar.
-3. **Claude Code** için `~/.claude/skills` konumuna bağ kurar.
-4. **Cursor** için `~/.cursor/rules` konumuna bağ kurar.
+2. **Cursor Global Skills**: 58 adet yeteneği Cursor'ın dahili global yetenek alanına (`~/.cursor/skills-cursor`) ekler.
+3. **Cursor Global Rules**: `.mdc` kurallarını `~/.cursor/rules` konumuna bağlar.
+4. **Antigravity (Gemini)**: Global yetenekleri `~/.gemini/config/skills` konumuna bağlar.
+5. **Claude Code**: Global yetenekleri `~/.claude/skills` konumuna bağlar.
 
 ---
 
@@ -57,10 +58,13 @@ python setup.py
 :: Cursor kurallarını derleyin
 python build_cursor_rules.py
 
-:: Bağlantıları oluşturun (Junction)
+:: Bağlantıları oluşturun (Junction Point)
 mklink /J "%USERPROFILE%\.gemini\config\skills" "%CD%\skills"
 mklink /J "%USERPROFILE%\.claude\skills" "%CD%\skills"
 mklink /J "%USERPROFILE%\.cursor\rules" "%CD%\rules"
+
+:: Dilerseniz Cursor dahili yetenek alanına da klasörleri bağlayabilirsiniz:
+:: "%USERPROFILE%\.cursor\skills-cursor\<skill-name>" -> "%CD%\skills\<skill-name>"
 ```
 
 #### macOS / Linux (Bash / Zsh):
@@ -86,7 +90,7 @@ Yeni bir yetenek eklemek için:
    # Skill Talimatları
    ...
    ```
-3. `python setup.py` çalıştırarak Cursor kurallarını güncelleyin.
+3. `python setup.py` çalıştırarak Cursor kurallarını ve tüm bağları güncelleyin.
 
 ---
 
