@@ -4,8 +4,11 @@
 [![Platform: Antigravity](https://img.shields.io/badge/Antigravity-Supported-brightgreen.svg)]()
 [![Platform: Cursor](https://img.shields.io/badge/Cursor-Supported-blue.svg)]()
 [![Platform: Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-orange.svg)]()
+[![Platform: GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Supported-purple.svg)]()
+[![Platform: OpenAI Codex](https://img.shields.io/badge/OpenAI%20Codex-Supported-black.svg)]()
+[![Platform: Windsurf](https://img.shields.io/badge/Windsurf-Supported-teal.svg)]()
 
-Bu depo; **Antigravity (Gemini Agent)**, **Cursor AI** ve **Claude Code** araçları için özelleştirilmiş 58+ adet AI yeteneği (skill) ve sistem kuralı (`.mdc` / markdown rules) barındıran merkezi bir kütüphanedir.
+Bu depo; **Antigravity (Gemini Agent)**, **Cursor AI**, **Claude Code**, **GitHub Copilot**, **OpenAI Codex**, **Windsurf** ve jenerik tüm AI agent araçları için 63+ adet özelleştirilmiş AI yeteneği (skill) ve sistem kuralı barındıran evrensel kütüphanedir.
 
 ---
 
