@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI Skills & Rules Installation Script
-Supports Windows, macOS, and Linux for Antigravity, Cursor, and Claude Code.
+Supports Windows, macOS, and Linux for Antigravity, Cursor, Claude Code, and GitHub Copilot / OpenAI Codex.
 """
 
 import os
@@ -10,7 +10,7 @@ import shutil
 import subprocess
 
 def run_build_rules():
-    print("[1/5] Cursor kurallari derleniyor (build_cursor_rules.py)...")
+    print("[1/6] Cursor kurallari derleniyor (build_cursor_rules.py)...")
     base_dir = os.path.dirname(os.path.abspath(__file__))
     build_script = os.path.join(base_dir, "build_cursor_rules.py")
     if os.path.exists(build_script):
@@ -21,6 +21,52 @@ def run_build_rules():
             print(f"  [UYARI] Cursor kural uretimi hatasi: {res.stderr}")
     else:
         print("  [ATLANDI] build_cursor_rules.py bulunamadi.")
+
+def build_copilot_instructions():
+    print("[2/6] GitHub Copilot talimatlari uretiliyor (.github/copilot-instructions.md)...")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    skills_dir = os.path.join(base_dir, "skills")
+    github_dir = os.path.join(base_dir, ".github")
+    copilot_file = os.path.join(github_dir, "copilot-instructions.md")
+
+    os.makedirs(github_dir, exist_ok=True)
+
+    header = """# GitHub Copilot & OpenAI Codex System Instructions
+
+This repository enforces global engineering standards, anti-sycophancy discipline, clean code practices, and multi-orchestrator architecture.
+
+---
+
+## 🛑 Core Discipline & Anti-Sycophancy
+- **No Praise-Spam:** Never use empty flattery ("Great idea!", "You're right!").
+- **Authority-Bias Defense:** If the user proposes a flawed architecture, dangerous pattern, or sub-optimal code, challenge the decision, highlight technical risks, and propose the production-grade fix.
+- **Full Output Enforcement:** Never truncate code using `...` or "rest is the same". Always output complete, production-ready code.
+
+---
+
+## 🛠️ Essential Skills Summary
+"""
+    body = ""
+    for folder in sorted(os.listdir(skills_dir)):
+        skill_path = os.path.join(skills_dir, folder, "SKILL.md")
+        if not os.path.exists(skill_path):
+            continue
+        with open(skill_path, "r", encoding="utf-8") as f:
+            content = f.read()
+            desc = ""
+            if content.startswith("---"):
+                end_idx = content.find("---", 3)
+                if end_idx != -1:
+                    frontmatter = content[3:end_idx]
+                    for line in frontmatter.split("\n"):
+                        if line.strip().startswith("description:"):
+                            desc = line.strip().replace("description:", "").strip().strip('"').strip("'")
+            body += f"- **{folder}**: {desc}\n"
+
+    with open(copilot_file, "w", encoding="utf-8") as f:
+        f.write(header + body)
+    
+    print("  [OK] .github/copilot-instructions.md basariyla uretildi.")
 
 def setup_link(target_path, source_path, app_name):
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
@@ -84,20 +130,21 @@ def main():
     rules_src = os.path.join(base_dir, "rules")
 
     run_build_rules()
+    build_copilot_instructions()
 
-    print("\n[2/5] Proje seviyesi Cursor kurallari baglaniyor (.cursor/rules)...")
+    print("\n[3/6] Proje seviyesi Cursor kurallari baglaniyor (.cursor/rules)...")
     local_cursor_rules = os.path.join(base_dir, ".cursor", "rules")
     setup_link(local_cursor_rules, rules_src, "Cursor Proje Rules (.cursor/rules)")
 
-    print("\n[3/5] Cursor Global Skills yapilandiriliyor (~/.cursor/skills-cursor)...")
+    print("\n[4/6] Cursor Global Skills yapilandiriliyor (~/.cursor/skills-cursor)...")
     link_individual_cursor_skills(skills_src, os.path.join(home, ".cursor", "skills-cursor"))
 
-    print("\n[4/5] Global baglantilar yapilandiriliyor...")
+    print("\n[5/6] Global baglantilar yapilandiriliyor...")
     setup_link(os.path.join(home, ".gemini", "config", "skills"), skills_src, "Antigravity (Gemini)")
     setup_link(os.path.join(home, ".claude", "skills"), skills_src, "Claude Code")
     setup_link(os.path.join(home, ".cursor", "rules"), rules_src, "Cursor Global Rules (~/.cursor/rules)")
 
-    print("\n[5/5] Kurulum tamamlandi! Tüm AI yetenekleri ve kurallari global olarak aktif.")
+    print("\n[6/6] Kurulum tamamlandi! Tüm AI yetenekleri ve kurallari global ve Copilot/Codex icin aktif.")
 
 if __name__ == "__main__":
     main()
