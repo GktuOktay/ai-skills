@@ -26,6 +26,7 @@ Bu kütüphanenin geliştirilmesinde ilham veren ve zemin hazırlayan açık kay
 - **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Sokratik netleştirme kapısı.
 - **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Hasmane kod incelemesi ve teslim öncesi showstopper denetimi.
 - **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem sistem stres simülasyonu.
+- **[mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)** - Siber güvenlik, API testleri ve Pentest yetenek (skill) senaryoları.
 
 Tüm detaylı atıflar için bkz: **[CREDITS.md](CREDITS.md)** | **[CREDITS_EN.md](CREDITS_EN.md)**.
 

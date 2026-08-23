@@ -1,10 +1,6 @@
 ---
 name: testing-for-json-web-token-vulnerabilities
-description: Tests JWT implementations for algorithm confusion, "none" algorithm bypass,
-  kid/jku parameter injection, and weak secret exploitation using jwt_tool and Burp Suite's
-  JWT Editor extension, aiming to achieve authentication bypass and privilege escalation.
-  Use when assessing JWT-based auth/session management, OAuth2/OIDC token handling, or
-  SSO systems during a security engagement.
+description: "JWT uygulamalarında algoritma karmaşası, 'none' algoritması atlatması, kid/jku parametre enjeksiyonu ve zayıf gizli anahtar (secret) zafiyetlerini test eder. jwt_tool ve Burp Suite kullanarak kimlik doğrulama atlatma ve yetki yükseltmeyi hedefler."
 domain: cybersecurity
 subdomain: web-application-security
 tags:

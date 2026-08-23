@@ -26,6 +26,7 @@ We extend our deep gratitude to the open-source creators and maintainers whose w
 - **[SwePalm/socratic-skill](https://github.com/SwePalm/socratic-skill)** & **[m4vic/socratic](https://github.com/m4vic/socratic)** - Socratic clarification gate.
 - **[vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard)** - Adversarial code review & showstopper auditing.
 - **[ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills)** - Pre-Mortem system stress testing.
+- **[mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)** - Cybersecurity, API testing, and Pentest skill scenarios.
 
 For full attribution details, see **[CREDITS.md](CREDITS.md)** | **[CREDITS_EN.md](CREDITS_EN.md)**.
 

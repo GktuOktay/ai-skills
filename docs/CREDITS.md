@@ -21,6 +21,7 @@ Aşağıdaki yaratıcılara ve projelere derin saygı ve teşekkürlerimizi suna
 | **`vlad-ko`** | Hasmane Kod Denetçisi ve teslim öncesi showstopper denetimi | [vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard) |
 | **`ColdIQ`** | Pre-Mortem sistem stres simülasyonu ve steelmanning teknikleri | [ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills) |
 | **`ComposioHQ`** | Modüler agent yetenek ekosistemi ilhamı | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
+| **`mukul975`** | Siber güvenlik, API testleri, zafiyet tarama ve Pentest yetenek (skill) senaryoları | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) |
 
 ---
 

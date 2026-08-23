@@ -1,6 +1,6 @@
 ---
 name: scanning-containers-with-trivy-in-cicd
-description: 'Integrates Aqua Security''s Trivy scanner into CI/CD pipelines to detect
+description: "CI/CD süreçlerine Aqua Security Trivy tarayıcısını entegre ederek işletim sistemi paketlerindeki, bağımlılıklardaki CVE'leri, Dockerfile hatalarını ve git repolarındaki sızıntıları tespit eder. Zafiyetli imajların dağıtımını engellemek için kalite kapıları (quality gates) oluşturur."'s Trivy scanner into CI/CD pipelines to detect
   OS package and application dependency CVEs, Dockerfile misconfigurations, and issues
   in filesystems or git repositories, and to enforce severity-based quality gates that
   block vulnerable images from being deployed. Use when building Docker images in

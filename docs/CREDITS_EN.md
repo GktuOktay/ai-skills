@@ -21,6 +21,7 @@ We extend our deep gratitude and respect to the following creators and projects:
 | **`vlad-ko`** | Adversarial Code Reviewer & pre-delivery showstopper auditing | [vlad-ko/claude-wizard](https://github.com/vlad-ko/claude-wizard) |
 | **`ColdIQ`** | Pre-Mortem system stress simulation & steelmanning techniques | [ColdIQ/ColdIQ-s-GTM-Skills](https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills) |
 | **`ComposioHQ`** | Modular agent skill ecosystem inspiration | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
+| **`mukul975`** | Cybersecurity, API testing, vulnerability scanning, and Pentest skill scenarios | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) |
 
 ---
 

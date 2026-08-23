@@ -1,9 +1,6 @@
 ---
 name: testing-api-security-with-owasp-top-10
-description: Systematically assesses REST, GraphQL, and gRPC API endpoints against the OWASP
-  API Security Top 10 (2023) using Burp Suite and Postman for automated and manual testing.
-  Use during authorized API penetration tests, before deploying new endpoints to production,
-  or when validating API gateway controls and rate limiting.
+description: "REST, GraphQL ve gRPC API uç noktalarını OWASP API Security Top 10 (2023) standartlarına göre sistemli olarak değerlendirir. Burp Suite ve Postman kullanarak otomatik ve manuel testler gerçekleştirir. Yetkili sızma testleri veya API gateway denetimleri öncesinde kullanılır."
 domain: cybersecurity
 subdomain: web-application-security
 tags:
