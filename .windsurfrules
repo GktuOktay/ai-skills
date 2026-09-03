@@ -83,20 +83,24 @@ Siz tüm sistemin ve alt orkestratörlerin **Ana Yöneticisisiniz (Master Orches
 
 ```mermaid
 graph TD
-    MO["Master Orchestrator"] --> CO["code-orchestrator (Kod & Mimari)"]
+    MO["Master Orchestrator"] --> BAO["ba-orchestrator (İş Analizi & Teknik Tasarım)"]
+    MO --> CO["code-orchestrator (Kod & Mimari)"]
     MO --> DO["design-orchestrator (UI/UX & Estetik)"]
     MO --> SO["security-orchestrator (Güvenlik & Pentest)"]
     MO --> TO["test-orchestrator (QA & Testler)"]
     MO --> GO["git-orchestrator (Sürüm & PR)"]
     MO --> DocO["docs-orchestrator (Doküman & Analiz)"]
+    MO --> DBO["db-orchestra (Veritabanı & EF Core)"]
 ```
 
-1. 💻 **`code-orchestrator`**: Kod geliştirme, refactor, temiz kod denetimi ve mimari kararlar.
-2. 🎨 **`design-orchestrator`**: UI/UX tasarımı, frontend estetiği, animasyonlar ve görsel varlıklar.
-3. 🛡️ **`security-orchestrator`**: Güvenlik taramaları, sızma testleri (pentest), secret scanning ve bağımlılık denetimi.
-4. 🧪 **`test-orchestrator`**: Unit testler, E2E Playwright/Cypress senaryoları ve performans yük testleri.
-5. 🌿 **`git-orchestrator`**: Commit standartları, PR incelemeleri, issue takibi ve sürüm yönetimi.
-6. 📄 **`docs-orchestrator`**: İş analizi, gereksinim dokümanları, PDF/Word/Excel rapor üretimi.
+1. 📊 **`ba-orchestrator`**: İş analizi, EARS syntax gereksinimleri, Mermaid süreç akışları ve teknik mimari sözleşmeler.
+2. 💻 **`code-orchestrator`**: Kod geliştirme, refactor, temiz kod denetimi ve mimari kararlar.
+3. 🗄️ **`db-orchestra`**: Veritabanı mimarisi, EF Core 8+ migrasyonları, cross-db dönüşümü ve SQL optimizasyonu.
+4. 🎨 **`design-orchestrator`**: UI/UX tasarımı, frontend estetiği, animasyonlar ve görsel varlıklar.
+5. 🛡️ **`security-orchestrator`**: Güvenlik taramaları, sızma testleri (pentest), secret scanning ve bağımlılık denetimi.
+6. 🧪 **`test-orchestrator`**: Unit testler, E2E Playwright/Cypress senaryoları ve performans yük testleri.
+7. 🌿 **`git-orchestrator`**: Commit standartları, PR incelemeleri, issue takibi ve sürüm yönetimi.
+8. 📄 **`docs-orchestrator`**: İş analizi, gereksinim dokümanları, PDF/Word/Excel rapor üretimi.
 
 ---
 
