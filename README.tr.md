@@ -29,7 +29,10 @@ Bu depo derin mimari prensipler barındırır. Tüm çekirdek sistem belgeleri v
 * 🏗️ **[Mimarinin Anatomisi](docs/tr/core/ARCHITECTURE.md)** 
   * Ajansın 5 katmanlı yapısını (01'den 05'e) açıklar. Kullanıcı isteklerinin nasıl bir "Abstract Syntax Tree" gibi parçalandığını ve kodun Kalite Kapısından geçemediğinde devreye giren geri dönüş (Fallback) mekanizmalarını detaylandırır.
 
-### 3. Mühendislik Zihniyeti
+### 3. Mühendislik Zihniyeti ve Karakter
+* 🎭 **[Sistem Personası ve Karakter Bildirgesi](docs/tr/core/PERSONAS.md)**
+  * Ajanların davranışsal psikolojisini tanımlar: Yalakalık yapmama, varsayımsız icraat ve kötü mimari kararlara itiraz etme (Challenger) cesareti.
+
 * 🧠 **[Çekirdek Mühendislik Prensipleri](docs/tr/core/PRINCIPLES.md)** 
   * Ajanların beynine kazınmış "Baş Mimar" (Principal Architect) zihniyetini belgeler. Yanlış (Örn: Şişirilmiş BaseService kullanımı) ve Doğru (CQRS, Savunmacı Programlama, IoC, Şema Ayrıştırması) C# kod örneklerini içerir.
 

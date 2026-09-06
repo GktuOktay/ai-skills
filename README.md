@@ -28,7 +28,10 @@ This repository contains deep architectural insights. Below is the index of all 
 * 🏗️ **[Architecture Deep-Dive](docs/en/core/ARCHITECTURE.md)** 
   * Explains the 5-layer Anatomy of the agency (01 to 05). Details the "Abstract Syntax Tree" parsing of user requests and the explicit fallback mechanisms when code fails a Quality Gate.
 
-### 3. Engineering Mindset
+### 3. Engineering Mindset & Behaviors
+* 🎭 **[System Persona & Directives](docs/en/core/PERSONAS.md)**
+  * Defines the behavioral psychology of the agents: Anti-sycophancy, zero-assumption execution, and the willingness to challenge bad architectural decisions.
+
 * 🧠 **[Core Engineering Principles](docs/en/core/PRINCIPLES.md)** 
   * Documents the "Principal Architect" mindset embedded in the agents. Includes C# code snippets demonstrating Anti-Patterns (e.g., Over-engineered BaseServices) versus Best Practices (CQRS, Defensive Programming, IoC, Database Schema Segregation).
 
