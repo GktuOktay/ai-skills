@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""
-Autonomous Agency v2.0 - Universal Enterprise Build Script
-This script acts as the Single Source of Truth (SSOT) compiler.
-It reads from 'src/skills/' and generates the required artifacts for Cursor, Claude, and Windsurf.
-No symlink spaghetti, no hidden folders. Just pure artifact generation.
-"""
-
 import os
 import glob
 
@@ -24,7 +17,6 @@ def clean_old_artifacts():
 def build():
     print("[2/3] Compiling Single Source of Truth (src/skills/)...")
     
-    
     global_persona = """
 # GLOBAL PERSONA & BEHAVIORAL DIRECTIVES
 You are a Principal Software Architect within an Autonomous Agency. You MUST strictly adhere to the following behavioral traits in every response:
@@ -40,9 +32,7 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
 """
 
     global_enforcer = "\n\nCRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.\n"
-    
     global_combined = global_persona + global_enforcer
-
     
     cursor_count = 0
     windsurf_content = "## Windsurf Global Rules\n\n"
@@ -74,7 +64,6 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
             
             body += global_combined
             
-            # 1. Cursor (.mdc) Generation
             mdc_content = f"---\ndescription: {description}\nglobs: *\n" if always_apply or "gate" in skill_name or "enforcer" in skill_name else f"---\ndescription: {description}\nglobs: *{skill_name}*\n"
             mdc_content += f"---\n\n{body}"
             
@@ -93,39 +82,10 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
     with open(os.path.join(base_dir, "clauderules.md"), "w", encoding="utf-8") as f:
         f.write(claude_content)
         
-    # NEW: Roo Code (Cline) Support
-
-" + claude_content.replace("## Claude Code Global Rules
-
-", "")
-    with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
-        f.write(roo_content)
-
-    # NEW: Aider / Copilot Conventions Support
-
-" + claude_content.replace("## Claude Code Global Rules
-
-", "")
-    with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
-        f.write(aider_content)
-        
-    print(f"
-✅ Build Complete!")
-    print(f"   - {cursor_count} rules compiled for Cursor (.mdc)")
-    print(f"   - 1 global rule file compiled for Windsurf (.windsurfrules)")
-    print(f"   - 1 global rule file compiled for Claude (clauderules.md)")
-    print(f"   - 1 global rule file compiled for Roo Code (.clinerules)")
-    print(f"   - 1 global rule file compiled for Aider/Copilot (CONVENTIONS.md)")
-
-if __name__ == "__main__":
-    clean_old_artifacts()
-    build()
-    # NEW: Roo Code (Cline) Support
     roo_content = "# Roo Code / Cline Global Rules\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", "")
     with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
         f.write(roo_content)
 
-    # NEW: Aider / Copilot Conventions Support
     aider_content = "# Aider / GitHub Copilot Conventions\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", "")
     with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
         f.write(aider_content)
