@@ -1,30 +1,70 @@
-# 🚀 AI-Skills v2.0 (The Autonomous Agency)
+# 🚀 AI-Skills v2.0: The Autonomous Digital Agency
 
-Bu depo, yapay zeka kodlama araçları (Cursor, Claude Code, Windsurf vb.) için tasarlanmış **hiyerarşik, otonom ve deterministik** bir yetenek (skill) ekosistemidir.
+![Architecture: Multi-Agent](https://img.shields.io/badge/Architecture-Multi--Agent-blue)
+![Stack: .NET | React | Mobile](https://img.shields.io/badge/Stack-.NET_%7C_React_%7C_Mobile-purple)
+![Paradigm: Test--Driven](https://img.shields.io/badge/Paradigm-Test--Driven-success)
 
-Klasik "prompt yığınlarının" aksine, bu sistem tıpkı bir dijital yazılım şirketi gibi çalışır.
+Bu depo, standart ve pasif yapay zeka (LLM) prompt yığınlarını reddeden; yerine **karar alabilen, test yazan, birbirine iş devreden ve deterministik kalite kapılarından (Quality Gates) geçen** otonom bir ajan ekosistemidir.
 
-## 🏗️ Mimari ve Klasör Yapısı (`src/skills/`)
+Klasik AI kullanımında geliştirici her detayı anlatmak zorundadır. **v2.0 Mimarisinde ise geliştirici (Kıdemli Mimar) sadece hedefi verir; ajanlar analizi yapar, kodu yazar, test eder, dokümante eder ve devreder.**
 
-Sistem 5 ana departmandan oluşur:
+## 📊 Ajan Topolojisi ve Veri Akışı
 
-1. **`01_orchestrators/` (Yöneticiler):** İşi alır, planlar ve diğer uzmanlara devreder. Doğrudan kod yazmazlar. (Örn: `master-orchestrator`, `project-bootstrap-orchestrator`)
-2. **`02_specialists/` (Uzmanlar):** İşi fiilen yapan kıdemli geliştiriciler ve tasarımcılardır. Belirli bir teknoloji yığınına veya işe odaklanırlar. (Örn: `dotnet-enterprise-architect`, `legacy-code-migrator-specialist`)
-3. **`03_quality_gates/` (Kalite Kapıları):** Kodun ve çıktıların kullanıcıya ulaşmadan önce geçtiği zorunlu denetim noktalarıdır. (Örn: `test-driven-development-gate`, `critical-critique-gate`, `turkish-language-enforcer-gate`)
-4. **`04_workflows/` (İş Akışları):** Sürekli tekrarlanan otomasyon ve standartlaşma görevleridir. (Örn: `update-changelog-workflow`, `git-conventional-commits-workflow`)
-5. **`05_capabilities/` (Araçlar ve Modlar):** Ajanların kullandığı sistem araçları veya çalışma kipleridir. (Örn: `caveman-mode` (token tasarrufu), `graphify-tool`)
+```mermaid
+flowchart TB
+    User((Kullanıcı)) -->|İş Talebi / Hedef| MO[01: Master Orchestrator]
+    
+    subgraph Planning [Planlama ve İş Analizi]
+        MO --> BA[BA / Sistem Mimarı]
+        BA -->|Mimari Şemalar & Kabul Kriterleri| Spec[(Proje Spesifikasyonu)]
+    end
 
-## 🛠️ Temel Prensipler
+    subgraph Execution [Uzman Ajanlar - Execution]
+        Spec --> CO[01: Code Orchestrator]
+        CO --> Backend[02: .NET Enterprise Architect]
+        CO --> Mobile[02: Mobile Swift/Flutter Architect]
+        CO --> Migrator[02: Legacy Code Migrator]
+    end
 
-* **Türkçe Arayüz, İngilizce Zeka:** Yapay zekanın çekirdek talimatları maksimum performans için İngilizcedir. Ancak `turkish-language-enforcer-gate` sayesinde yapay zeka sizinle **her zaman Türkçe** iletişim kurar.
-* **Kanıt Odaklı (Evidence-Based):** Ajanlar kodu yazıp bırakmaz; testleri çalıştırıp sonucunu size kanıtlamak zorundadır.
-* **Anti-AI Tasarım:** Tasarım orkestratörleri, yapay zekanın varsayılan klişelerinden (mor gradyanlar, yuvarlak SaaS kartları) kaçınacak şekilde programlanmıştır.
+    subgraph QualityGates [Zorunlu Kalite Kapıları]
+        Backend --> TDD{03: Test-Driven Gate}
+        Mobile --> UI{03: Anti-AI Design Gate}
+        Migrator --> Sec{03: Security & Logging Gate}
+        
+        TDD -->|Test Failed| Backend
+        TDD -->|Test Passed (Yeşil)| API_Docs
+    end
+
+    subgraph Output [İş Akışları & Teslimat]
+        API_Docs{03: Swagger & XML Gate} --> Handoff[04: API Handoff Workflow]
+        Handoff -->|Frontend İçin Entegrasyon Dokümanı| FinalCheck
+        UI --> FinalCheck
+        Sec --> FinalCheck
+        FinalCheck{03: Turkish Language Enforcer} -->|Saf Türkçe Yanıt| User
+    end
+    
+    classDef orchestrator fill:#2b1b3d,stroke:#9d5bdf,stroke-width:2px,color:#fff
+    classDef agent fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
+    classDef gate fill:#5c1a1b,stroke:#e74c3c,stroke-width:2px,color:#fff
+    
+    class MO,CO orchestrator
+    class BA,Backend,Mobile,Migrator agent
+    class TDD,UI,Sec,API_Docs,FinalCheck gate
+```
+
+## 📚 Kapsamlı Dokümantasyon
+
+Sistemin derin teknik mimarisi, prensipleri ve iş akışları için aşağıdaki dokümanları inceleyin:
+
+* 🏗️ [Mimarinin Anatomisi (ARCHITECTURE.md)](docs/ARCHITECTURE.md): 5 Ana Departmanın (01-05) teknik hiyerarşisi.
+* 🧠 [Çekirdek Prensipler (PRINCIPLES.md)](docs/PRINCIPLES.md): Fail-Fast, Evrimsel Mimari, .NET Base Service İkilemi ve YAGNI.
+* 🔄 [Otonom İş Akışları (WORKFLOWS.md)](docs/WORKFLOWS.md): API Devir-Teslimi (Handoff), Proje Kurulumu ve Changelog yönetim süreçleri.
 
 ## ⚙️ Kurulum ve Derleme (Build)
 
-Sisteme yeni bir ajan (Skill) eklediğinizde veya değişiklik yaptığınızda, IDE'lerin bunu algılayabilmesi için derleme scriptini çalıştırmanız gerekir.
+Cursor, Claude Code veya Windsurf ortamlarında kuralları (.mdc) üretmek için:
 
 ```bash
-# Cursor ve diğer IDE'ler için .mdc kurallarını yeniden derler
 python3 scripts/build_cursor_rules.py
 ```
+Bu komut, `src/skills/` hiyerarşisini özyineli (recursive) tarayarak 100+ otonom kural dosyasını IDE'nize entegre eder.
