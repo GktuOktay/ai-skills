@@ -95,7 +95,7 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
         
     # NEW: Roo Code (Cline) Support
     with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
-        f.write("# Roo Code / Cline Global Rules
+        f.write("# Roo Code / Cline Global Rules\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", ""))
 
 " + claude_content.replace("## Claude Code Global Rules
 
@@ -103,7 +103,7 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
 
     # NEW: Aider / Copilot Conventions Support
     with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
-        f.write("# Aider / GitHub Copilot Conventions
+        f.write("# Aider / GitHub Copilot Conventions\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", ""))
 
 " + claude_content.replace("## Claude Code Global Rules
 
