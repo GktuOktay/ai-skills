@@ -93,10 +93,29 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
     with open(os.path.join(base_dir, "clauderules.md"), "w", encoding="utf-8") as f:
         f.write(claude_content)
         
-    print(f"\n✅ Build Complete!")
+    # NEW: Roo Code (Cline) Support
+    with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
+        f.write("# Roo Code / Cline Global Rules
+
+" + claude_content.replace("## Claude Code Global Rules
+
+", ""))
+
+    # NEW: Aider / Copilot Conventions Support
+    with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
+        f.write("# Aider / GitHub Copilot Conventions
+
+" + claude_content.replace("## Claude Code Global Rules
+
+", ""))
+        
+    print(f"
+✅ Build Complete!")
     print(f"   - {cursor_count} rules compiled for Cursor (.mdc)")
     print(f"   - 1 global rule file compiled for Windsurf (.windsurfrules)")
     print(f"   - 1 global rule file compiled for Claude (clauderules.md)")
+    print(f"   - 1 global rule file compiled for Roo Code (.clinerules)")
+    print(f"   - 1 global rule file compiled for Aider/Copilot (CONVENTIONS.md)")
 
 if __name__ == "__main__":
     clean_old_artifacts()
