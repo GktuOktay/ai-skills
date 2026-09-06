@@ -45,7 +45,7 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `gitops-manager` | ArgoCD ve Flux ile Kubernetes üzerinde GitOps tabanlı sürekli dağıtım (CD) süreçlerini yönetir. |
 | `iac-architect` | Altyapının kod olarak yönetimi (IaC). Terraform, Pulumi ve Ansible kullanarak bulut ve sunucu altyapısını tasarlar. |
 | `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
-| `update-changelog-workflow` | Release & Changelog Manager: Strictly manages version bumps and CHANGELOG.md generation ONLY during the Release/Deployment phase, never during active coding. |
+| `update-changelog-workflow` | Release & Changelog Manager: Manages version bumps (x.x.x SemVer) and CHANGELOG.md generation ONLY during the Release/Deployment phase, never during active coding. |
 
 ### Frontend And Mobile
 | Yetenek / Rol Adı | Açıklama |
