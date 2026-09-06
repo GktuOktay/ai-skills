@@ -1,116 +1,39 @@
-# 🚀 AI-Skills v2.0: Otonom Dijital Ajans
+# AI-Skills: Autonomous Digital Agency (v2.0)
 
-[English Documentation (README_EN.md)](README_EN.md)
+![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent_Ecosystem-blue)
+![Quality Gates](https://img.shields.io/badge/Quality_Gates-Strict_Enforcement-red)
+![Total Agents](https://img.shields.io/badge/Active_Specialists-105-success)
 
-Bu depo, standart ve pasif yapay zeka (LLM) prompt yığınlarını reddeden; yerine **karar alabilen, test yazan, birbirine iş devreden ve deterministik kalite kapılarından (Quality Gates) geçen** otonom bir ajan ekosistemidir.
+**AI-Skills** is an enterprise-grade, multi-agent AI ecosystem designed to replace standard conversational coding with a deterministic, autonomous software factory. It enforces Test-Driven Development (TDD), Strict Architectural Patterns (e.g., CQRS, .NET Clean Architecture), and automated API handoffs.
 
-## 📊 Ajan Topolojisi ve Detaylı Veri Akışı
-```mermaid
-flowchart TB
-    %% Kullanici İstegi
-    User((Kullanıcı)) -->|İş Talebi| MO[01: Master Orchestrator]
+## 🚀 Key Differentiators
+* **Not a Prompt Library:** It is a hierarchical company of agents (Orchestrators, Specialists, and Quality Gates).
+* **Strict Quality Gates:** Code is rejected if it lacks unit tests, swagger documentation, or structured logging.
+* **Single Source of Truth (SSOT):** Over 100 skills compiled dynamically for multiple IDEs (Cursor, Claude Code, Windsurf) from a single `src/skills/` directory.
 
-    %% Faz 1: Analiz ve Mimari
-    subgraph Phase1 [Faz 1: Analiz ve Mimari Kilitlenmesi]
-        direction TB
-        MO --> BA[02: Business Analyst & Architect]
-        BA -->|1. Şema Tasarımı| DB_Gate{DB Schema Bölme Kuralı}
-        DB_Gate -->|identity, audit, business şemaları| DB[(Veritabanı)]
-        BA -->|2. Kabul Kriterleri| Spec[Proje & API Dokümanı]
-    end
+## 📋 The Agency Departments
+The ecosystem consists of **105 strictly defined roles** distributed across 5 departments:
+1. `01_orchestrators`: Meta-agents that plan, delegate, and manage workflows.
+2. `02_specialists`: Domain-specific engineers (.NET, Mobile, Security, UX/UI, DB Architects).
+3. `03_quality_gates`: Deterministic rule-checkers (TDD Enforcer, Turkish Language Enforcer).
+4. `04_workflows`: Automated routines (API Handoff generation, Project Scaffolding).
+5. `05_capabilities`: Tooling for agents (Code parsing, document generation).
 
-    %% Faz 2: Geliştirme (Execution)
-    subgraph Phase2 [Faz 2: Dikey Uzmanlarla Geliştirme]
-        direction TB
-        Spec --> CO[01: Code Orchestrator]
-        CO --> Backend[02: .NET Enterprise Architect]
-        CO --> Frontend[02: Mobile Swift/Flutter Architect]
-        CO --> Migrator[02: Legacy Code Migrator]
-        
-        Backend --> Logic[İş Kuralları - CQRS/MediatR]
-        Migrator --> Logic
-        Frontend --> UI[UI ve State Management]
-    end
+👉 **[View the Complete Catalog of all 105 Agents & Skills](docs/SKILLS_CATALOG.md)**
 
-    %% Faz 3: Kalite Kapıları
-    subgraph Phase3 [Faz 3: Deterministik Kalite Kapıları]
-        direction LR
-        Logic --> TDD{03: Test-Driven Gate}
-        TDD -->|Birim Testi Hatalı| Backend
-        TDD -->|Birim Testi Başarılı| Sec{03: Security & Logging Gate}
-        
-        Sec -->|Hata: Düz Metin Log| Backend
-        Sec -->|Başarılı: Structured Log| Swagger{03: Swagger & XML Gate}
-    end
+## 📚 Technical Documentation (Whitepapers)
+Deep architectural insights and execution logic:
+* 🏗️ [Architecture Deep-Dive](docs/en/ARCHITECTURE.md) *(also in [TR](docs/tr/ARCHITECTURE.md))*
+* 🧠 [Core Engineering Principles](docs/en/PRINCIPLES.md) *(also in [TR](docs/tr/PRINCIPLES.md))*
+* 🔄 [Autonomous Workflows](docs/en/WORKFLOWS.md) *(also in [TR](docs/tr/WORKFLOWS.md))*
 
-    %% Faz 4: Teslimat
-    subgraph Phase4 [Faz 4: Devir Teslim ve Yayın]
-        direction TB
-        Swagger -->|Onaylandı| Handoff[04: API Handoff Workflow]
-        Handoff -->|Eski/Yeni API Farkı| UIDocs[Frontend Entegrasyon Dokümanı]
-        
-        UIDocs --> LangGate{03: Turkish Language Enforcer}
-        UI --> LangGate
-        LangGate -->|Saf Türkçe Çıktı| User
-    end
+## ⚙️ Installation & Build
+AI-Skills uses a centralized SSOT compiler. To inject all 105 rules into your IDEs:
 
-    %% Stiller
-    classDef orchestrator fill:#2b1b3d,stroke:#9d5bdf,stroke-width:2px,color:#fff
-    classDef specialist fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
-    classDef gate fill:#5c1a1b,stroke:#e74c3c,stroke-width:2px,color:#fff
-    classDef database fill:#2d4a22,stroke:#5c9e42,stroke-width:2px,color:#fff
-    
-    class MO,CO orchestrator
-    class BA,Backend,Frontend,Migrator specialist
-    class DB_Gate,TDD,Sec,Swagger,LangGate gate
-    class DB database
-```
-
-## 📚 Kapsamlı Dokümantasyon (Türkçe)
-* 🏗️ [Mimarinin Anatomisi (ARCHITECTURE.md)](docs/tr/ARCHITECTURE.md)
-* 🧠 [Çekirdek Prensipler (PRINCIPLES.md)](docs/tr/PRINCIPLES.md)
-* 🔄 [Otonom İş Akışları (WORKFLOWS.md)](docs/tr/WORKFLOWS.md)
-
-## ⚙️ Kurulum
 ```bash
-python3 scripts/build_cursor_rules.py
+python3 setup.py
 ```
+This generates the required `.mdc` files for Cursor, `.windsurfrules` for Windsurf, and `clauderules.md` for Claude.
 
-## 🏢 Ajans Organizasyon Şeması (Agency Org Chart)
-Sistemimiz tıpkı bir yazılım şirketi gibi hiyerarşik çalışır. Yöneticiler (Orchestrators) kod yazmaz, uzmanlara (Specialists) iş dağıtır.
-
-```mermaid
-flowchart TD
-    %% Yöneticiler
-    CEO[01: Master Orchestrator
-Genel Müdür]
-    CTO[01: Code Orchestrator
-Yazılım Yöneticisi]
-    PM[01: Project Bootstrap
-Proje Kurulum Şefi]
-    
-    %% Uzmanlar
-    NET[02: .NET Enterprise Architect
-Backend Uzmanı]
-    MOB[02: Mobile Swift/Flutter Architect
-Frontend Uzmanı]
-    MIG[02: Legacy Code Migrator
-Göç/Dönüşüm Uzmanı]
-    BA[02: Business Analyst
-İş & Veritabanı Analisti]
-
-    %% Hiyerarşi Bağlantıları
-    CEO ==> CTO
-    CEO ==> PM
-    CEO ==> BA
-    
-    CTO --> NET
-    CTO --> MOB
-    CTO --> MIG
-    
-    classDef exec fill:#2b1b3d,stroke:#9d5bdf,stroke-width:3px,color:#fff
-    classDef worker fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
-    
-    class CEO,CTO,PM exec
-    class NET,MOB,MIG,BA worker
-```
+---
+*Built for Principal Engineers who demand determinism, not just suggestions.*
