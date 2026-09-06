@@ -75,3 +75,42 @@ flowchart TB
 ```bash
 python3 scripts/build_cursor_rules.py
 ```
+
+## 🏢 Ajans Organizasyon Şeması (Agency Org Chart)
+Sistemimiz tıpkı bir yazılım şirketi gibi hiyerarşik çalışır. Yöneticiler (Orchestrators) kod yazmaz, uzmanlara (Specialists) iş dağıtır.
+
+```mermaid
+flowchart TD
+    %% Yöneticiler
+    CEO[01: Master Orchestrator
+Genel Müdür]
+    CTO[01: Code Orchestrator
+Yazılım Yöneticisi]
+    PM[01: Project Bootstrap
+Proje Kurulum Şefi]
+    
+    %% Uzmanlar
+    NET[02: .NET Enterprise Architect
+Backend Uzmanı]
+    MOB[02: Mobile Swift/Flutter Architect
+Frontend Uzmanı]
+    MIG[02: Legacy Code Migrator
+Göç/Dönüşüm Uzmanı]
+    BA[02: Business Analyst
+İş & Veritabanı Analisti]
+
+    %% Hiyerarşi Bağlantıları
+    CEO ==> CTO
+    CEO ==> PM
+    CEO ==> BA
+    
+    CTO --> NET
+    CTO --> MOB
+    CTO --> MIG
+    
+    classDef exec fill:#2b1b3d,stroke:#9d5bdf,stroke-width:3px,color:#fff
+    classDef worker fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
+    
+    class CEO,CTO,PM exec
+    class NET,MOB,MIG,BA worker
+```
