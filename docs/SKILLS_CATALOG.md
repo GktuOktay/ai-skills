@@ -79,3 +79,6 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
 | `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
+
+## ⚖️ System Rules & Protocols
+* [Hierarchy & Delegation Protocol](tr/HIERARCHY_PROTOCOL.md)
