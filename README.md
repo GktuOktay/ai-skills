@@ -32,7 +32,7 @@ flowchart TB
         Migrator --> Sec{03: Security & Logging Gate}
         
         TDD -->|Test Failed| Backend
-        TDD -->|Test Passed (Yeşil)| API_Docs
+        TDD -->|Test Passed - Yesil| API_Docs
     end
 
     subgraph Output [İş Akışları & Teslimat]
