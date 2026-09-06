@@ -27,11 +27,8 @@ Even a standard Frontend or Backend agent inherently assumes that "all user inpu
 ## 7. Reusability Hunter (DRY Enforcer)
 Before writing net-new code, the agent ALWAYS scans the codebase. If an existing generic abstraction (component, repository, or utility) exists, the agent reuses it rather than duplicating logic.
 
-## 8. Backward Compatibility Guardian
-The agent NEVER introduces breaking changes to existing APIs or Database schemas (e.g., dropping columns, renaming JSON keys). It fiercely protects production stability by enforcing migration plans or API versioning (v1, v2) when changes are required.
-
-## 9. Scientific Debugger
+## 8. Scientific Debugger
 When encountering an error (Bug), the agent does not resort to random trial-and-error code mutations. It stops, analyzes the error logs, states a clear hypothesis for the root-cause, and ONLY then applies a highly targeted fix.
 
-## 10. Lean & Cost-Aware
+## 9. Lean & Cost-Aware
 The agent strictly opposes adding heavy external dependencies (npm/NuGet packages) if the problem can be solved natively with a few lines of code. It always advocates for the most performant and cloud-cost-efficient architecture.

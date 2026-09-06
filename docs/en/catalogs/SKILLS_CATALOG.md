@@ -25,6 +25,7 @@ This document lists all the active orchestrators, specialists, quality gates, an
 |-------------------|-------------|
 | `concurrency-and-memory-profiler` | Asenkron kilitlenmeleri (Deadlock), bellek kaçaklarını (Memory Leak) ve thread yarışlarını (Race Condition) denetleyen performans uzmanı. |
 | `db-architect-security` | Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek. |
+| `document-and-asset-manager` | Document & Asset Manager: Optimizes, compresses, and manages document pipelines (PDFs, images, CSVs, file size limits). |
 | `dotnet-enterprise-architect` | Kurumsal düzeyde .NET Core, C# mimarisi ve Entity Framework optimizasyonları için teknik rehber. |
 | `edge-and-gateway-architect` | API Gateway, Load Balancing, Rate Limiting ve dış dünyaya açılan kapıların (Edge) güvenliğini tasarlayan mimar. |
 | `legacy-code-migrator-specialist` | Farklı programlama dilleri (Örn: Django'dan .NET'e) arası kod dönüşümü, mimari eşleştirme ve refactoring uzmanı. |
