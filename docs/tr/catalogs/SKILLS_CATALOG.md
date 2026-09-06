@@ -44,9 +44,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `git-repo-setup-workflow` | GitHub repo kurulumu ve topluluk standartları için en iyi uygulamalar (README, CONTRIBUTING, kurallar). |
 | `gitops-manager` | ArgoCD ve Flux ile Kubernetes üzerinde GitOps tabanlı sürekli dağıtım (CD) süreçlerini yönetir. |
 | `iac-architect` | Altyapının kod olarak yönetimi (IaC). Terraform, Pulumi ve Ansible kullanarak bulut ve sunucu altyapısını tasarlar. |
-| `manage-versioning-workflow` | Semantik versiyonlama kuralları, otomatik sürüm notu oluşturma ve sürüm yönetimi süreçleri. |
 | `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
-| `update-changelog-workflow` | Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart Markdown dosyasında tutma kuralı. |
+| `update-changelog-workflow` | Release & Changelog Manager: Strictly manages version bumps and CHANGELOG.md generation ONLY during the Release/Deployment phase, never during active coding. |
 
 ### Frontend And Mobile
 | Yetenek / Rol Adı | Açıklama |
