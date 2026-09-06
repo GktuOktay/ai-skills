@@ -16,7 +16,7 @@
 ## 📚 Technical Documentation & Whitepapers
 This repository contains deep architectural insights. Below is the index of all core system documents and what they govern:
 
-### 0. Quick Start
+### 0. Quick Start & Usage
 * 🚀 **[Installation & Usage Guide](docs/en/core/INSTALL_AND_USAGE.md)**
   * Learn how to build the agents, integrate them into Cursor/Windsurf, and how to properly communicate with the Orchestrators.
 

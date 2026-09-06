@@ -16,8 +16,9 @@
 ## 📚 Teknik Dokümantasyon ve İzahnameler
 Bu depo derin mimari prensipler barındırır. Tüm çekirdek sistem belgeleri ve yönettikleri alanlar aşağıdadır:
 
-### 0. Hızlı Başlangıç
-* 🚀 **[Kurulum ve Kullanım Kılavuzu](docs/tr/core/INSTALL_AND_USAGE.md)**
+### 0. Hızlı Başlangıç ve Kullanım
+* ⚙️ **[Gelişmiş Kurulum Rehberi](docs/tr/core/INSTALLATION.md)** (Cursor, Windsurf, Claude Code, Copilot)
+* 🧠 **[Agentic Prompting ve Kullanım Kılavuzu](docs/tr/core/USAGE.md)** (Orkestratörlerle iletişim, kalite kapılarını aşma ve devir-teslim işlemleri)
   * Ajanların nasıl derleneceğini, Cursor/Windsurf içine nasıl entegre edileceğini ve Yöneticilerle nasıl "doğru" iletişim kurulacağını öğrenin.
 
 ### 1. Sistem Anayasası ve Kısıtlamalar
