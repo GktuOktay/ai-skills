@@ -55,6 +55,7 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 ### Product And Ba
 | Yetenek / Rol Adı | Açıklama |
 |-------------------|----------|
+| `api-documentation-architect` | API Documentation & Tech Writer: Builds Stripe/Vercel-quality public-facing developer documentation sites (Docusaurus/Mintlify) from raw backend code. |
 | `ba-architect` | Netleşmiş iş gereksinimlerinden Mermaid akış diyagramları, Gherkin kabul kriterleri ve DB/API teknik şemaları üreten mimari dönüşüm yeteneği. |
 | `ba-elicitor` | Muğlak iş fikirlerini ve taleplerini yapılandırılmış EARS (Easy Approach to Requirements Syntax) formatına çeviren gereksinim analiz yeteneği. |
 | `brandkit` | Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi. |
@@ -118,6 +119,7 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `swagger-and-xml-doc-gate` | Backend kodunda (özellikle .NET) yazılan her endpoint için XML Doc, Summary ve profesyonel Swagger yapılandırmasını zorunlu kılan kapı. |
 | `test-driven-development-gate` | Kod üretildikten sonra AI'ın ilgili birim testlerini (Unit Test) yazıp terminalde çalıştırmasını zorunlu kılan kapı. |
 | `turkish-language-enforcer-gate` | Yapay zekanın İngilizce talimat alsa bile kullanıcıya her zaman Türkçe yanıt vermesini zorunlu kılan güvenlik kapısı. |
+| `validation-and-integrity-gate` | Dual-Validation & Integrity Gate: Strictly enforces defensive programming, null-checks at the DB level, FluentValidation at the API, and UX-friendly client-side validations. |
 
 ## 04 Workflows
 | Yetenek / Rol Adı | Açıklama |
