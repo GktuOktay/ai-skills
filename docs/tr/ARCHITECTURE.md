@@ -1,21 +1,29 @@
-# 🏗️ Sistemin Anatomisi (Architecture)
+# 🏗️ Sistemin Anatomisi ve Mimari Derinlik (Architecture Deep-Dive)
 
-## 01_orchestrators (Yöneticiler)
-Kod yazmaz, işi planlar ve delege eder. (Örn: Master Orchestrator, Code Orchestrator)
+Bu doküman, `v2.0` Otonom Ajans ekosisteminin teknik katmanlarını, ajanlar arası iletişim protokollerini (Inter-Agent Communication) ve yetki devri (Delegation) süreçlerini mikroskobik düzeyde inceler.
 
-## 02_specialists (Uzman Ajanlar)
-* **.NET Enterprise Architect:** C# 11+, CQRS, EF Core.
-* **Legacy Code Migrator:** Django -> .NET veya Vue -> React göçlerini mimariye uygun yapar.
-* **Mobile Swift/Flutter Architect:** Native (TCA/MVVM) ve Cross-platform (Riverpod) uzmanı.
+## 1. Meta-Mimari: Çoklu Ajan Karar Ağacı
+Sistem klasik bir "İstem -> Yanıt" (Prompt -> Completion) döngüsüyle çalışmaz. Bunun yerine **Stateful (Durum Korumalı) Yönlendirme Algoritması** kullanır. Kullanıcıdan gelen soyut istek (örn: "Sepet altyapısını kur"), Master Orchestrator tarafından bir AST (Abstract Syntax Tree) gibi parçalanır ve Node'lara (Ajanlara) dağıtılır.
 
-## 03_quality_gates (Kalite Kapıları)
-* **Turkish Language Enforcer:** Çıktının her zaman Türkçe olmasını sağlar.
-* **Test-Driven Gate:** Test yazılıp başarılı olmadan kodu kabul etmez.
-* **Structured Logging & Audit Gate:** Tam Payload loglanmasını engeller, ActionType loglamayı zorunlu tutar.
+### 01_orchestrators (Yönlendirme ve Karar Katmanı)
+Orchestrator'lar asla kaynak kodu doğrudan manipüle etmez. Görevleri şunlardır:
+- **Context Boundary (Bağlam Sınırı) Çizmek:** Hangi ajanın hangi klasörlerde yetkisi olduğunu belirler.
+- **Fail-Fast Denetimi:** Uzman ajandan gelen kod kalite kapısından geçemezse, işlemi derhal durdurur ve geri bildirim döngüsünü (Feedback Loop) başlatır.
+- **Dependency Graph (Bağımlılık Grafiği) Yönetimi:** Önce veritabanı şemasının, sonra backend API'nin, en son mobil arayüzün yazılması gerektiğine karar veren sıralı asenkron akışı yönetir.
+
+### 02_specialists (Dikey Uzmanlık Alanları ve Execution)
+Bu katman, spesifik teknolojilerde derinlemesine eğitilmiş (Fine-tuned) prompt setleridir.
+* **.NET Enterprise Architect:** `DbContext` üzerinde `AsNoTracking()` uygulamasını zorunlu kılar. `N+1` select hatalarını önceden tespit etmek için LINQ sorgularını statik analiz vizyonuyla inceler. YARP veya Ocelot gateway yapılandırmalarında uzmanlaşmıştır.
+* **Mobile Swift/Flutter Architect:** Arayüz çizerken bellek sızıntılarını (Memory Leaks - Retain Cycles) önlemek için `weak self` (Swift) veya uygun `dispose` (Flutter) metodolojilerini zorla uygular.
+* **Legacy Code Migrator:** Dönüşüm esnasında (Örn: Python -> C#) kaynak kodun anti-pattern'lerini hedef dile taşımaz. "Lift and Shift" yerine "Refactor and Shift" mimarisini benimser.
+
+## 2. Deterministik Kalite Kapıları (Quality Gates - Katman 03)
+Üretilen kod parçacıkları, kullanıcıya sunulmadan önce "Hard-Constraint" (Kesin Kural) kapılarından geçer. Eğer kod aşağıdaki şartları sağlamazsa ajan tarafından reddedilir:
+1. **TDD (Test-Driven Development) Kapısı:** Yazılan her Controller veya Manager sınıfı için xUnit/NUnit testlerinin varlığı kontrol edilir.
+2. **Audit & Structured Logging Kapısı:** `ILogger` kullanımlarında metin tabanlı (String interpolation) loglama yasaktır. Tamamen JSON veya Semantic (Yapısal) Loglama kurgusu aranır. Kullanıcı şifreleri, kredi kartı gibi PII/PCI verilerinin log payload'unda maskelendiğinden emin olunur.
+3. **Turkish Language Enforcer:** Kodun kendisi, değişken adları, veritabanı şemaları tamamen İngilizce (Evrensel standart) kalmak zorundadır; ancak kullanıcının göreceği terminal çıktıları, dokümantasyonlar ve Commit mesajları saf Türkçe olmalıdır.
 
 ## 🚥 Üretim Bandı ve Kalite Kapıları (Quality Pipeline)
-Uzmanların yazdığı kodlar, aşağıdaki deterministik kapılardan geçmeden ASLA size ulaşmaz.
-
 ```mermaid
 flowchart LR
     Start([Ham Kod]) --> TDD{1. Test-Driven Gate}
