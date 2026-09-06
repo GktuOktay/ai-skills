@@ -16,6 +16,10 @@
 ## 📚 Technical Documentation & Whitepapers
 This repository contains deep architectural insights. Below is the index of all core system documents and what they govern:
 
+### 0. Quick Start
+* 🚀 **[Installation & Usage Guide](docs/en/core/INSTALL_AND_USAGE.md)**
+  * Learn how to build the agents, integrate them into Cursor/Windsurf, and how to properly communicate with the Orchestrators.
+
 ### 1. System Constitution & Constraints
 * ⚖️ **[Hierarchy & Delegation Protocol](docs/en/core/HIERARCHY_PROTOCOL.md)** 
   * Defines the hard constraints of the ecosystem: Why Orchestrators are prohibited from writing code, why Quality Gates are Read-Only (they cannot fix code, only reject it), and the exact state-machine lifecycle of a user request.

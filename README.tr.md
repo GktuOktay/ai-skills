@@ -16,6 +16,10 @@
 ## 📚 Teknik Dokümantasyon ve İzahnameler
 Bu depo derin mimari prensipler barındırır. Tüm çekirdek sistem belgeleri ve yönettikleri alanlar aşağıdadır:
 
+### 0. Hızlı Başlangıç
+* 🚀 **[Kurulum ve Kullanım Kılavuzu](docs/tr/core/INSTALL_AND_USAGE.md)**
+  * Ajanların nasıl derleneceğini, Cursor/Windsurf içine nasıl entegre edileceğini ve Yöneticilerle nasıl "doğru" iletişim kurulacağını öğrenin.
+
 ### 1. Sistem Anayasası ve Kısıtlamalar
 * ⚖️ **[Hiyerarşi ve Yetki Devri Protokolü](docs/tr/core/HIERARCHY_PROTOCOL.md)** 
   * Ekosistemin kesin sınırlarını çizer: Neden Yöneticilerin kod yazmasının yasak olduğu, Kalite Kapılarının neden sadece "Okuma" (Read-Only) yetkisine sahip olduğu (kodu düzeltemez, sadece reddederler) ve bir kullanıcı isteğinin durum-makinesi (state-machine) döngüsü.
