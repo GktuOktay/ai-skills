@@ -1,5 +1,8 @@
 # 🎼 Code Orchestrator (Yazılım Geliştirme Yöneticisi)
 
+[🇺🇸 English Documentation](../../en/orchestrators/code-orchestrator.md)
+
+
 **Görevi:** Yazılım mimarisi, kod yazımı ve platform bazlı uzmanların (Backend/Frontend) orkestrasyonundan sorumludur.
 
 ## Alt Uzmanlar ve Yetki Dağılımı Diyagramı

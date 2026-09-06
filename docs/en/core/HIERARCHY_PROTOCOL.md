@@ -1,5 +1,8 @@
 # ⚖️ Hierarchy & Delegation Protocol
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/core/HIERARCHY_PROTOCOL.md)
+
+
 This document defines the strict communication boundaries and constraints between departments in the `v2.0` Autonomous Agency architecture. The system relies on deterministic rules; agents are not granted uncontrolled autonomy.
 
 ## 1. Inter-Departmental Rules

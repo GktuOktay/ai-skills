@@ -1,5 +1,8 @@
 # 🎼 Design Orchestrator
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/orchestrators/design-orchestrator.md)
+
+
 **Role:** Manages visual quality, copywriting, and design system (Brandkit) construction.
 
 ## Sub-Specialists and Delegation Diagram

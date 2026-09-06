@@ -1,5 +1,8 @@
 # 🎼 Marketing Orchestrator
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/orchestrators/marketing-orchestrator.md)
+
+
 **Role:** Manages pre-launch marketing strategies, copy, and brand communication.
 
 ## Sub-Specialists and Delegation Diagram

@@ -1,5 +1,8 @@
 # 📋 Autonomous Agency Yetenek Envanteri
 
+[🇺🇸 English Catalog](../../en/catalogs/SKILLS_CATALOG.md)
+
+
 Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalite kapılerini ve iş akışlarını listeler.
 
 ## 01 Orchestrators

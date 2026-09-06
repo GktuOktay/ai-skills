@@ -1,5 +1,8 @@
 # 🏗️ Sistemin Anatomisi ve Mimari Derinlik (Architecture Deep-Dive)
 
+[🇺🇸 English Documentation](../../en/core/ARCHITECTURE.md)
+
+
 Bu doküman, `v2.0` Otonom Ajans ekosisteminin teknik katmanlarını, ajanlar arası iletişim protokollerini (Inter-Agent Communication) ve yetki devri (Delegation) süreçlerini mikroskobik düzeyde inceler.
 
 ## 1. Meta-Mimari: Çoklu Ajan Karar Ağacı

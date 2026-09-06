@@ -1,5 +1,8 @@
 # 🏗️ Architecture Deep-Dive (Architecture Deep-Dive)
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/core/ARCHITECTURE.md)
+
+
 This document, `v2.0` Autonomous Agency ekosisteminin teknik katmanlarını, ajanlar arası iletişim protokollerini (Inter-Agent Communication) ve yetki devri (Delegation) süreçlerini mikroskobik düzeyde inceler.
 
 ## 1. Meta-Mimari: Çoklu Ajan Karar Ağacı

@@ -1,5 +1,8 @@
 # 🎼 Project Bootstrap (Proje Başlatma Yöneticisi)
 
+[🇺🇸 English Documentation](../../en/orchestrators/project-bootstrap-orchestrator.md)
+
+
 **Görevi:** Sıfırdan projelerin (CLI üzerinden) klasör yapısını, boilerplate kodlarını ve mimarisini kurar.
 
 ## Alt Uzmanlar ve Yetki Dağılımı Diyagramı

@@ -1,5 +1,8 @@
 # 🔄 Otonom İş Akışları (Autonomous Workflows)
 
+[🇺🇸 English Documentation](../../en/core/WORKFLOWS.md)
+
+
 Geliştirme sürecindeki hammaliye süreçlerini (Boilerplate yazımı, Dokümantasyon, Sürüm Yönetimi) ortadan kaldıran otomatize edilmiş işlem hatları.
 
 ## 1. Backend-to-Frontend Devir Teslimi (API Handoff)

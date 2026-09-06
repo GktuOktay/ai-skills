@@ -1,5 +1,8 @@
 # 🎼 Design Orchestrator (Tasarım ve UI/UX Yöneticisi)
 
+[🇺🇸 English Documentation](../../en/orchestrators/design-orchestrator.md)
+
+
 **Görevi:** Görsel kalite, metin yazarlığı ve tasarım sistemleri (Brandkit) inşasını yönetir.
 
 ## Alt Uzmanlar ve Yetki Dağılımı Diyagramı

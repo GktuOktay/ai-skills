@@ -1,5 +1,8 @@
 # 🎼 Test Orchestrator (QA Yöneticisi)
 
+[🇺🇸 English Documentation](../../en/orchestrators/test-orchestrator.md)
+
+
 **Görevi:** Uçtan uca testleri (E2E), birim testleri (Unit) ve duman testlerini (Smoke) koordine eder.
 
 ## Alt Uzmanlar ve Yetki Dağılımı Diyagramı

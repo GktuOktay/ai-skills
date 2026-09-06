@@ -1,5 +1,8 @@
 # 🧠 Core Engineering Principles (Core Engineering Principles)
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/core/PRINCIPLES.md)
+
+
 Bu ekosistemdeki ajanlar standart bir LLM gibi davranmaz. Sektördeki en iyi "Kıdemli Mimar" (Principal Architect) pratiklerini kod üretim sürecine entegre ederler.
 
 ## 1. Evrimsel Mimari ve "BaseService" İkilemi

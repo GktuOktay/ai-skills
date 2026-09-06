@@ -1,5 +1,8 @@
 # ⚖️ Hiyerarşi ve Yetki Devri Protokolü (Hierarchy & Delegation Protocol)
 
+[🇺🇸 English Documentation](../../en/core/HIERARCHY_PROTOCOL.md)
+
+
 Bu doküman, `v2.0` Otonom Ajans mimarisindeki departmanların birbiriyle iletişim sınırlarını ve katı (strict) kısıtlamalarını tanımlar. Sistem bilgiye ve deterministik kurallara dayanır, ajanların otonomisine kontrolsüz izin verilmez.
 
 ## 1. Departmanlar Arası İletişim Kuralları (Inter-Departmental Rules)

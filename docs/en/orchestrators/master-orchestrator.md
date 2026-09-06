@@ -1,5 +1,8 @@
 # 🎼 Master Orchestrator
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/orchestrators/master-orchestrator.md)
+
+
 **Role:** Receives raw user requests and decides which sub-orchestrator (Department) should take over.
 
 ## Sub-Specialists and Delegation Diagram

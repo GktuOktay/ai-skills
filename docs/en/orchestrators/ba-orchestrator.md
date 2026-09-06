@@ -1,5 +1,8 @@
 # 🎼 Business Analysis Orchestrator
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/orchestrators/ba-orchestrator.md)
+
+
 **Role:** Gathers business requirements, designs DB schemas, and outputs technical specifications.
 
 ## Sub-Specialists and Delegation Diagram

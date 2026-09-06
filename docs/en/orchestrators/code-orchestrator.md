@@ -1,5 +1,8 @@
 # 🎼 Code Orchestrator
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/orchestrators/code-orchestrator.md)
+
+
 **Role:** Responsible for software architecture, code generation, and orchestrating platform-specific specialists.
 
 ## Sub-Specialists and Delegation Diagram
