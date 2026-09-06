@@ -1,7 +1,13 @@
+# Build Artifacts
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# OS specific
 .DS_Store
-.cursor/
-analyze_skills.py
-inspect_cursor.py
-link_cursor_skills.py
+Thumbs.db
