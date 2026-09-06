@@ -2,7 +2,7 @@
 
 [🇺🇸 English Documentation](../../en/core/USAGE.md)
 
-**Autonomous Agency** sıradan bir Soru-Cevap asistanı değildir. 105 uzman ve 5 departmandan oluşan bu fabrikadan verim alabilmek için, komutlarınızı (Prompt) bir **Proje Yöneticisi** gibi vermelisiniz.
+**Autonomous Agency** sıradan bir Soru-Cevap asistanı değildir. 109 uzman ve 5 departmandan oluşan bu fabrikadan verim alabilmek için, komutlarınızı (Prompt) bir **Proje Yöneticisi** gibi vermelisiniz.
 
 ## 1. Altın Kural: Yöneticilerle (Orchestrators) Konuşun
 Bir şirkete gidip doğrudan veritabanı uzmanına *"Şu butonu kırmızı yap"* demezsiniz. Aynı kural burada da geçerlidir.

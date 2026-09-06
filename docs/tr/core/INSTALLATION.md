@@ -17,7 +17,7 @@ python3 setup.py
 ```
 **Çıktılar:**
 Bu işlem bittiğinde şu dosyalar üretilmiş olacaktır:
-- `rules/*.mdc` (Cursor için 105+ adet parselize edilmiş kural dosyası)
+- `rules/*.mdc` (Cursor için 109+ adet parselize edilmiş kural dosyası)
 - `.windsurfrules` (Windsurf için tekil bağlam dosyası)
 - `clauderules.md` (Claude Code CLI için global bağlam)
 
@@ -26,7 +26,7 @@ Bu işlem bittiğinde şu dosyalar üretilmiş olacaktır:
 ## 2. Ortam ve IDE Entegrasyonları
 
 ### 🖱️ Cursor (Tavsiye Edilen Ortam)
-Cursor, `.mdc` (Markdown Cursor) mimarisini desteklediği için 105 ajanın yetkilerini klasör ve dosya uzantılarına göre (globs) otonom olarak devreye sokabilir.
+Cursor, `.mdc` (Markdown Cursor) mimarisini desteklediği için 109 ajanın yetkilerini klasör ve dosya uzantılarına göre (globs) otonom olarak devreye sokabilir.
 
 **Adımlar:**
 1. Kendi çalışma projenizin ana dizinine gidin (Örn: `cd ~/Masaustu/E-Ticaret-Projem`).

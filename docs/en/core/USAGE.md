@@ -1,44 +1,44 @@
 # 🧠 Agentic Prompting & Usage Guide
 
-[🇺🇸 English Documentation](../../en/core/USAGE.md)
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](../../tr/core/USAGE.md)
 
-**Autonomous Agency** sıradan bir Soru-Cevap asistanı değildir. 105 uzman ve 5 departmandan oluşan bu fabrikadan verim alabilmek için, komutlarınızı (Prompt) bir **Proje Yöneticisi** gibi vermelisiniz.
+**Autonomous Agency** is not an ordinary Q&A assistant. To get the most out of this factory consisting of 109 experts and 5 departments, you must issue your commands (Prompts) like a **Project Manager**.
 
 ## 1. Golden Rule: Speak to the Orchestrators
-Bir şirkete gidip doğrudan veritabanı uzmanına *"Şu butonu kırmızı yap"* demezsiniz. Aynı kural burada da geçerlidir.
-Taleplerinizi spesifik uzmanlara (Örn: .NET Mimarı) değil, **Master Orchestrator** veya **Code Orchestrator**'a iletin. O sizin yerinize doğru uzmanları uyandıracaktır.
+You wouldn't go to a company and directly tell the database expert, *"Make this button red."* The same rule applies here.
+Do not forward your requests to specific experts (e.g., .NET Architect). Forward them to the **Master Orchestrator** or **Code Orchestrator**. It will wake up the right experts on your behalf.
 
-### ❌ Kaçınılması Gereken Komut (Amatör Kullanım)
-> *"Bana bir e-ticaret sepeti yap. Frontend React olsun, Backend C# olsun, veritabanını da Entity Framework ile bağla. Ha, testleri de yazmayı unutma."*
-**Sonuç:** IDE çökecek veya halüsinasyon görecektir. Yapay zeka tüm bu yükü tek bir asistan (Context) üzerinde tutamaz.
+### ❌ Command to Avoid (Amateur Usage)
+> *"Build me an e-commerce cart. Frontend in React, Backend in C#, connect the database with Entity Framework. Oh, and don't forget to write the tests."*
+**Result:** The IDE will crash or hallucinate. The AI cannot hold all this burden in a single context.
 
-### ✅ Kusursuz Kullanım (Agentic Workflow)
-> *"Rolün: Master Orchestrator. Bir e-ticaret sepeti altyapısı kuracağız. Lütfen önce Business Analyst ve Database Architect ajanlarını uyandırarak bana veritabanı şemasını çıkar. Onayladığımda Code Orchestrator'a devret."*
-**Sonuç:** Sistem önce iş analizi ve SQL tabloları çizer. Siz onaylarsınız. Ardından Backend kodlanır, TDD kapısından geçer, onaylarsınız ve Frontend'e geçilir.
+### ✅ Perfect Usage (Agentic Workflow)
+> *"Your role: Master Orchestrator. We are going to build an e-commerce cart infrastructure. Please wake up the Business Analyst and Database Architect agents first to map out the database schema for me. Once I approve, hand it over to the Code Orchestrator."*
+**Result:** The system first draws the business analysis and SQL tables. You approve. Then the Backend is coded, passes the TDD gate, you approve, and it moves to the Frontend.
 
 ---
 
 ## 2. Dealing with Quality Gates
-Sistemimizde kodlar size ulaşmadan önce Kalite Kapılarından geçer. Eğer kod reddedilirse (Örn: Test yazılmadığı için), ajan duraksayabilir.
+In our system, codes pass through Quality Gates before reaching you. If the code is rejected (e.g., because a test wasn't written), the agent might pause.
 
-**Böyle bir durumda ajanı yönlendirin:**
-> *"TDD Kalite Kapısı kodunu reddetti. Lütfen hatayı oku (Feedback Loop) ve eksik olan xUnit testlerini yazarak tekrar kapıdan geçiş izni iste."*
+**In such a case, guide the agent:**
+> *"The TDD Quality Gate rejected your code. Please read the error (Feedback Loop) and write the missing xUnit tests to request permission to pass the gate again."*
 
 ---
 
 ## 3. Cross-Team API Handoff
-Projelerde Backend ve Frontend ekiplerinin senkronizasyonu her zaman bir sorundur. Bunu çözmek için `API_HANDOFF.md` iş akışını kullanın.
+Synchronization of Backend and Frontend teams is always a problem in projects. Use the `API_HANDOFF.md` workflow to solve this.
 
-**Backend bittiğinde:**
-> *"Backend işlemleri tamamlandı. Code Orchestrator, lütfen Workflow ajanıyla iletişime geç ve Frontend ekibi için API_HANDOFF.md dosyasını (JSON diff'leriyle birlikte) oluştur."*
+**When the Backend is finished:**
+> *"Backend operations are complete. Code Orchestrator, please contact the Workflow agent and generate the API_HANDOFF.md file (with JSON diffs) for the Frontend team."*
 
-**Frontend'e başlarken:**
-> *"Mobile Architect, lütfen API_HANDOFF.md dosyasını oku ve Riverpod/Redux state mimarisini yeni JSON sözleşmesine göre güncelle."*
+**When starting the Frontend:**
+> *"Mobile Architect, please read the API_HANDOFF.md file and update the Riverpod/Redux state architecture according to the new JSON contract."*
 
 ---
 
 ## 4. Exceptions: Bypassing Rules (Override)
-Çok nadiren de olsa, prototip çıkarırken Kalite Kapılarının (Swagger yazma, Test yazma zorunluluklarının) sizi yavaşlattığını hissedebilirsiniz.
-Eğer bir kuralı anlık olarak bypass etmek istiyorsanız, prompt'unuzun sonuna şu komutu ekleyin:
-> *"Bu işlem için geçici olarak `[TDD_GATE_BYPASS]` yetkisini kullanıyorum. Test yazmadan doğrudan prototip kodu ver."*
-*(Not: Bu işlem sadece acil durumlar içindir, kurumsal mimariyi zayıflatır.)*
+Very rarely, when prototyping, you might feel that the Quality Gates (mandatory Swagger writing, mandatory Tests) are slowing you down.
+If you want to temporarily bypass a rule, add the following command to the end of your prompt:
+> *"I am temporarily using the `[TDD_GATE_BYPASS]` authority for this operation. Give me the prototype code directly without writing tests."*
+*(Note: This operation is only for emergencies; it weakens the enterprise architecture.)*
