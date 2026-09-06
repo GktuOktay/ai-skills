@@ -34,12 +34,19 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ### Devops And Cloud
 | Skill / Role Name | Description |
 |-------------------|-------------|
+| `caveman-commit` | > |
+| `caveman-review` | > |
+| `caveman-stats` | > |
 | `ci-cd-engineer` | Sürekli entegrasyon ve dağıtım (CI/CD) pipeline'ları kurma uzmanı. GitHub Actions, GitLab CI ve Jenkins için yapılandırmalar oluşturur. |
 | `cloud-deployer` | Vercel, Netlify, Cloudflare, Serverless Framework gibi platformlara hızlı ve zero-config dağıtım süreçlerini yönetir. |
 | `container-master` | Konteynerleştirme ve orkestrasyon uzmanı. Dockerfile yazımı, optimizasyonu ve Kubernetes (K8s) / Helm yapılandırmaları. |
+| `git-conventional-commits-workflow` | Git commit mesajları ve branch isimlendirme standartlarını belirler. Conventional Commits kurallarını uygular. |
+| `git-repo-setup-workflow` | GitHub repo kurulumu ve topluluk standartları için en iyi uygulamalar (README, CONTRIBUTING, kurallar). |
 | `gitops-manager` | ArgoCD ve Flux ile Kubernetes üzerinde GitOps tabanlı sürekli dağıtım (CD) süreçlerini yönetir. |
 | `iac-architect` | Altyapının kod olarak yönetimi (IaC). Terraform, Pulumi ve Ansible kullanarak bulut ve sunucu altyapısını tasarlar. |
+| `manage-versioning-workflow` | Semantik versiyonlama kuralları, otomatik sürüm notu oluşturma ve sürüm yönetimi süreçleri. |
 | `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
+| `update-changelog-workflow` | Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart Markdown dosyasında tutma kuralı. |
 
 ### Frontend And Mobile
 | Skill / Role Name | Description |
@@ -128,20 +135,13 @@ This document lists all the active orchestrators, specialists, quality gates, an
 |-------------------|-------------|
 | `api-handoff-workflow` | Backend'de bir değişiklik yapıldığında otomatik Changelog çıkaran ve Frontend takımı için eski/yeni API karşılaştırma (Devir-Teslim) dokümanı üreten iş akışı. |
 | `generate-standup-workflow` | Günlük standup (geliştirme) raporlarını kısa, öz ve yapılandırılmış bir şekilde oluşturma kuralları. |
-| `git-conventional-commits-workflow` | Git commit mesajları ve branch isimlendirme standartlarını belirler. Conventional Commits kurallarını uygular. |
-| `git-repo-setup-workflow` | GitHub repo kurulumu ve topluluk standartları için en iyi uygulamalar (README, CONTRIBUTING, kurallar). |
-| `manage-versioning-workflow` | Semantik versiyonlama kuralları, otomatik sürüm notu oluşturma ve sürüm yönetimi süreçleri. |
-| `update-changelog-workflow` | Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart Markdown dosyasında tutma kuralı. |
 
 ## 05 Capabilities
 | Skill / Role Name | Description |
 |-------------------|-------------|
 | `caveman` | > |
-| `caveman-commit` | > |
 | `caveman-compress` | > |
 | `caveman-help` | > |
-| `caveman-review` | > |
-| `caveman-stats` | > |
 | `docx-tool` | Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için yetenek. |
 | `graphify-tool` | Use for any question about a codebase, its architecture, file relationships, or project content — especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools. |
 | `humanizer-tool` | | |
