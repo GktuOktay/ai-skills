@@ -20,60 +20,12 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ## 02 Specialists
 | Skill / Role Name | Description |
 |-------------------|-------------|
-| `a11y-and-i18n-engineer` | Ürünlerin en baştan çoklu dil (i18n) destekli ve ekran okuyuculara (WCAG) uygun erişilebilir olmasını sağlayan uzman. |
-| `api-authentication-weaknesses-pentester` | API kimlik doğrulama mekanizmalarını; kırık kimlik doğrulama, güvensiz token yönetimi ve brute-force gibi zafiyetlere karşı test eder. |
-| `api-for-broken-object-level-authorization-pentester` | REST ve GraphQL API'lerde Kırık Nesne Seviyesi Yetkilendirme (BOLA/IDOR, OWASP API1:2023) zafiyetlerini test eder. Nesne kimliklerini (ID'ler) analiz edip değiştirerek, sunucunun doğru yetkilendirme yapıp yapmadığını kontrol eder. BOLA veya erişim denetimi testlerinde kullanılır. |
-| `api-for-mass-assignment-vulnerability-pentester` | API'lerde toplu atama (mass assignment) zafiyetlerini test eder. (OWASP API3:2023). Kayıt, profil veya nesne oluşturma uç noktalarında belgelenmemiş alanlar (role, isAdmin vb.) göndererek sunucunun bu verileri kabul edip etmediğini kontrol eder. |
-| `api-pentest` | Endpoint güvenliği, rate limiting, SQL/NoSQL injection koruması, JWT ve yetkilendirme (authorization) zafiyet testleri. |
-| `api-security-with-owasp-top-10-pentester` | REST, GraphQL ve gRPC API uç noktalarını OWASP API Security Top 10 (2023) standartlarına göre sistemli olarak değerlendirir. Burp Suite ve Postman kullanarak otomatik ve manuel testler gerçekleştirir. Yetkili sızma testleri veya API gateway denetimleri öncesinde kullanılır. |
-| `apple-design` | iOS, macOS ve visionOS için Apple Human Interface Guidelines (İnsan Arayüzü Yönergeleri) tabanlı uygulama tasarımı ve geliştirme becerisi. |
-| `ba-architect` | Netleşmiş iş gereksinimlerinden Mermaid akış diyagramları, Gherkin kabul kriterleri ve DB/API teknik şemaları üreten mimari dönüşüm yeteneği. |
-| `ba-elicitor` | Muğlak iş fikirlerini ve taleplerini yapılandırılmış EARS (Easy Approach to Requirements Syntax) formatına çeviren gereksinim analiz yeteneği. |
-| `brandkit` | Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi. |
-| `cavecrew` | > |
-| `ci-cd-engineer` | Sürekli entegrasyon ve dağıtım (CI/CD) pipeline'ları kurma uzmanı. GitHub Actions, GitLab CI ve Jenkins için yapılandırmalar oluşturur. |
-| `client-security` | Frontend güvenliği; XSS, CSRF, Content Security Policy (CSP) header'ları ve DOM tabanlı zafiyetlerin engellenmesi. |
-| `cloud-deployer` | Vercel, Netlify, Cloudflare, Serverless Framework gibi platformlara hızlı ve zero-config dağıtım süreçlerini yönetir. |
-| `concurrency-and-memory-profiler` | Asenkron kilitlenmeleri (Deadlock), bellek kaçaklarını (Memory Leak) ve thread yarışlarını (Race Condition) denetleyen performans uzmanı. |
-| `container-master` | Konteynerleştirme ve orkestrasyon uzmanı. Dockerfile yazımı, optimizasyonu ve Kubernetes (K8s) / Helm yapılandırmaları. |
-| `copywriting` | Açık ve anlaşılır eyleme çağrı (CTA), hata mesajları ve kullanıcı arayüzü metinleri yazma kuralları. |
-| `cors-misconfiguration-pentester` | Güvenlik testleri sırasında, yetkisiz alanlar arası (cross-domain) veri erişimine ve kimlik bilgisi hırsızlığına olanak tanıyan Cross-Origin Resource Sharing (CORS) hatalı yapılandırmalarını tespit eder ve istismar eder. |
-| `csrf-attack-simulation-specialist` | Yetkili güvenlik değerlendirmeleri sırasında onaylanmış kullanıcı oturumlarını istismar eden sahte istekler oluşturarak, web uygulamalarını Cross-Site Request Forgery (CSRF) zafiyetlerine karşı test eder. |
-| `db-architect-security` | Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek. |
-| `dotnet-enterprise-architect` | Kurumsal düzeyde .NET Core, C# mimarisi ve Entity Framework optimizasyonları için teknik rehber. |
-| `edge-and-gateway-architect` | API Gateway, Load Balancing, Rate Limiting ve dış dünyaya açılan kapıların (Edge) güvenliğini tasarlayan mimar. |
-| `feature-ideator` | Yeni ürün özellikleri, fikir geliştirme ve feature backlog oluşturmak için yetenek. |
-| `for-broken-access-control-pentester` | Web uygulamaları ve API'leri Kırık Erişim Kontrolü (OWASP A01:2021) açısından test eder. Yetki yükseltme, eksik fonksiyon seviyesi kontrolleri, IDOR ve çoklu kiracı (multi-tenant) veri sızıntılarını tespit etmek için Burp Suite kullanır. |
-| `for-json-web-token-vulnerabilities-pentester` | JWT uygulamalarında algoritma karmaşası, 'none' algoritması atlatması, kid/jku parametre enjeksiyonu ve zayıf gizli anahtar (secret) zafiyetlerini test eder. jwt_tool ve Burp Suite kullanarak kimlik doğrulama atlatma ve yetki yükseltmeyi hedefler. |
-| `for-xss-vulnerabilities-pentester` | Web uygulamalarında Reflected, Stored ve DOM tabanlı XSS (Cross-Site Scripting) zafiyetlerini test eder. Burp Suite ve tarayıcı araçlarıyla JavaScript payload'ları enjekte ederek filtreleme (sanitization) ve CSP atlatma yöntemlerini uygular. |
-| `git-issue-manager` | GitHub/GitLab issue yönetimi için en iyi uygulamalar. Etkili hata raporları, özellik istekleri yazma ve etiketleme. |
-| `gitops-manager` | ArgoCD ve Flux ile Kubernetes üzerinde GitOps tabanlı sürekli dağıtım (CD) süreçlerini yönetir. |
-| `graphql-security-assessment-specialist` | GraphQL API uç noktalarını introspection (içe bakış) sızıntıları, enjeksiyon saldırıları, yetkilendirme hataları ve servis dışı bırakma (DoS) zafiyetleri açısından değerlendirir. |
-| `high-end-visual-design` | Üst düzey, lüks ve premium kullanıcı arayüzü (UI) tasarımı prensipleri. Glassmorphism, optik hizalama, premium renk paletleri ve mikro etkileşimler gibi ince detaylara odaklanır. |
-| `iac-architect` | Altyapının kod olarak yönetimi (IaC). Terraform, Pulumi ve Ansible kullanarak bulut ve sunucu altyapısını tasarlar. |
-| `jwt-token-security-pentester` | JSON Web Token (JWT) uygulamalarını kriptografik zayıflıklar, algoritma karmaşası ve yetkilendirme atlama zafiyetlerine karşı güvenlik testleri sırasında analiz eder. |
-| `legacy-code-migrator-specialist` | Farklı programlama dilleri (Örn: Django'dan .NET'e) arası kod dönüşümü, mimari eşleştirme ve refactoring uzmanı. |
-| `make-plan` | Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği. |
-| `master-pentester` | Test stratejileri, birim testleri (unit test) ve e2e testler yazmak için yetenek. |
-| `mobile-api-authentication-pentester` | Mobil uygulama API'lerindeki kimlik doğrulama ve yetkilendirme mekanizmalarını test ederek kırık kimlik doğrulama, güvensiz token yönetimi, oturum sabitleme, yetki yükseltme ve IDOR zafiyetlerini tespit eder. |
-| `mobile-flutter-swift-architect` | iOS (Swift/SwiftUI) ve Flutter uygulamaları için performans, state management ve native köprü mimarisi uzmanı. |
-| `oauth2-implementation-flaws-pentester` | OAuth 2.0 ve OpenID Connect uygulamalarını yetkilendirme kodu yakalama, yönlendirme (redirect URI) manipülasyonu, CSRF, token sızıntısı ve PKCE atlatma gibi konularda test eder. Hesap ele geçirmeye yol açabilen hatalı SSO veya OAuth2 yapılandırmalarını bulmak için kullanılır. |
-| `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
-| `onboarding` | Web ve mobil uygulamalar için ilk kullanım deneyimi (FTUE), aşamalı bilgilendirme ve kullanıcı karşılama süreçlerinin tasarımı. |
-| `pick-ui-library` | Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir. |
-| `product-designer` | Ürün tasarımı, UX deneyimi ve wireframe planlaması için kullanılan yetenek. |
-| `product-marketer` | App Store açıklamaları, sürüm notları, pazarlama metinleri ve SEO uyumlu içerikler oluşturan ürün pazarlama uzmanı. |
-| `prototype` | Hızlı prototipleme, MVP geliştirme ve farklı tasarım aslına uygunluk seviyelerinde doğru aracı seçme stratejileri. |
-| `sca-dependency-scanning-with-snyk-specialist` | CI/CD süreçlerinde zafiyetli açık kaynaklı bağımlılıkları tespit etmek için Snyk ile Yazılım Bileşimi Analizi (SCA) uygulanmasını sağlar. Otomatik PR (Pull Request) oluşturma, lisans kontrolü ve GitHub/GitLab ile Jenkins entegrasyonunu kapsar. |
-| `scanning-containers-with-trivy-in-cicd` | CI/CD süreçlerine Aqua Security Trivy tarayıcısını entegre ederek işletim sistemi paketlerindeki, bağımlılıklardaki CVE'leri, Dockerfile hatalarını ve git repolarındaki sızıntıları tespit eder. Zafiyetli imajların dağıtımını engellemek için kalite kapıları (quality gates) oluşturur."'s Trivy scanner into CI/CD pipelines to detect |
-| `schema` | İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları. |
-| `secret-scanner` | Kod tabanında unutulmuş API key, şifre, sertifika gibi hassas verilerin taranması ve .env yönetimi. |
-| `secret-scanning-with-gitleaks-specialist` | Git repolarında hardcode edilmiş (gömülü) hassas verileri ve şifreleri bulup engellemek için Gitleaks'i entegre eder. Pre-commit hook yapılandırması, CI/CD entegrasyonu, özel kurallar ve mevcut repolardaki sızıntıları düzeltme süreçlerini kapsar. |
-| `secrets-scanning-in-ci-cd-specialist` | Dağıtım öncesinde sızdırılmış şifreleri, anahtarları ve hassas verileri tespit etmek için gitleaks ve trufflehog araçlarını CI/CD süreçlerine entegre eder. |
-| `swift-architecture-auditor` | Swift & iOS/macOS mimari inceleme, SwiftUI/UIKit katman analizi, MVVM/VIPER/TCA kontrolü, Concurrency ve Memory Leak denetim skilli |
-| `tech-business-analyst` | Teknik iş analizi ve gereksinim dokümanı yazmak için kullanılan yetenek. |
-| `ui-animation` | Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi. |
-| `unit-test-architect` | Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi. |
+| `backend_and_data` | No description |
+| `devops_and_cloud` | No description |
+| `frontend_and_mobile` | No description |
+| `product_and_ba` | No description |
+| `qa_and_testing` | No description |
+| `security_and_pentest` | No description |
 
 ## 03 Quality Gates
 | Skill / Role Name | Description |
@@ -127,15 +79,3 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
 | `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
-
-## 🗺️ Orchestrator Deep-Dive Diagrams
-Explore the delegation hierarchy of each orchestrator (with detailed Mermaid diagrams):
-* [Master Orchestrator](tr/orchestrators/master-orchestrator.md)
-* [Code Orchestrator](tr/orchestrators/code-orchestrator.md)
-* [Security Orchestrator](tr/orchestrators/security-orchestrator.md)
-* [Design Orchestrator](tr/orchestrators/design-orchestrator.md)
-* [Test Orchestrator](tr/orchestrators/test-orchestrator.md)
-* [Business Analysis (BA) Orchestrator](tr/orchestrators/ba-orchestrator.md)
-* [Deployment Orchestrator](tr/orchestrators/deployment-orchestrator.md)
-* [Project Bootstrap Orchestrator](tr/orchestrators/project-bootstrap-orchestrator.md)
-* [Marketing Orchestrator](tr/orchestrators/marketing-orchestrator.md)
