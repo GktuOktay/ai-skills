@@ -1,5 +1,7 @@
 # AI-Skills: Autonomous Digital Agency (v2.0)
 
+[🇹🇷 Türkçe Dokümantasyon (Turkish)](README.tr.md)
+
 ![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent_Ecosystem-blue)
 ![Quality Gates](https://img.shields.io/badge/Quality_Gates-Strict_Enforcement-red)
 ![Total Agents](https://img.shields.io/badge/Active_Specialists-105-success)
@@ -15,19 +17,19 @@
 This repository contains deep architectural insights. Below is the index of all core system documents and what they govern:
 
 ### 1. System Constitution & Constraints
-* ⚖️ **[Hierarchy & Delegation Protocol](docs/tr/HIERARCHY_PROTOCOL.md)** *(also in [EN](docs/en/HIERARCHY_PROTOCOL.md))*
+* ⚖️ **[Hierarchy & Delegation Protocol](docs/en/HIERARCHY_PROTOCOL.md)** 
   * Defines the hard constraints of the ecosystem: Why Orchestrators are prohibited from writing code, why Quality Gates are Read-Only (they cannot fix code, only reject it), and the exact state-machine lifecycle of a user request.
 
 ### 2. Architectural Design
-* 🏗️ **[Architecture Deep-Dive](docs/tr/ARCHITECTURE.md)** *(also in [EN](docs/en/ARCHITECTURE.md))*
+* 🏗️ **[Architecture Deep-Dive](docs/en/ARCHITECTURE.md)** 
   * Explains the 5-layer Anatomy of the agency (01 to 05). Details the "Abstract Syntax Tree" parsing of user requests and the explicit fallback mechanisms when code fails a Quality Gate.
 
 ### 3. Engineering Mindset
-* 🧠 **[Core Engineering Principles](docs/tr/PRINCIPLES.md)** *(also in [EN](docs/en/PRINCIPLES.md))*
+* 🧠 **[Core Engineering Principles](docs/en/PRINCIPLES.md)** 
   * Documents the "Principal Architect" mindset embedded in the agents. Includes C# code snippets demonstrating Anti-Patterns (e.g., Over-engineered BaseServices) versus Best Practices (CQRS, Defensive Programming, IoC, Database Schema Segregation).
 
 ### 4. Process Automation
-* 🔄 **[Autonomous Workflows](docs/tr/WORKFLOWS.md)** *(also in [EN](docs/en/WORKFLOWS.md))*
+* 🔄 **[Autonomous Workflows](docs/en/WORKFLOWS.md)** 
   * Details the automated routines that eliminate boilerplate. Explains the API Handoff Algorithm (how the system generates JSON diffs between Backend and Frontend) and the exact CLI sequence executed during Project Scaffolding.
 
 ## 📋 The Agency Departments & Skill Catalog
@@ -36,11 +38,11 @@ The ecosystem consists of **105 strictly defined roles** grouped by professional
 
 ### 🗺️ Orchestrator Maps
 Curious about who reports to whom? Explore the specific delegation diagrams (Mermaid) for our core managers:
-* [Master Orchestrator](docs/tr/orchestrators/master-orchestrator.md) — The CEO agent.
-* [Code Orchestrator](docs/tr/orchestrators/code-orchestrator.md) — Manages Backend, Frontend, and Migrations.
-* [Security Orchestrator](docs/tr/orchestrators/security-orchestrator.md) — Manages Pentesters and IDOR/JWT Specialists.
-* [Design Orchestrator](docs/tr/orchestrators/design-orchestrator.md) — Manages UX/UI, Brandkit, and Copywriting.
-* [Test Orchestrator](docs/tr/orchestrators/test-orchestrator.md) — Manages Unit, Smoke, and E2E Testing.
+* [Master Orchestrator](docs/en/orchestrators/master-orchestrator.md) — The CEO agent.
+* [Code Orchestrator](docs/en/orchestrators/code-orchestrator.md) — Manages Backend, Frontend, and Migrations.
+* [Security Orchestrator](docs/en/orchestrators/security-orchestrator.md) — Manages Pentesters and IDOR/JWT Specialists.
+* [Design Orchestrator](docs/en/orchestrators/design-orchestrator.md) — Manages UX/UI, Brandkit, and Copywriting.
+* [Test Orchestrator](docs/en/orchestrators/test-orchestrator.md) — Manages Unit, Smoke, and E2E Testing.
 * *(See the [Catalog](docs/SKILLS_CATALOG.md) for BA, Deployment, and Marketing Orchestrators).*
 
 ## ⚙️ Installation & Build
