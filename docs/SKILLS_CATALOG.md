@@ -127,3 +127,15 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
 | `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
+
+## 🗺️ Orchestrator Deep-Dive Diagrams
+Explore the delegation hierarchy of each orchestrator (with detailed Mermaid diagrams):
+* [Master Orchestrator](tr/orchestrators/master-orchestrator.md)
+* [Code Orchestrator](tr/orchestrators/code-orchestrator.md)
+* [Security Orchestrator](tr/orchestrators/security-orchestrator.md)
+* [Design Orchestrator](tr/orchestrators/design-orchestrator.md)
+* [Test Orchestrator](tr/orchestrators/test-orchestrator.md)
+* [Business Analysis (BA) Orchestrator](tr/orchestrators/ba-orchestrator.md)
+* [Deployment Orchestrator](tr/orchestrators/deployment-orchestrator.md)
+* [Project Bootstrap Orchestrator](tr/orchestrators/project-bootstrap-orchestrator.md)
+* [Marketing Orchestrator](tr/orchestrators/marketing-orchestrator.md)
