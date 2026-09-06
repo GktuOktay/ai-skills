@@ -1,4 +1,4 @@
-# 📋 AI-Skills Full Catalog
+# 📋 Autonomous Agency Full Catalog
 
 This document lists all the active orchestrators, specialists, quality gates, and workflows in the v2.0 ecosystem.
 

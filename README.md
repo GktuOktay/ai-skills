@@ -1,4 +1,4 @@
-# AI-Skills: Autonomous Digital Agency (v2.0)
+# Autonomous Agency: Autonomous Digital Agency (v2.0)
 
 [🇹🇷 Türkçe Dokümantasyon (Turkish)](README.tr.md)
 
@@ -6,7 +6,7 @@
 ![Quality Gates](https://img.shields.io/badge/Quality_Gates-Strict_Enforcement-red)
 ![Total Agents](https://img.shields.io/badge/Active_Specialists-105-success)
 
-**AI-Skills** is an enterprise-grade, multi-agent AI ecosystem designed to replace standard conversational coding with a deterministic, autonomous software factory. It enforces Test-Driven Development (TDD), Strict Architectural Patterns (e.g., CQRS, .NET Clean Architecture), and automated API handoffs.
+**Autonomous Agency** is an enterprise-grade, multi-agent AI ecosystem designed to replace standard conversational coding with a deterministic, autonomous software factory. It enforces Test-Driven Development (TDD), Strict Architectural Patterns (e.g., CQRS, .NET Clean Architecture), and automated API handoffs.
 
 ## 🚀 Key Differentiators
 * **Not a Prompt Library:** It is a hierarchical company of agents (Orchestrators, Specialists, and Quality Gates).
@@ -46,7 +46,7 @@ Curious about who reports to whom? Explore the specific delegation diagrams (Mer
 * *(See the [Catalog](docs/SKILLS_CATALOG.md) for BA, Deployment, and Marketing Orchestrators).*
 
 ## ⚙️ Installation & Build
-AI-Skills uses a centralized SSOT compiler. To inject all 105 rules into your IDEs:
+Autonomous Agency uses a centralized SSOT compiler. To inject all 105 rules into your IDEs:
 
 ```bash
 python3 setup.py

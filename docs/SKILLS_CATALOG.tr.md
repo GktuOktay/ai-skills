@@ -1,4 +1,4 @@
-# 📋 AI-Skills Yetenek Envanteri
+# 📋 Autonomous Agency Yetenek Envanteri
 
 Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalite kapılerini ve iş akışlarını listeler.
 

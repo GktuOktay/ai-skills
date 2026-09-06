@@ -1,4 +1,4 @@
-# AI-Skills: Otonom Dijital Ajans (v2.0)
+# Autonomous Agency: Otonom Dijital Ajans (v2.0)
 
 [🇺🇸 English Documentation](README.md)
 
@@ -6,7 +6,7 @@
 ![Quality Gates](https://img.shields.io/badge/Kalite_Kapilari-Kesin_Denetim-red)
 ![Total Agents](https://img.shields.io/badge/Aktif_Uzman-105-success)
 
-**AI-Skills**, standart sohbet tabanlı kodlamayı reddeden; bunun yerine kararlı (deterministik) ve otonom bir yazılım fabrikası kurmayı hedefleyen kurumsal düzeyde bir çoklu ajan ekosistemidir. Test Güdümlü Geliştirmeyi (TDD), katı mimari prensipleri (CQRS, .NET Clean Architecture) ve otomatik API devir-teslimlerini zorunlu kılar.
+**Autonomous Agency**, standart sohbet tabanlı kodlamayı reddeden; bunun yerine kararlı (deterministik) ve otonom bir yazılım fabrikası kurmayı hedefleyen kurumsal düzeyde bir çoklu ajan ekosistemidir. Test Güdümlü Geliştirmeyi (TDD), katı mimari prensipleri (CQRS, .NET Clean Architecture) ve otomatik API devir-teslimlerini zorunlu kılar.
 
 ## 🚀 Temel Farklar
 * **Prompt Kütüphanesi Değildir:** Yöneticiler (Orchestrators), Uzmanlar ve Kalite Kapılarından oluşan hiyerarşik bir şirkettir.
@@ -46,7 +46,7 @@ Kimin kime rapor verdiğini merak mı ediyorsunuz? Temel yöneticilerimiz için 
 * *(BA, Deployment ve Marketing orkestratörleri için [Kataloga](docs/SKILLS_CATALOG.tr.md) bakın).*
 
 ## ⚙️ Kurulum ve Derleme (Build)
-AI-Skills, merkezi bir SSOT derleyici kullanır. Tüm 105 kuralı IDE'lerinize enjekte etmek için:
+Autonomous Agency, merkezi bir SSOT derleyici kullanır. Tüm 105 kuralı IDE'lerinize enjekte etmek için:
 
 ```bash
 python3 setup.py

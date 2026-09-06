@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI-Skills v2.0 - Universal Enterprise Build Script
+Autonomous Agency v2.0 - Universal Enterprise Build Script
 This script acts as the Single Source of Truth (SSOT) compiler.
 It reads from 'src/skills/' and generates the required artifacts for Cursor, Claude, and Windsurf.
 No symlink spaghetti, no hidden folders. Just pure artifact generation.
