@@ -111,6 +111,7 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `design-taste-frontend-gate` | Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları ve görsel kalite standartları. |
 | `e2e-tester` | Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği. |
 | `git-pr-reviewer` | Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartlar ve yapıcı geri bildirim. |
+| `main-thread-and-performance-gate` | Main Thread & Performance Gate: Raises a red flag if frontend code blocks the UI thread, enforcing Web Workers and Streams for heavy operations (like large file parsing). |
 | `no-truncation-gate` | Yapay zeka asistanının kod üretimi ve açıklamalarında hiçbir zaman kısaltma, atlama veya eksik bilgi vermemesini sağlayan meta-yetenek. "Geri kalanı aynı", "..." gibi tembel çıktıları engeller. |
 | `performance-tester` | Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu. |
 | `pre-mortem-stress-test-gate` | Mimari ve sistem kararlarında 'Bu sistem canlıda patlarsa nereden patlar?' analizi yapan stres testi skill'i. |
