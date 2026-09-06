@@ -1,4 +1,4 @@
-# Autonomous Agency: Otonom Dijital Ajans (v2.0)
+# Autonomous Agency (v2.0)
 
 [🇺🇸 English Documentation](README.md)
 

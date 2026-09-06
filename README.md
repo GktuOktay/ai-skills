@@ -1,4 +1,4 @@
-# Autonomous Agency: Autonomous Digital Agency (v2.0)
+# Autonomous Agency (v2.0)
 
 [🇹🇷 Türkçe Dokümantasyon (Turkish)](README.tr.md)
 
