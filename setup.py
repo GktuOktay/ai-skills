@@ -94,23 +94,43 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
         f.write(claude_content)
         
     # NEW: Roo Code (Cline) Support
-    with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
-        f.write("# Roo Code / Cline Global Rules\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", ""))
 
 " + claude_content.replace("## Claude Code Global Rules
 
-", ""))
+", "")
+    with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
+        f.write(roo_content)
 
     # NEW: Aider / Copilot Conventions Support
-    with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
-        f.write("# Aider / GitHub Copilot Conventions\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", ""))
 
 " + claude_content.replace("## Claude Code Global Rules
 
-", ""))
+", "")
+    with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
+        f.write(aider_content)
         
     print(f"
 ✅ Build Complete!")
+    print(f"   - {cursor_count} rules compiled for Cursor (.mdc)")
+    print(f"   - 1 global rule file compiled for Windsurf (.windsurfrules)")
+    print(f"   - 1 global rule file compiled for Claude (clauderules.md)")
+    print(f"   - 1 global rule file compiled for Roo Code (.clinerules)")
+    print(f"   - 1 global rule file compiled for Aider/Copilot (CONVENTIONS.md)")
+
+if __name__ == "__main__":
+    clean_old_artifacts()
+    build()
+    # NEW: Roo Code (Cline) Support
+    roo_content = "# Roo Code / Cline Global Rules\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", "")
+    with open(os.path.join(base_dir, ".clinerules"), "w", encoding="utf-8") as f:
+        f.write(roo_content)
+
+    # NEW: Aider / Copilot Conventions Support
+    aider_content = "# Aider / GitHub Copilot Conventions\n\n" + claude_content.replace("## Claude Code Global Rules\n\n", "")
+    with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
+        f.write(aider_content)
+        
+    print(f"\n✅ Build Complete!")
     print(f"   - {cursor_count} rules compiled for Cursor (.mdc)")
     print(f"   - 1 global rule file compiled for Windsurf (.windsurfrules)")
     print(f"   - 1 global rule file compiled for Claude (clauderules.md)")
