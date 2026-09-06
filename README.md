@@ -1,70 +1,77 @@
-# 🚀 AI-Skills v2.0: The Autonomous Digital Agency
+# 🚀 AI-Skills v2.0: Otonom Dijital Ajans
 
-![Architecture: Multi-Agent](https://img.shields.io/badge/Architecture-Multi--Agent-blue)
-![Stack: .NET | React | Mobile](https://img.shields.io/badge/Stack-.NET_%7C_React_%7C_Mobile-purple)
-![Paradigm: Test--Driven](https://img.shields.io/badge/Paradigm-Test--Driven-success)
+[English Documentation (README_EN.md)](README_EN.md)
 
 Bu depo, standart ve pasif yapay zeka (LLM) prompt yığınlarını reddeden; yerine **karar alabilen, test yazan, birbirine iş devreden ve deterministik kalite kapılarından (Quality Gates) geçen** otonom bir ajan ekosistemidir.
 
-Klasik AI kullanımında geliştirici her detayı anlatmak zorundadır. **v2.0 Mimarisinde ise geliştirici (Kıdemli Mimar) sadece hedefi verir; ajanlar analizi yapar, kodu yazar, test eder, dokümante eder ve devreder.**
-
-## 📊 Ajan Topolojisi ve Veri Akışı
-
+## 📊 Ajan Topolojisi ve Detaylı Veri Akışı
 ```mermaid
 flowchart TB
-    User((Kullanıcı)) -->|İş Talebi / Hedef| MO[01: Master Orchestrator]
-    
-    subgraph Planning [Planlama ve İş Analizi]
-        MO --> BA[BA / Sistem Mimarı]
-        BA -->|Mimari Şemalar & Kabul Kriterleri| Spec[(Proje Spesifikasyonu)]
+    %% Kullanici İstegi
+    User((Kullanıcı)) -->|İş Talebi| MO[01: Master Orchestrator]
+
+    %% Faz 1: Analiz ve Mimari
+    subgraph Phase1 [Faz 1: Analiz ve Mimari Kilitlenmesi]
+        direction TB
+        MO --> BA[02: Business Analyst & Architect]
+        BA -->|1. Şema Tasarımı| DB_Gate{DB Schema Bölme Kuralı}
+        DB_Gate -->|identity, audit, business şemaları| DB[(Veritabanı)]
+        BA -->|2. Kabul Kriterleri| Spec[Proje & API Dokümanı]
     end
 
-    subgraph Execution [Uzman Ajanlar - Execution]
+    %% Faz 2: Geliştirme (Execution)
+    subgraph Phase2 [Faz 2: Dikey Uzmanlarla Geliştirme]
+        direction TB
         Spec --> CO[01: Code Orchestrator]
         CO --> Backend[02: .NET Enterprise Architect]
-        CO --> Mobile[02: Mobile Swift/Flutter Architect]
+        CO --> Frontend[02: Mobile Swift/Flutter Architect]
         CO --> Migrator[02: Legacy Code Migrator]
-    end
-
-    subgraph QualityGates [Zorunlu Kalite Kapıları]
-        Backend --> TDD{03: Test-Driven Gate}
-        Mobile --> UI{03: Anti-AI Design Gate}
-        Migrator --> Sec{03: Security & Logging Gate}
         
-        TDD -->|Test Failed| Backend
-        TDD -->|Test Passed - Yesil| API_Docs
+        Backend --> Logic[İş Kuralları - CQRS/MediatR]
+        Migrator --> Logic
+        Frontend --> UI[UI ve State Management]
     end
 
-    subgraph Output [İş Akışları & Teslimat]
-        API_Docs{03: Swagger & XML Gate} --> Handoff[04: API Handoff Workflow]
-        Handoff -->|Frontend İçin Entegrasyon Dokümanı| FinalCheck
-        UI --> FinalCheck
-        Sec --> FinalCheck
-        FinalCheck{03: Turkish Language Enforcer} -->|Saf Türkçe Yanıt| User
+    %% Faz 3: Kalite Kapıları
+    subgraph Phase3 [Faz 3: Deterministik Kalite Kapıları]
+        direction LR
+        Logic --> TDD{03: Test-Driven Gate}
+        TDD -->|Birim Testi Hatalı| Backend
+        TDD -->|Birim Testi Başarılı| Sec{03: Security & Logging Gate}
+        
+        Sec -->|Hata: Düz Metin Log| Backend
+        Sec -->|Başarılı: Structured Log| Swagger{03: Swagger & XML Gate}
     end
-    
+
+    %% Faz 4: Teslimat
+    subgraph Phase4 [Faz 4: Devir Teslim ve Yayın]
+        direction TB
+        Swagger -->|Onaylandı| Handoff[04: API Handoff Workflow]
+        Handoff -->|Eski/Yeni API Farkı| UIDocs[Frontend Entegrasyon Dokümanı]
+        
+        UIDocs --> LangGate{03: Turkish Language Enforcer}
+        UI --> LangGate
+        LangGate -->|Saf Türkçe Çıktı| User
+    end
+
+    %% Stiller
     classDef orchestrator fill:#2b1b3d,stroke:#9d5bdf,stroke-width:2px,color:#fff
-    classDef agent fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
+    classDef specialist fill:#1e3a5f,stroke:#4a90e2,stroke-width:2px,color:#fff
     classDef gate fill:#5c1a1b,stroke:#e74c3c,stroke-width:2px,color:#fff
+    classDef database fill:#2d4a22,stroke:#5c9e42,stroke-width:2px,color:#fff
     
     class MO,CO orchestrator
-    class BA,Backend,Mobile,Migrator agent
-    class TDD,UI,Sec,API_Docs,FinalCheck gate
+    class BA,Backend,Frontend,Migrator specialist
+    class DB_Gate,TDD,Sec,Swagger,LangGate gate
+    class DB database
 ```
 
-## 📚 Kapsamlı Dokümantasyon
+## 📚 Kapsamlı Dokümantasyon (Türkçe)
+* 🏗️ [Mimarinin Anatomisi (ARCHITECTURE.md)](docs/tr/ARCHITECTURE.md)
+* 🧠 [Çekirdek Prensipler (PRINCIPLES.md)](docs/tr/PRINCIPLES.md)
+* 🔄 [Otonom İş Akışları (WORKFLOWS.md)](docs/tr/WORKFLOWS.md)
 
-Sistemin derin teknik mimarisi, prensipleri ve iş akışları için aşağıdaki dokümanları inceleyin:
-
-* 🏗️ [Mimarinin Anatomisi (ARCHITECTURE.md)](docs/ARCHITECTURE.md): 5 Ana Departmanın (01-05) teknik hiyerarşisi.
-* 🧠 [Çekirdek Prensipler (PRINCIPLES.md)](docs/PRINCIPLES.md): Fail-Fast, Evrimsel Mimari, .NET Base Service İkilemi ve YAGNI.
-* 🔄 [Otonom İş Akışları (WORKFLOWS.md)](docs/WORKFLOWS.md): API Devir-Teslimi (Handoff), Proje Kurulumu ve Changelog yönetim süreçleri.
-
-## ⚙️ Kurulum ve Derleme (Build)
-
-Cursor, Claude Code veya Windsurf ortamlarında kuralları (.mdc) üretmek için:
-
+## ⚙️ Kurulum
 ```bash
 python3 scripts/build_cursor_rules.py
 ```
-Bu komut, `src/skills/` hiyerarşisini özyineli (recursive) tarayarak 100+ otonom kural dosyasını IDE'nize entegre eder.
