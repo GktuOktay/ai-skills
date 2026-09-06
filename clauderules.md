@@ -1,4 +1,4 @@
-## Windsurf Global Rules
+## Claude Code Global Rules
 
 ### socratic-clarification-gate
 Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı.
