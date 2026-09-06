@@ -2,8 +2,7 @@
 
 [🇺🇸 English Catalog](../../en/catalogs/SKILLS_CATALOG.md)
 
-
-Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalite kapılerini ve iş akışlarını listeler.
+Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalite kapılarını ve iş akışlarını listeler.
 
 ## 01 Orchestrators
 | Yetenek / Rol Adı | Açıklama |
@@ -50,6 +49,7 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `mobile-flutter-swift-architect` | iOS (Swift/SwiftUI) ve Flutter uygulamaları için performans, state management ve native köprü mimarisi uzmanı. |
 | `pick-ui-library` | Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir. |
 | `swift-architecture-auditor` | Swift & iOS/macOS mimari inceleme, SwiftUI/UIKit katman analizi, MVVM/VIPER/TCA kontrolü, Concurrency ve Memory Leak denetim skilli |
+| `technical-seo-architect` | Technical SEO & Core Web Vitals Architect: Ensures maximum search engine visibility via Semantic HTML, JSON-LD Schema, OpenGraph, and strict Web Vitals optimization. |
 | `ui-animation` | Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi. |
 
 ### Product And Ba
