@@ -1,10 +1,10 @@
-# 📋 Autonomous Agency Yetenek Envanteri
+# 📋 Autonomous Agency Full Catalog
 
-Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalite kapılerini ve iş akışlarını listeler.
+This document lists all the active orchestrators, specialists, quality gates, and workflows in the v2.0 ecosystem.
 
 ## 01 Orchestrators
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `ba-orchestrator` | İş analizi ve teknik sistem tasarımı ana yönlendiricisi. Karmaşık iş isteklerini EARS gereksinimlerine, Mermaid diyagramlarına ve teknik şemalara dönüştüren orkestratör. |
 | `code-orchestrator` | Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör. |
 | `deployment-orchestrator` | Deployment, CI/CD, altyapı yönetimi (IaC) ve bulut süreçlerini yöneten ana orkestratör. Gerektiğinde alt skill'leri otomatik çağırır. |
@@ -19,8 +19,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 
 ## 02 Specialists
 ### Backend And Data
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `concurrency-and-memory-profiler` | Asenkron kilitlenmeleri (Deadlock), bellek kaçaklarını (Memory Leak) ve thread yarışlarını (Race Condition) denetleyen performans uzmanı. |
 | `db-architect-security` | Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek. |
 | `dotnet-enterprise-architect` | Kurumsal düzeyde .NET Core, C# mimarisi ve Entity Framework optimizasyonları için teknik rehber. |
@@ -29,8 +29,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `schema` | İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları. |
 
 ### Devops And Cloud
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `ci-cd-engineer` | Sürekli entegrasyon ve dağıtım (CI/CD) pipeline'ları kurma uzmanı. GitHub Actions, GitLab CI ve Jenkins için yapılandırmalar oluşturur. |
 | `cloud-deployer` | Vercel, Netlify, Cloudflare, Serverless Framework gibi platformlara hızlı ve zero-config dağıtım süreçlerini yönetir. |
 | `container-master` | Konteynerleştirme ve orkestrasyon uzmanı. Dockerfile yazımı, optimizasyonu ve Kubernetes (K8s) / Helm yapılandırmaları. |
@@ -39,8 +39,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
 
 ### Frontend And Mobile
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `a11y-and-i18n-engineer` | Ürünlerin en baştan çoklu dil (i18n) destekli ve ekran okuyuculara (WCAG) uygun erişilebilir olmasını sağlayan uzman. |
 | `apple-design` | iOS, macOS ve visionOS için Apple Human Interface Guidelines (İnsan Arayüzü Yönergeleri) tabanlı uygulama tasarımı ve geliştirme becerisi. |
 | `high-end-visual-design` | Üst düzey, lüks ve premium kullanıcı arayüzü (UI) tasarımı prensipleri. Glassmorphism, optik hizalama, premium renk paletleri ve mikro etkileşimler gibi ince detaylara odaklanır. |
@@ -50,8 +50,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `ui-animation` | Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi. |
 
 ### Product And Ba
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `ba-architect` | Netleşmiş iş gereksinimlerinden Mermaid akış diyagramları, Gherkin kabul kriterleri ve DB/API teknik şemaları üreten mimari dönüşüm yeteneği. |
 | `ba-elicitor` | Muğlak iş fikirlerini ve taleplerini yapılandırılmış EARS (Easy Approach to Requirements Syntax) formatına çeviren gereksinim analiz yeteneği. |
 | `brandkit` | Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi. |
@@ -67,13 +67,13 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `tech-business-analyst` | Teknik iş analizi ve gereksinim dokümanı yazmak için kullanılan yetenek. |
 
 ### Qa And Testing
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `unit-test-architect` | Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi. |
 
 ### Security And Pentest
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `api-authentication-weaknesses-pentester` | API kimlik doğrulama mekanizmalarını; kırık kimlik doğrulama, güvensiz token yönetimi ve brute-force gibi zafiyetlere karşı test eder. |
 | `api-for-broken-object-level-authorization-pentester` | REST ve GraphQL API'lerde Kırık Nesne Seviyesi Yetkilendirme (BOLA/IDOR, OWASP API1:2023) zafiyetlerini test eder. Nesne kimliklerini (ID'ler) analiz edip değiştirerek, sunucunun doğru yetkilendirme yapıp yapmadığını kontrol eder. BOLA veya erişim denetimi testlerinde kullanılır. |
 | `api-for-mass-assignment-vulnerability-pentester` | API'lerde toplu atama (mass assignment) zafiyetlerini test eder. (OWASP API3:2023). Kayıt, profil veya nesne oluşturma uç noktalarında belgelenmemiş alanlar (role, isAdmin vb.) göndererek sunucunun bu verileri kabul edip etmediğini kontrol eder. |
@@ -97,8 +97,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `secrets-scanning-in-ci-cd-specialist` | Dağıtım öncesinde sızdırılmış şifreleri, anahtarları ve hassas verileri tespit etmek için gitleaks ve trufflehog araçlarını CI/CD süreçlerine entegre eder. |
 
 ## 03 Quality Gates
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `adversarial-code-reviewer` | Yazılan kodu teslim etmeden önce 'Şeytanın Avukatı' gözüyle gizli bug, showstopper, bellek kaçağı ve mimari açıkları arayan denetçi. |
 | `clean-code-reviewer` | SOLID, DRY, YAGNI ve Addy Osmani üretim seviyesi mühendislik ilkeleri ile kod kalitesini denetleyen yetenek. |
 | `critical-critique-gate` | Yapay zekanın kullanıcı fikirlerini ve hatalı kod yönlendirmelerini körü körüne onaylamasını engeller. Yapıcı itiraz eder, riskleri gösterir ve doğru alternatifi sunar. |
@@ -117,8 +117,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `turkish-language-enforcer-gate` | Yapay zekanın İngilizce talimat alsa bile kullanıcıya her zaman Türkçe yanıt vermesini zorunlu kılan güvenlik kapısı. |
 
 ## 04 Workflows
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `api-handoff-workflow` | Backend'de bir değişiklik yapıldığında otomatik Changelog çıkaran ve Frontend takımı için eski/yeni API karşılaştırma (Devir-Teslim) dokümanı üreten iş akışı. |
 | `generate-standup-workflow` | Günlük standup (geliştirme) raporlarını kısa, öz ve yapılandırılmış bir şekilde oluşturma kuralları. |
 | `git-conventional-commits-workflow` | Git commit mesajları ve branch isimlendirme standartlarını belirler. Conventional Commits kurallarını uygular. |
@@ -127,8 +127,8 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `update-changelog-workflow` | Kod yazıldıkça yapılan değişiklikleri (changelog) ve versiyon geçmişini standart Markdown dosyasında tutma kuralı. |
 
 ## 05 Capabilities
-| Yetenek / Rol Adı | Açıklama |
-|-------------------|----------|
+| Skill / Role Name | Description |
+|-------------------|-------------|
 | `caveman` | > |
 | `caveman-commit` | > |
 | `caveman-compress` | > |
@@ -148,17 +148,17 @@ Bu doküman, v2.0 ekosistemindeki tüm aktif orkestratörleri, uzmanları, kalit
 | `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
 | `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
-## 🗺️ Orkestratör (Yönetici) Hiyerarşi Diyagramları
-Her bir orkestratörün yetki devri hiyerarşisini (detaylı Mermaid diyagramlarıyla) inceleyin:
-* [Master Orchestrator](tr/orchestrators/master-orchestrator.md)
-* [Code Orchestrator](tr/orchestrators/code-orchestrator.md)
-* [Security Orchestrator](tr/orchestrators/security-orchestrator.md)
-* [Design Orchestrator](tr/orchestrators/design-orchestrator.md)
-* [Test Orchestrator](tr/orchestrators/test-orchestrator.md)
-* [Business Analysis (BA) Orchestrator](tr/orchestrators/ba-orchestrator.md)
-* [Deployment Orchestrator](tr/orchestrators/deployment-orchestrator.md)
-* [Project Bootstrap Orchestrator](tr/orchestrators/project-bootstrap-orchestrator.md)
-* [Marketing Orchestrator](tr/orchestrators/marketing-orchestrator.md)
+## 🗺️ Orchestrator Deep-Dive Diagrams
+Explore the delegation hierarchy of each orchestrator (with detailed Mermaid diagrams):
+* [Master Orchestrator](../orchestrators/master-orchestrator.md)
+* [Code Orchestrator](../orchestrators/code-orchestrator.md)
+* [Security Orchestrator](../orchestrators/security-orchestrator.md)
+* [Design Orchestrator](../orchestrators/design-orchestrator.md)
+* [Test Orchestrator](../orchestrators/test-orchestrator.md)
+* [Business Analysis (BA) Orchestrator](../orchestrators/ba-orchestrator.md)
+* [Deployment Orchestrator](../orchestrators/deployment-orchestrator.md)
+* [Project Bootstrap Orchestrator](../orchestrators/project-bootstrap-orchestrator.md)
+* [Marketing Orchestrator](../orchestrators/marketing-orchestrator.md)
 
-## ⚖️ Sistem Kuralları ve Protokoller
-* [Hiyerarşi ve Yetki Devri Protokolü](tr/HIERARCHY_PROTOCOL.md)
+## ⚖️ System Rules & Protocols
+* [Hierarchy & Delegation Protocol](../core/HIERARCHY_PROTOCOL.md)
