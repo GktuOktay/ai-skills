@@ -1,5 +1,5 @@
 ---
-description: Rapid prototyping, MVP development, and fidelity-level selection strategies. / TR: Hızlı prototipleme, MVP geliştirme ve farklı tasarım aslına uygunluk seviyelerinde doğru aracı seçme stratejileri.
+description: Hızlı prototipleme, MVP geliştirme ve farklı tasarım aslına uygunluk seviyelerinde doğru aracı seçme stratejileri.
 globs: *prototype*
 ---
 
@@ -57,3 +57,5 @@ Before building, clearly define the scope:
 - **Never Use Prototype Code Directly**: If you built a code prototype fast and dirty, do not deploy it to production. Rewrite it with proper architecture, testing, and security.
 - **Design Handoff**: Use Figma's Dev Mode or Zeplin to extract CSS values, assets, and spacing.
 - **Component Driven**: Identify repeating UI patterns in the prototype and build them as reusable React/Vue components in the production codebase.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

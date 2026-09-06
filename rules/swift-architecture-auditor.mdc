@@ -89,3 +89,5 @@ For each architectural issue identified, provide:
 ```swift
 // Modern Swift 5.9+ / Swift 6 compliant refactored code
 ```
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

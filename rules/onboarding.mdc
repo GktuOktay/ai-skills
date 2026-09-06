@@ -1,5 +1,5 @@
 ---
-description: First-time user experience (FTUE), progressive disclosure, and onboarding flow design. / TR: Web ve mobil uygulamalar için ilk kullanım deneyimi (FTUE), aşamalı bilgilendirme ve kullanıcı karşılama süreçlerinin tasarımı.
+description: Web ve mobil uygulamalar için ilk kullanım deneyimi (FTUE), aşamalı bilgilendirme ve kullanıcı karşılama süreçlerinin tasarımı.
 globs: *onboarding*
 ---
 
@@ -66,3 +66,5 @@ Always test onboarding flows:
 3. **Empty State**: Dashboard with a "Create First Project" CTA.
 4. **Action**: User clicks CTA -> Tooltip highlights the template library.
 5. **Success State**: Project created -> Confetti animation -> "Invite a teammate" prompt.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

@@ -1,5 +1,5 @@
 ---
-description: Orchestrator for UI/UX design, animations, visual production, and frontend aesthetic standards. / TR: UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör.
+description: UI/UX tasarım, animasyon, görsel üretim ve frontend estetik süreçlerini yöneten orkestratör.
 globs: *design-orchestrator*
 ---
 
@@ -106,3 +106,5 @@ You are an orchestrator. Analyze the user's design, UI/UX, animation, or visual 
 ## When Not to Invoke
 - If only a color code or font name is asked (answer directly)
 - If the user explicitly asks for a specific skill, invoke that skill directly instead of the orchestrator
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

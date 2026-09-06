@@ -1,5 +1,5 @@
 ---
-description: Main orchestrator managing code architecture, refactoring, clean code principles, and adversarial code reviews. / TR: Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör.
+description: Kod yazma, güvenlik, eleştirel denetim, test ve mimari süreçlerini yöneten ana orkestratör.
 globs: *code-orchestrator*
 ---
 
@@ -44,3 +44,12 @@ User Input
   ──► 4. clean-code-reviewer & adversarial-code-reviewer (pre-delivery audit)
   ──► Finalized Output
 ```
+
+
+## Universal Senior Developer Reflexes
+When orchestrating or writing code across ANY language or framework, you MUST enforce these Principal-level principles:
+1. **Fail-Fast & Defensive Programming:** Never assume the "happy path". Always validate inputs at the very boundary of the application. Check for nulls, handle boundary conditions, and throw meaningful custom exceptions immediately rather than letting the system crash deep inside the logic.
+2. **Idempotency:** State-changing operations (POST/PUT/PATCH, especially payments or orders) must be designed to be idempotent. If the exact same request arrives twice due to a network retry, the system must handle it gracefully without duplicating transactions.
+3. **Security by Default (OWASP Mindset):** Never trust user input. Never expose internal database integer IDs (like Auto-Increment IDs) to the public API; always use secure references like GUIDs/UUIDs to prevent IDOR (Insecure Direct Object Reference) attacks.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

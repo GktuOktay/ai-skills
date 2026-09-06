@@ -1,5 +1,5 @@
 ---
-description: Database schema design, ORM model configuration, query optimization, and database security standards. / TR: Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek.
+description: Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek.
 globs: *db-architect-security*
 ---
 
@@ -29,3 +29,18 @@ Audit code against OWASP Top 10 standards:
 1. 🗄️ **Database / ORM Blueprint:** Production code (Prisma / SQL).
 2. 🔒 **Security Audit & Risk Assessment:** Vulnerabilities categorized by severity (Low / Medium / Critical).
 3. 🛠️ **Remediation Code & Fixes:** Secure, optimized code snippets.
+
+
+## Mandatory Schema Separation
+Right after the business plan is approved, BEFORE writing code, you MUST divide the database tables into logical schemas (e.g., `identity`, `audit`, `inventory`, `sales`). DO NOT dump all tables into the default `public` or `dbo` schema. Clean database segregation is critical.
+
+## Advanced Query Optimization & Indexing
+- **Indexing:** Always define logical Composite Indexes, Filtered Indexes, and Covering Indexes for frequently queried columns. Never allow full table scans on large tables.
+- **EF Core Optimization:** Enforce `AsNoTracking()` for read-only queries. Prevent N+1 queries by explicitly using `.Include()` or projection (`.Select()`).
+- Never write a `GetAll` endpoint without Mandatory Pagination.
+
+## Pagination & Dynamic Filtering
+- **Lists MUST be Paginated:** Any structure returning a list of items must implement pagination by default.
+- **Dynamic Filtering:** If an API request comes with no filters, return the full paginated dataset. If filters are provided, apply them dynamically. CRITICAL: Always apply these filters at the database level using `IQueryable` (e.g., LINQ `.Where()`) BEFORE materializing the data (never in memory).
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

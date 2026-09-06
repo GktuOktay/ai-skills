@@ -1,5 +1,5 @@
 ---
-description: Load testing, memory leak detection, benchmark analysis, and performance optimization. / TR: Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu.
+description: Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu.
 globs: *performance-tester*
 ---
 
@@ -87,3 +87,5 @@ Memory leaks occur when objects are no longer needed but are not garbage collect
 - [ ] Have thresholds been defined (e.g., p95 < 200ms) for success criteria?
 - [ ] Are external third-party services mocked out during load testing? (Do not load test services you do not own).
 - [ ] Are infrastructure metrics (CPU, Memory, IO) being monitored concurrently with the test?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

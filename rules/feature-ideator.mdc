@@ -1,5 +1,5 @@
 ---
-description: Product feature ideation, brainstorming, and backlog expansion. / TR: Yeni ürün özellikleri, fikir geliştirme ve feature backlog oluşturmak için yetenek.
+description: Yeni ürün özellikleri, fikir geliştirme ve feature backlog oluşturmak için yetenek.
 globs: *feature-ideator*
 ---
 
@@ -36,3 +36,5 @@ Evaluate the project across 4 core dimensions:
    - **Complexity:** Low / Medium / High
 3. 🎁 **Bonus Quick Wins:** 2-3 fast-to-implement ideas.
 4. 🗺️ **Recommended Roadmap:** Suggested execution order.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

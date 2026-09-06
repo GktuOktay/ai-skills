@@ -35,3 +35,5 @@ Feature: <Feature Name>
 
 ## 🚫 Output Guidelines
 - Output direct code blocks only. Do not repeat the requirement prose.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

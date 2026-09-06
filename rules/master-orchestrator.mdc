@@ -1,5 +1,5 @@
 ---
-description: Central command node coordinating all sub-orchestrators (Code, Design, Security, Test, Git, Docs) and anti-sycophancy critique gates. / TR: Tüm alt orkestratörleri (Code, Design, Security, Test, Git, Docs) ve eleştirel denetim kapılarını tek noktadan yöneten ana sistem mimarı.
+description: Tüm alt orkestratörleri (Code, Design, Security, Test, Git, Docs) ve eleştirel denetim kapılarını tek noktadan yöneten ana sistem mimarı.
 globs: *
 ---
 
@@ -40,3 +40,5 @@ graph TD
 2. **Objektif İtiraz (Anti-Sycophancy):** Kullanıcı hatalı bir yönlendirme yaparsa körü körüne kabul etme; riskleri göster, yapıcı itiraz et.
 3. **Alt Orkestratöre Yönlendirme:** İlgili alt orkestratörü çağır ve çıktıyı kontrol et.
 4. **Hasmane Denetim (Adversarial Audit):** Kod veya mimari çıktı sunulmadan önce `adversarial-code-reviewer` ile son denetimi yap.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

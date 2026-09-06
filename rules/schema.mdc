@@ -1,5 +1,5 @@
 ---
-description: Scalable and secure schema design patterns for relational databases, NoSQL, and APIs. / TR: İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları.
+description: İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları.
 globs: *schema*
 ---
 
@@ -86,3 +86,5 @@ APIs evolve. Avoid breaking changes for existing clients.
 - **EAV (Entity-Attribute-Value)**: Creating generic tables (`entity_id`, `attribute_name`, `value`) in SQL. It destroys performance and makes querying a nightmare. Use JSONB columns in Postgres instead.
 - **Fat Controllers**: Putting schema validation and business logic in the API routing layer instead of dedicated validation modules.
 - **God Objects**: Returning massive, deeply nested API responses when the client only needs two fields.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

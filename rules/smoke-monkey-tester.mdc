@@ -1,5 +1,5 @@
 ---
-description: Smoke tests for core functionality and monkey/chaos tests aiming to break the system with randomized inputs. / TR: Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri.
+description: Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri.
 globs: *smoke-monkey-tester*
 ---
 
@@ -99,3 +99,5 @@ Moving beyond the application layer to the infrastructure layer:
 - [ ] Is there logging in place to capture the stack trace when the monkey breaks the system?
 - [ ] Can you reproduce the exact sequence of random events? (Ensure random seeds are logged).
 - [ ] Are safeguards in place to prevent the monkey test from destroying real data?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

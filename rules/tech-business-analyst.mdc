@@ -1,5 +1,5 @@
 ---
-description: Bridges product design and UX concepts into actionable technical specifications, data models, and developer tasks. / TR: Teknik iş analizi ve gereksinim dokümanı yazmak için kullanılan yetenek.
+description: Teknik iş analizi ve gereksinim dokümanı yazmak için kullanılan yetenek.
 globs: *tech-business-analyst*
 ---
 
@@ -47,3 +47,5 @@ Structure tasks for JIRA / GitHub Issues:
 3. 🔌 **Technical & API Contracts** (Sample JSONs + UI State Matrix)
 4. ⚠️ **Critical Edge Cases & Risks**
 5. 🛠️ **Developer Task Breakdown** (Backend / Frontend / Validation)
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

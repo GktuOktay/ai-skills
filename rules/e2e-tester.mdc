@@ -1,5 +1,5 @@
 ---
-description: End-to-end (E2E) user scenario and integration testing with Cypress, Playwright, or Appium. / TR: Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği.
+description: Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği.
 globs: *e2e-tester*
 ---
 
@@ -105,3 +105,5 @@ E2E tests take longer to run. Optimize CI pipelines by:
 - [ ] Is there absolutely zero usage of static sleep/timeout commands?
 - [ ] Does the test clean up any persistent state it created?
 - [ ] Are network requests explicitly awaited where necessary?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

@@ -1,5 +1,5 @@
 ---
-description: UX microcopy, call-to-action (CTA), error messages, and UI text rules. / TR: Açık ve anlaşılır eyleme çağrı (CTA), hata mesajları ve kullanıcı arayüzü metinleri yazma kuralları.
+description: Açık ve anlaşılır eyleme çağrı (CTA), hata mesajları ve kullanıcı arayüzü metinleri yazma kuralları.
 globs: *copywriting*
 ---
 
@@ -67,3 +67,5 @@ Speak the user's language. Avoid technical terms or internal acronyms unless the
 - [ ] Is the action clear?
 - [ ] Is the tone appropriate for the context (e.g., serious for billing, encouraging for onboarding)?
 - [ ] Are technical terms simplified?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

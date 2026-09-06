@@ -1,5 +1,5 @@
 ---
-description: Brand identity management, logo usage, typography, color palettes, and brand rules. / TR: Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi.
+description: Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi.
 globs: *brandkit*
 ---
 
@@ -64,3 +64,5 @@ When applying these guidelines to code (e.g., Tailwind CSS, Styled Components):
 - [ ] Is typography responsive across mobile, tablet, and desktop breakpoints?
 - [ ] Do button states (hover, active, disabled) reflect the brand palette?
 - [ ] Is contrast ratio AAA or AA compliant for accessibility?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

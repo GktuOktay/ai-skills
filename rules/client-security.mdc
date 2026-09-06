@@ -1,5 +1,5 @@
 ---
-description: Frontend security auditing, XSS, CSRF, Content Security Policy (CSP) headers, and DOM vulnerability prevention. / TR: Frontend güvenliği; XSS, CSRF, Content Security Policy (CSP) header'ları ve DOM tabanlı zafiyetlerin engellenmesi.
+description: Frontend güvenliği; XSS, CSRF, Content Security Policy (CSP) header'ları ve DOM tabanlı zafiyetlerin engellenmesi.
 globs: *client-security*
 ---
 
@@ -70,3 +70,5 @@ app.use(helmet.contentSecurityPolicy({
 - [ ] Do sensitive cookies have `HttpOnly`, `Secure`, and `SameSite` flags?
 - [ ] Is a robust CSP implemented without `unsafe-inline`?
 - [ ] Are user inputs from URL fragments or referrers validated before use?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

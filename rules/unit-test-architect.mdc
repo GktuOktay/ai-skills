@@ -1,5 +1,5 @@
 ---
-description: Comprehensive unit testing patterns, mock/stub usages, and edge-case scenario coverage. / TR: Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi.
+description: Kapsamlı birim (unit) testleri, mock/stub kullanımları ve edge-case (uç durum) senaryoları yazma becerisi.
 globs: *unit-test-architect*
 ---
 
@@ -108,3 +108,5 @@ Whether you are using Jest, JUnit, XCTest, or PyTest, these principles apply:
 - [ ] Are dependencies properly mocked or stubbed?
 - [ ] Are all edge cases and boundary conditions considered?
 - [ ] Is there no logic (if/else, loops) inside the test itself?
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

@@ -1,5 +1,5 @@
 ---
-description: QA & testing orchestrator managing unit tests, E2E user scenarios, load testing, and performance benchmarks. / TR: Kapsamlı test stratejileri, birim testleri (unit), uçtan uca testler (E2E), performans ve yük testlerini yöneten ana orkestratör.
+description: Kapsamlı test stratejileri, birim testleri (unit), uçtan uca testler (E2E), performans ve yük testlerini yöneten ana orkestratör.
 globs: *test-orchestrator*
 ---
 
@@ -55,3 +55,5 @@ You are an orchestrator dedicated to Quality Assurance (QA) and comprehensive te
 
 ## When Not to Invoke
 - For very basic, inline TDD during active development, the `code-orchestrator` and its `testing-master` can be used instead to save context switching.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

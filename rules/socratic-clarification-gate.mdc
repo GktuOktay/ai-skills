@@ -1,6 +1,6 @@
 ---
-description: Prevents premature code generation on ambiguous prompts by asking high-leverage Socratic clarifying questions. / TR: Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı.
-globs: *socratic-clarification-gate*
+description: Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı.
+globs: *
 ---
 
 # Socratic Clarification Gate & Requirement Inspector
@@ -34,3 +34,5 @@ Bu skill, kullanıcının talebi muğlak, eksik veya varsayımlara dayalı oldu�
 > 2. **Kullanıcı Rolleri:** Rol tabanlı erişim (RBAC) olacak mı (Admin, User vb.)?
 > 
 > *Seçiminize göre mimariyi hemen kurgulayabilirim.*
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

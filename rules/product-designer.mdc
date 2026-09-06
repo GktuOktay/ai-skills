@@ -1,5 +1,5 @@
 ---
-description: Product design, UX research, wireframing, and user journey planning. / TR: Ürün tasarımı, UX deneyimi ve wireframe planlaması için kullanılan yetenek.
+description: Ürün tasarımı, UX deneyimi ve wireframe planlaması için kullanılan yetenek.
 globs: *product-designer*
 ---
 
@@ -34,3 +34,5 @@ When asked for product or page design feedback, evaluate from 4 key angles:
 2. 💡 **Top 3 UX/UI Recommendations:** High-impact design enhancements.
 3. ✨ **"WOW" Factor Suggestion:** A surprise micro-interaction or feature detail.
 4. 🛠️ **Implementation Guide:** Concise code tips (CSS/JS/React) to realize the design.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

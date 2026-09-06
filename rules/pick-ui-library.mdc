@@ -1,5 +1,5 @@
 ---
-description: UI component library selection guide based on performance, accessibility, and maintenance. / TR: Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir.
+description: Projeler için doğru UI bileşen kütüphanesini seçme rehberi; performans, erişilebilirlik ve bakım kriterlerini içerir.
 globs: *pick-ui-library*
 ---
 
@@ -58,3 +58,5 @@ For mobile development, the choice is often between native and cross-platform or
 - You have a mature design system.
 - Bundle size and performance are absolutely critical.
 - You find yourself constantly overriding > 50% of a library's default styles.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

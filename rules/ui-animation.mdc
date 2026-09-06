@@ -1,5 +1,5 @@
 ---
-description: UI animation standards: web/mobile motion terminology, opportunity detection, optimization, and code review. / TR: Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi.
+description: Uçtan uca kullanıcı arayüzü (UI) animasyon yeteneği: web ve mobil animasyonlar için terminoloji, optimizasyon ve kod incelemesi.
 globs: *ui-animation*
 ---
 
@@ -200,3 +200,5 @@ withAnimation(.spring(response: 0.4, dampingFraction: 0.75)) {
 | **CSS (native)** | All | Simple transitions, keyframes, scroll-driven |
 | **SwiftUI .animation** | iOS / macOS | Native spring physics, matched geometry |
 | **Rive** | Cross-platform | Interactive, state-machine driven animations |
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

@@ -1,5 +1,5 @@
 ---
-description: Pull Request (PR) creation and code review standards with constructive feedback and merge strategies. / TR: Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartlar ve yapıcı geri bildirim.
+description: Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartlar ve yapıcı geri bildirim.
 globs: *git-pr-reviewer*
 ---
 
@@ -75,3 +75,5 @@ Choose the right merge strategy based on project conventions.
 - [ ] Tests have been added or updated.
 - [ ] Documentation has been updated.
 - [ ] Commit history is clean and descriptive.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.

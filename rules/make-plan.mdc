@@ -1,5 +1,5 @@
 ---
-description: Detailed project planning, risk management, dependency mapping, and task breakdown. / TR: Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği.
+description: Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği.
 globs: *make-plan*
 ---
 
@@ -98,3 +98,5 @@ When generating a plan, use this structured artifact format:
 
 ## Conclusion
 A good plan is not static; it is a living document. The goal of planning is to remove ambiguity, identify critical paths, and align engineering execution with product goals.
+
+CRITICAL INSTRUCTION: You MUST communicate and explain everything to the user in fluent Turkish. Code, variable names, and technical terms should remain in English, but the prose MUST be Turkish.
