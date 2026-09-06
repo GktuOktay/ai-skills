@@ -4,7 +4,7 @@
 
 ![Architecture](https://img.shields.io/badge/Mimari-Multi--Agent_Ekosistemi-blue)
 ![Quality Gates](https://img.shields.io/badge/Kalite_Kapilari-Kesin_Denetim-red)
-![Total Agents](https://img.shields.io/badge/Aktif_Uzman-105-success)
+![Total Agents](https://img.shields.io/badge/Aktif_Uzman-109-success)
 
 **Autonomous Agency**, standart sohbet tabanlı kodlamayı reddeden; bunun yerine kararlı (deterministik) ve otonom bir yazılım fabrikası kurmayı hedefleyen kurumsal düzeyde bir çoklu ajan ekosistemidir. Test Güdümlü Geliştirmeyi (TDD), katı mimari prensipleri (CQRS, .NET Clean Architecture) ve otomatik API devir-teslimlerini zorunlu kılar.
 
@@ -41,8 +41,8 @@ Bu depo derin mimari prensipler barındırır. Tüm çekirdek sistem belgeleri v
   * Hammaliye süreçlerini ortadan kaldıran otomatik rutinleri detaylandırır. API Devir-Teslim (Handoff) algoritmasını (Backend ve Frontend arasındaki JSON diff üretimi) ve Proje Kurulumu (Scaffolding) sırasında çalışan tam CLI komut dizisini açıklar.
 
 ## 📋 Ajans Departmanları ve Yetenek Envanteri
-Ekosistem, mesleki alanlara (Örn: `backend_and_data`, `security_and_pentest`) göre gruplandırılmış **105 kesin tanımlı rolden** oluşur.
-👉 **[105 Ajan ve Yeteneğin Tam Kataloğunu Görüntüle](docs/tr/catalogs/SKILLS_CATALOG.md)**
+Ekosistem, mesleki alanlara (Örn: `backend_and_data`, `security_and_pentest`) göre gruplandırılmış **109 kesin tanımlı rolden** oluşur.
+👉 **[109 Ajan ve Yeteneğin Tam Kataloğunu Görüntüle](docs/tr/catalogs/SKILLS_CATALOG.md)**
 
 ### 🗺️ Orkestratör (Yönetici) Haritaları
 Kimin kime rapor verdiğini merak mı ediyorsunuz? Temel yöneticilerimiz için özel yetki devri diyagramlarını (Mermaid) inceleyin:
@@ -54,7 +54,7 @@ Kimin kime rapor verdiğini merak mı ediyorsunuz? Temel yöneticilerimiz için 
 * *(BA, Deployment ve Marketing orkestratörleri için [Kataloga](docs/tr/catalogs/SKILLS_CATALOG.md) bakın).*
 
 ## ⚙️ Kurulum ve Derleme (Build)
-Autonomous Agency, merkezi bir SSOT derleyici kullanır. Tüm 105 kuralı IDE'lerinize enjekte etmek için:
+Autonomous Agency, merkezi bir SSOT derleyici kullanır. Tüm 109 kuralı IDE'lerinize enjekte etmek için:
 
 ```bash
 python3 setup.py

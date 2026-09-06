@@ -4,7 +4,7 @@
 
 ![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent_Ecosystem-blue)
 ![Quality Gates](https://img.shields.io/badge/Quality_Gates-Strict_Enforcement-red)
-![Total Agents](https://img.shields.io/badge/Active_Specialists-105-success)
+![Total Agents](https://img.shields.io/badge/Active_Specialists-109-success)
 
 **Autonomous Agency** is an enterprise-grade, multi-agent AI ecosystem designed to replace standard conversational coding with a deterministic, autonomous software factory. It enforces Test-Driven Development (TDD), Strict Architectural Patterns (e.g., CQRS, .NET Clean Architecture), and automated API handoffs.
 
@@ -40,8 +40,8 @@ This repository contains deep architectural insights. Below is the index of all 
   * Details the automated routines that eliminate boilerplate. Explains the API Handoff Algorithm (how the system generates JSON diffs between Backend and Frontend) and the exact CLI sequence executed during Project Scaffolding.
 
 ## 📋 The Agency Departments & Skill Catalog
-The ecosystem consists of **105 strictly defined roles** grouped by professional domains (e.g., `backend_and_data`, `security_and_pentest`). 
-👉 **[View the Complete Catalog of all 105 Agents & Skills](docs/en/catalogs/SKILLS_CATALOG.md)**
+The ecosystem consists of **109 strictly defined roles** grouped by professional domains (e.g., `backend_and_data`, `security_and_pentest`). 
+👉 **[View the Complete Catalog of all 109 Agents & Skills](docs/en/catalogs/SKILLS_CATALOG.md)**
 
 ### 🗺️ Orchestrator Maps
 Curious about who reports to whom? Explore the specific delegation diagrams (Mermaid) for our core managers:
@@ -53,7 +53,7 @@ Curious about who reports to whom? Explore the specific delegation diagrams (Mer
 * *(See the [Catalog](docs/en/catalogs/SKILLS_CATALOG.md) for BA, Deployment, and Marketing Orchestrators).*
 
 ## ⚙️ Installation & Build
-Autonomous Agency uses a centralized SSOT compiler. To inject all 105 rules into your IDEs:
+Autonomous Agency uses a centralized SSOT compiler. To inject all 109 rules into your IDEs:
 
 ```bash
 python3 setup.py
