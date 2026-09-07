@@ -119,9 +119,8 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ## 03 Quality Gates
 | Skill / Role Name | Description |
 |-------------------|-------------|
-| `adversarial-code-reviewer` | Yazılan kodu teslim etmeden önce 'Şeytanın Avukatı' gözüyle gizli bug, showstopper, bellek kaçağı ve mimari açıkları arayan denetçi. |
 | `audit-trail-guardian-gate` | Veritabanı tablolarında denetim izlerini zorunlu kılan kapı. |
-| `chaos-engineer-gate` | Kodun mutlu yoluna değil, kötümser senaryolarına odaklanan paranoyak kapı. |
+| `chaos-adversarial-gate` | Kodu 'Şeytanın Avukatı' gözüyle inceleyen; network kopması, bellek kaçağı ve rastgele monkey test senaryolarını dayatan paranoyak kapı. |
 | `clean-code-reviewer` | SOLID, DRY, YAGNI ve Addy Osmani üretim seviyesi mühendislik ilkeleri ile kod kalitesini denetleyen yetenek. |
 | `critical-critique-gate` | Yapay zekanın kullanıcı fikirlerini ve hatalı kod yönlendirmelerini körü körüne onaylamasını engeller. Yapıcı itiraz eder, riskleri gösterir ve doğru alternatifi sunar. |
 | `ddd-ubiquitous-language-gate` | Yanlış domain isimlendirmelerini (Ubiquitous Language ihlallerini) reddeden kapı. |
@@ -137,10 +136,8 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `no-truncation-gate` | Yapay zeka asistanının kod üretimi ve açıklamalarında hiçbir zaman kısaltma, atlama veya eksik bilgi vermemesini sağlayan meta-yetenek. "Geri kalanı aynı", "..." gibi tembel çıktıları engeller. |
 | `performance-tester` | Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu. |
 | `pre-flight-security-gate` | Kod yazılmadan önce, Master Orchestrator'un planındaki zararlı istekleri denetleyen kapı. |
-| `pre-mortem-stress-test-gate` | Mimari ve sistem kararlarında 'Bu sistem canlıda patlarsa nereden patlar?' analizi yapan stres testi skill'i. |
 | `privacy-pii-masking-gate` | TCKN, kredi kartı ve şifre gibi PII verilerinin loglanmasını yasaklayan kapı. |
 | `problem-details-gate` | Hataların RFC 7807 standartlarına uygun JSON dönmesini zorunlu kılan kapı. |
-| `smoke-monkey-tester` | Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri. |
 | `socratic-clarification-gate` | Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı. |
 | `stateless-architecture-gate` | Bellekte durum tutulmasını yasaklayıp yatay ölçeklenebilirliği zorunlu kılan kapı. |
 | `structured-logging-audit-gate` | Sistemde optimum maliyetli yapısal loglama, asenkron exception takibi ve temiz denetim izi (Audit Trail) kurallarını zorunlu tutan kapı. |
@@ -162,20 +159,16 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | Skill / Role Name | Description |
 |-------------------|-------------|
 | `caveman-optimizer` | Sistemdeki tüm Caveman (Ultra-Kısa Yanıt, Kod İnceleme, Commit) özelliklerini tek noktada toplayan optimizasyon aracı. |
-| `docx-tool` | Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için yetenek. |
+| `codebase-explorer-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve yapıyı anlama taktikleri. |
 | `focus-budget-tool` | LLM bağlamı şiştiğinde, alakasız dosyaları bellekten temizleme kapasitesi. |
 | `graphify-tool` | Use for any question about a codebase, its architecture, file relationships, or project content — especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools. |
 | `humanizer-tool` | | |
 | `image-to-code-tool` | Ekran görüntüleri, mockup'lar veya tasarım dosyalarını (Figma vb.) analiz ederek piksel mükemmelliğinde, duyarlı (responsive) ve temiz koda dönüştürme. |
 | `imagegen-frontend-tool` | Frontend projeleri için yapay zeka görsel oluşturma rehberi: web hero görselleri, mobil varlıklar, ikonlar ve pazarlama görselleri. |
-| `learn-codebase-tool` | Bilinmeyen veya büyük kod tabanlarını hızlıca anlama, analiz etme ve gezinme yeteneği. |
 | `mcp-builder-tool` | MCP (Model Context Protocol) sunucuları geliştirmek ve bağlamak için yetenek. |
 | `mentor-mode-tool` | teach-me tetikleyicisi geldiğinde alınan mimari kararın açıklamasını yapan eğitim aracı. |
-| `pdf-tool` | PDF belgeleri oluşturmak, okumak ve dönüştürmek için yetenek. |
-| `pptx-tool` | PowerPoint (.pptx) sunumları oluşturmak ve düzenlemek için yetenek. |
+| `office-documents-tool` | Word, Excel, PowerPoint ve PDF dosyalarını okuma, yazma ve dönüştürme işlemlerini tek noktadan yöneten araç. |
 | `skill-creator-tool` | Yeni yetenekler (Skill) ve entegrasyonlar geliştirmek için yetenek. |
-| `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
-| `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
 ## 06 MCP Connectors
 | Skill / Role Name | Description |
