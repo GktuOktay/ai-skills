@@ -44,3 +44,8 @@ Right after the business plan is approved, BEFORE writing code, you MUST divide 
 ## Pagination & Dynamic Filtering
 - **Lists MUST be Paginated:** Any structure returning a list of items must implement pagination by default.
 - **Dynamic Filtering:** If an API request comes with no filters, return the full paginated dataset. If filters are provided, apply them dynamically. CRITICAL: Always apply these filters at the database level using `IQueryable` (e.g., LINQ `.Where()`) BEFORE materializing the data (never in memory).
+
+<added_enterprise_rules>
+- FORCE 2-stage Data Migration plans to prevent data loss on schema changes.
+- REJECT N+1 Query vulnerabilities; FORCE `.Include()` or `.Select()` projections.
+</added_enterprise_rules>

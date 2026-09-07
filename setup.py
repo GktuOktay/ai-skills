@@ -90,13 +90,46 @@ You are a Principal Software Architect within an Autonomous Agency. You MUST str
     with open(os.path.join(base_dir, "CONVENTIONS.md"), "w", encoding="utf-8") as f:
         f.write(aider_content)
         
-    print(f"\n✅ Build Complete!")
+    print(f"\nBuild Complete!")
     print(f"   - {cursor_count} rules compiled for Cursor (.mdc)")
     print(f"   - 1 global rule file compiled for Windsurf (.windsurfrules)")
     print(f"   - 1 global rule file compiled for Claude (clauderules.md)")
     print(f"   - 1 global rule file compiled for Roo Code (.clinerules)")
     print(f"   - 1 global rule file compiled for Aider/Copilot (CONVENTIONS.md)")
 
+def sync_flattened_skills():
+    import shutil
+    print("\n[4/4] Syncing individual SKILL.md files for Claude and Antigravity...")
+    
+    claude_skills_dir = os.path.join(base_dir, ".claude", "skills")
+    gemini_skills_dir = os.path.expanduser("~/.gemini/config/skills")
+    
+    targets = [claude_skills_dir]
+    # Only sync to Antigravity if the local system has the config directory
+    if os.path.exists(os.path.expanduser("~/.gemini/config")):
+        targets.append(gemini_skills_dir)
+        
+    for t in targets:
+        if os.path.exists(t):
+            shutil.rmtree(t)
+        os.makedirs(t, exist_ok=True)
+        
+    count = 0
+    for root, dirs, files in os.walk(skills_dir):
+        if "SKILL.md" in files:
+            skill_name = os.path.basename(root)
+            src_path = os.path.join(root, "SKILL.md")
+            for t in targets:
+                target_dir = os.path.join(t, skill_name)
+                os.makedirs(target_dir, exist_ok=True)
+                shutil.copy2(src_path, os.path.join(target_dir, "SKILL.md"))
+            count += 1
+            
+    print(f"Synced {count} skills to:")
+    for t in targets:
+        print(f"   - {t}")
+
 if __name__ == "__main__":
     clean_old_artifacts()
     build()
+    sync_flattened_skills()

@@ -12,3 +12,8 @@ Whenever a change is made to the Backend APIs, you MUST execute this workflow:
    - Show the **OLD** Request/Response JSON structure vs the **NEW** structure (Diff).
    - Explain exactly what the Frontend developer needs to do to integrate this change (e.g., "Change the `userId` field to `userGuid` in the Redux store").
    - Highlight any breaking changes in bold.
+
+
+<added_enterprise_rules>
+- FORCE 100% type-safe conversion from C# DTOs to TypeScript Interfaces & Zod schemas.
+</added_enterprise_rules>
