@@ -43,9 +43,6 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ### Devops And Cloud
 | Skill / Role Name | Description |
 |-------------------|-------------|
-| `caveman-commit` | > |
-| `caveman-review` | > |
-| `caveman-stats` | > |
 | `ci-cd-engineer` | Sürekli entegrasyon ve dağıtım (CI/CD) pipeline'ları kurma uzmanı. GitHub Actions, GitLab CI ve Jenkins için yapılandırmalar oluşturur. |
 | `cloud-deployer` | Vercel, Netlify, Cloudflare, Serverless Framework gibi platformlara hızlı ve zero-config dağıtım süreçlerini yönetir. |
 | `container-master` | Konteynerleştirme ve orkestrasyon uzmanı. Dockerfile yazımı, optimizasyonu ve Kubernetes (K8s) / Helm yapılandırmaları. |
@@ -78,7 +75,6 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `ba-architect` | Netleşmiş iş gereksinimlerinden Mermaid akış diyagramları, Gherkin kabul kriterleri ve DB/API teknik şemaları üreten mimari dönüşüm yeteneği. |
 | `ba-elicitor` | Muğlak iş fikirlerini ve taleplerini yapılandırılmış EARS (Easy Approach to Requirements Syntax) formatına çeviren gereksinim analiz yeteneği. |
 | `brandkit` | Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi. |
-| `cavecrew` | > |
 | `copywriting` | Açık ve anlaşılır eyleme çağrı (CTA), hata mesajları ve kullanıcı arayüzü metinleri yazma kuralları. |
 | `corporate-memory-specialist` | Proje mimari kararlarını docs/ADR altına yazacak kalıcı hafıza uzmanı. |
 | `feature-ideator` | Yeni ürün özellikleri, fikir geliştirme ve feature backlog oluşturmak için yetenek. |
@@ -165,9 +161,7 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ## 05 Capabilities
 | Skill / Role Name | Description |
 |-------------------|-------------|
-| `caveman` | > |
-| `caveman-compress` | > |
-| `caveman-help` | > |
+| `caveman-optimizer` | Sistemdeki tüm Caveman (Ultra-Kısa Yanıt, Kod İnceleme, Commit) özelliklerini tek noktada toplayan optimizasyon aracı. |
 | `docx-tool` | Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için yetenek. |
 | `focus-budget-tool` | LLM bağlamı şiştiğinde, alakasız dosyaları bellekten temizleme kapasitesi. |
 | `graphify-tool` | Use for any question about a codebase, its architecture, file relationships, or project content — especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools. |
