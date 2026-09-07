@@ -1,4 +1,5 @@
 ---
+name: stateless-architecture-gate
 description: "Bellekte durum tutulmasını yasaklayıp yatay ölçeklenebilirliği zorunlu kılan kapı."
 alwaysApply: true
 ---

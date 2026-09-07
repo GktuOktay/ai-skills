@@ -1,4 +1,5 @@
 ---
+name: finite-state-machine-gate
 description: "Kompleks durum geçişleri için matematiksel Durum Makinesi (FSM) dayatan kapı."
 alwaysApply: true
 ---

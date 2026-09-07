@@ -1,4 +1,5 @@
 ---
+name: outbox-pattern-enforcer
 description: "DB kaydı ve RabbitMQ event'inin aynı anda atılmasını sağlayıp mesaj kaybını önleyen ajan."
 alwaysApply: true
 ---

@@ -1,4 +1,5 @@
 ---
+name: corporate-memory-specialist
 description: "Proje mimari kararlarını docs/ADR altına yazacak kalıcı hafıza uzmanı."
 alwaysApply: false
 ---

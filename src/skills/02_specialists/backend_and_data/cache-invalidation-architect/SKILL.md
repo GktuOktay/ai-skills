@@ -1,4 +1,5 @@
 ---
+name: cache-invalidation-architect
 description: "Önbellek güncellendiğinde mutlaka tahliye (Invalidation) yapılmasını zorunlu kılan ajan."
 alwaysApply: false
 ---

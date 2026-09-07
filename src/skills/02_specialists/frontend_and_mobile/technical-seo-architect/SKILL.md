@@ -1,4 +1,5 @@
 ---
+name: technical-seo-architect
 description: "Technical SEO & Core Web Vitals Architect: Ensures maximum search engine visibility via Semantic HTML, JSON-LD Schema, OpenGraph, and strict Web Vitals optimization."
 alwaysApply: false
 ---

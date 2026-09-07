@@ -1,4 +1,5 @@
 ---
+name: update-changelog-workflow
 description: "Release & Changelog Manager: Manages version bumps (x.x.x SemVer) and CHANGELOG.md generation ONLY during the Release/Deployment phase, never during active coding."
 alwaysApply: true
 ---

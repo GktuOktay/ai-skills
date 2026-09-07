@@ -1,4 +1,5 @@
 ---
+name: validation-and-integrity-gate
 description: "Dual-Validation & Integrity Gate: Strictly enforces defensive programming, null-checks at the DB level, FluentValidation at the API, and UX-friendly client-side validations."
 alwaysApply: true
 ---

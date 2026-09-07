@@ -1,4 +1,5 @@
 ---
+name: circuit-breaker-specialist
 description: "Dış API çağrılarına zorla Polly ve Fallback mekanizması ekleten ajan."
 alwaysApply: false
 ---

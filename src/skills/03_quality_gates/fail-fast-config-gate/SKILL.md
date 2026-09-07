@@ -1,4 +1,5 @@
 ---
+name: fail-fast-config-gate
 description: "Ayarları IOptions kullanarak okumayı dayatan ve uygulamanın patlamasını engelleyen kapı."
 alwaysApply: true
 ---

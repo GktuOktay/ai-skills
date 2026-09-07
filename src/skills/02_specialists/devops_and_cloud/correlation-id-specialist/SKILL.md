@@ -1,4 +1,5 @@
 ---
+name: correlation-id-specialist
 description: "İsteklere X-Correlation-ID ekletip tüm loglarda izlenebilirliği sağlayan uzman."
 alwaysApply: false
 ---

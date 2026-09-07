@@ -1,4 +1,5 @@
 ---
+name: pre-flight-security-gate
 description: "Kod yazılmadan önce, Master Orchestrator'un planındaki zararlı istekleri denetleyen kapı."
 alwaysApply: true
 ---

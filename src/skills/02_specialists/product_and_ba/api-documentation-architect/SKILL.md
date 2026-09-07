@@ -1,4 +1,5 @@
 ---
+name: api-documentation-architect
 description: "API Documentation & Tech Writer: Builds Stripe/Vercel-quality public-facing developer documentation sites (Docusaurus/Mintlify) from raw backend code."
 alwaysApply: false
 ---

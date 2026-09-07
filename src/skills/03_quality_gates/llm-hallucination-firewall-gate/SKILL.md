@@ -1,4 +1,5 @@
 ---
+name: llm-hallucination-firewall-gate
 description: "Dış yapay zekalardan gelen JSON yanıtlarını denetleyip halüsinasyonları durduran kapı."
 alwaysApply: true
 ---

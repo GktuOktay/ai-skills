@@ -1,4 +1,5 @@
 ---
+name: office-documents-tool
 description: "Word, Excel, PowerPoint ve PDF dosyalarını okuma, yazma ve dönüştürme işlemlerini tek noktadan yöneten araç."
 alwaysApply: false
 ---

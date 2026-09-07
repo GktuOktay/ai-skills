@@ -1,4 +1,5 @@
 ---
+name: forensic-detective
 description: "Hata logu geldiğinde 3 hipotez üreterek kök neden analizi yapacak uzman."
 alwaysApply: false
 ---

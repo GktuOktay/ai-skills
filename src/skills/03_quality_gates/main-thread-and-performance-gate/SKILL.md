@@ -1,4 +1,5 @@
 ---
+name: main-thread-and-performance-gate
 description: "Main Thread & Performance Gate: Raises a red flag if frontend code blocks the UI thread, enforcing Web Workers and Streams for heavy operations (like large file parsing)."
 alwaysApply: true
 ---

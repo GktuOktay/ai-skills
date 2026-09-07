@@ -1,4 +1,5 @@
 ---
+name: chaos-adversarial-gate
 description: "Kodu 'Şeytanın Avukatı' gözüyle inceleyen; network kopması, bellek kaçağı ve rastgele monkey test senaryolarını dayatan paranoyak kapı."
 alwaysApply: true
 ---

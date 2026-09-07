@@ -1,4 +1,5 @@
 ---
+name: focus-budget-tool
 description: "LLM bağlamı şiştiğinde, alakasız dosyaları bellekten temizleme kapasitesi."
 alwaysApply: false
 ---

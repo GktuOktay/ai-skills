@@ -1,4 +1,5 @@
 ---
+name: mentor-mode-tool
 description: "teach-me tetikleyicisi geldiğinde alınan mimari kararın açıklamasını yapan eğitim aracı."
 alwaysApply: false
 ---

@@ -1,4 +1,5 @@
 ---
+name: problem-details-gate
 description: "Hataların RFC 7807 standartlarına uygun JSON dönmesini zorunlu kılan kapı."
 alwaysApply: true
 ---

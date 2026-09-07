@@ -1,4 +1,5 @@
 ---
+name: tech-debt-collector
 description: "Kullanılmayan kodları (dead code) silmekle görevli uzman."
 alwaysApply: false
 ---

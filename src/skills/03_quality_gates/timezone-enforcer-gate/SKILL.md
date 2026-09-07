@@ -1,4 +1,5 @@
 ---
+name: timezone-enforcer-gate
 description: "DateTime.Now kullanımını yasaklayıp UtcNow veya TimeProvider zorunluluğu getiren kapı."
 alwaysApply: true
 ---

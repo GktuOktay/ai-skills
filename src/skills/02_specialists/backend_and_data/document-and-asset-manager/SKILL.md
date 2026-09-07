@@ -1,4 +1,5 @@
 ---
+name: document-and-asset-manager
 description: "Document & Asset Manager: Optimizes, compresses, and manages document pipelines (PDFs, images, CSVs, file size limits)."
 alwaysApply: false
 ---

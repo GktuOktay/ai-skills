@@ -1,4 +1,5 @@
 ---
+name: audit-trail-guardian-gate
 description: "Veritabanı tablolarında denetim izlerini zorunlu kılan kapı."
 alwaysApply: true
 ---

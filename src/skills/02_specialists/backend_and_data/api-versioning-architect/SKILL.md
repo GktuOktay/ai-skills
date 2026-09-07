@@ -1,4 +1,5 @@
 ---
+name: api-versioning-architect
 description: "Eski istemcileri (client) bozacak Breaking Change değişikliklerini yasaklayan ajan."
 alwaysApply: false
 ---

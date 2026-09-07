@@ -1,4 +1,5 @@
 ---
+name: tenant-isolation-gate
 description: "B2B projelerde TenantId filtresini mecburi kılan kapı."
 alwaysApply: true
 ---

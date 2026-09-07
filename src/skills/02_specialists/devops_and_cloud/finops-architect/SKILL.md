@@ -1,4 +1,5 @@
 ---
+name: finops-architect
 description: "LLM'in pahalı bulut çözümlerini engelleyip, en ucuz mimariyi dayatan ajan."
 alwaysApply: false
 ---

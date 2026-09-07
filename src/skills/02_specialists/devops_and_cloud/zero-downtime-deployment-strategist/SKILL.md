@@ -1,4 +1,5 @@
 ---
+name: zero-downtime-deployment-strategist
 description: "Güncellemelerde Expand & Contract desenini dayatan kesintisiz deployment uzmanı."
 alwaysApply: false
 ---

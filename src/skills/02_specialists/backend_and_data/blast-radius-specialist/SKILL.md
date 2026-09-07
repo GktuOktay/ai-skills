@@ -1,4 +1,5 @@
 ---
+name: blast-radius-specialist
 description: "Core dosyalara dokunulmadan önce projede nerelerin patlayacağını hesaplayacak ajan."
 alwaysApply: false
 ---

@@ -1,4 +1,5 @@
 ---
+name: graceful-degradation-gate
 description: "Backend çöktüğünde Frontend'i Fallback UI çizmeye zorlayan kapı."
 alwaysApply: true
 ---

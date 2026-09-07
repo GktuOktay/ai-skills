@@ -1,4 +1,5 @@
 ---
+name: escalation-workflow
 description: "Kalite kapısında 3 kez takılan işi Baş Mimara havale eden kriz iş akışı."
 alwaysApply: true
 ---

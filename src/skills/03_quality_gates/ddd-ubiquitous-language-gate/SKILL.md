@@ -1,4 +1,5 @@
 ---
+name: ddd-ubiquitous-language-gate
 description: "Yanlış domain isimlendirmelerini (Ubiquitous Language ihlallerini) reddeden kapı."
 alwaysApply: true
 ---

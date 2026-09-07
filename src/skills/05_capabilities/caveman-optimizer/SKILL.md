@@ -1,4 +1,5 @@
 ---
+name: caveman-optimizer
 description: "Sistemdeki tüm Caveman (Ultra-Kısa Yanıt, Kod İnceleme, Commit) özelliklerini tek noktada toplayan optimizasyon aracı."
 alwaysApply: false
 ---

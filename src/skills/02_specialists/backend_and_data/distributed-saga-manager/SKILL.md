@@ -1,4 +1,5 @@
 ---
+name: distributed-saga-manager
 description: "Distributed işlemlerde klasik transaction yerine Saga/Kompansasyon dayatan ajan."
 alwaysApply: false
 ---

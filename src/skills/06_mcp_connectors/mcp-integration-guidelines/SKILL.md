@@ -1,4 +1,5 @@
 ---
+name: mcp-integration-guidelines
 description: "Veritabanı, GitHub, Jira gibi MCP bağlantılarını otonom sisteme dahil eden kural seti."
 alwaysApply: false
 ---

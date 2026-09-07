@@ -1,4 +1,5 @@
 ---
+name: privacy-pii-masking-gate
 description: "TCKN, kredi kartı ve şifre gibi PII verilerinin loglanmasını yasaklayan kapı."
 alwaysApply: true
 ---

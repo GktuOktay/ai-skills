@@ -1,4 +1,5 @@
 ---
+name: recon-specialist
 description: "Kod yazılmadan önce grep ile projeyi tarayıp DRY prensibini uygulayacak ajan."
 alwaysApply: false
 ---

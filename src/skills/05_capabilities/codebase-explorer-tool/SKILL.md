@@ -1,4 +1,5 @@
 ---
+name: codebase-explorer-tool
 description: "Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve yapıyı anlama taktikleri."
 alwaysApply: false
 ---
