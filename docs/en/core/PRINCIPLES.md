@@ -57,3 +57,6 @@ record.CreatedAt = _dateTimeProvider.UtcNow; // Mock'lanabilir bağımlılık.
 ## 4. Güvenlik: IDOR ve Veritabanı Şemaları (Schemas)
 * **IDOR Koruması:** Ajan, veritabanının gerçek `Id` (INT) alanlarını dış dünyaya DTO'lar aracılığıyla açmaz. API yanıtlarında her zaman `Guid` (UUID) veya obfuscated id kullanır.
 * **Schema Segregation:** PostgreSQL veya SQL Server kurulumlarında tüm tabloları `public` (veya `dbo`) şemasına yığmak amatörcedir. Ajan iş planını okur ve tabloları anında mantıksal şemalara (Örn: `identity`, `audit`, `sales`) böler.
+
+### 6. Zero Fluff & Token Optimization
+All written `SKILL.md` rules are structured with pure XML tags and imperative commands (FORCE, REJECT) to avoid bloating the LLM context window. Unnecessary phrases like "You are an AI" are strictly prohibited.

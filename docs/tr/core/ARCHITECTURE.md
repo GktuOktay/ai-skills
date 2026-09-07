@@ -49,3 +49,7 @@ flowchart LR
     style Reject3 fill:#5c1a1b,color:#fff
     style Reject4 fill:#5c1a1b,color:#fff
 ```
+
+
+## 4. Token-Optimized Enterprise Mimarisi
+Sistem, 130'dan fazla ileri düzey Principal Engineer kuralını (Outbox Pattern, Circuit Breaker, Stateless Architecture, Zero-Downtime Deployment, CRDT vb.) IDE limitlerini (Context Window) koruyarak **Token-Optimized** formatta çalıştırır. Her kural saf emir kipleriyle (`FORCE`, `REJECT`) tanımlanmıştır.

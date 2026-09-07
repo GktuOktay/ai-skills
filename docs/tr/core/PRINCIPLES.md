@@ -57,3 +57,6 @@ record.CreatedAt = _dateTimeProvider.UtcNow; // Mock'lanabilir bağımlılık.
 ## 4. Güvenlik: IDOR ve Veritabanı Şemaları (Schemas)
 * **IDOR Koruması:** Ajan, veritabanının gerçek `Id` (INT) alanlarını dış dünyaya DTO'lar aracılığıyla açmaz. API yanıtlarında her zaman `Guid` (UUID) veya obfuscated id kullanır.
 * **Schema Segregation:** PostgreSQL veya SQL Server kurulumlarında tüm tabloları `public` (veya `dbo`) şemasına yığmak amatörcedir. Ajan iş planını okur ve tabloları anında mantıksal şemalara (Örn: `identity`, `audit`, `sales`) böler.
+
+### 6. Sıfır Laf Kalabalığı (Token Optimization & Zero Fluff)
+Yazılan tüm `SKILL.md` kuralları, LLM context window'unu gereksiz doldurmamak adına saf XML tagleri ve emir kipleriyle (FORCE, REJECT) yazılır. Ajana "Sen bir yapay zekasın" gibi gereksiz cümleler kurulmaz.

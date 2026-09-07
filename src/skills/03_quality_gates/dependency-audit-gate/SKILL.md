@@ -67,3 +67,8 @@ pip-compile --generate-hashes requirements.in
 - [ ] Is an automated dependency update tool (Dependabot/Renovate) configured?
 - [ ] Are package integrity hashes verified during installation?
 - [ ] Is there a process to evaluate and remediate reported CVEs promptly?
+
+
+<added_enterprise_rules>
+- FORCE proactive package updates and subsequent build verification (`dotnet build`).
+</added_enterprise_rules>

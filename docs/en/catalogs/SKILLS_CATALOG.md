@@ -23,13 +23,22 @@ This document lists all the active orchestrators, specialists, quality gates, an
 ### Backend And Data
 | Skill / Role Name | Description |
 |-------------------|-------------|
+| `api-versioning-architect` | Eski istemcileri (client) bozacak Breaking Change değişikliklerini yasaklayan ajan. |
+| `blast-radius-specialist` | Core dosyalara dokunulmadan önce projede nerelerin patlayacağını hesaplayacak ajan. |
+| `cache-invalidation-architect` | Önbellek güncellendiğinde mutlaka tahliye (Invalidation) yapılmasını zorunlu kılan ajan. |
+| `circuit-breaker-specialist` | Dış API çağrılarına zorla Polly ve Fallback mekanizması ekleten ajan. |
 | `concurrency-and-memory-profiler` | Asenkron kilitlenmeleri (Deadlock), bellek kaçaklarını (Memory Leak) ve thread yarışlarını (Race Condition) denetleyen performans uzmanı. |
 | `db-architect-security` | Veritabanı mimarisi, güvenlik standartları, ORM yapılandırmaları ve veritabanı tasarımı için yetenek. |
+| `distributed-saga-manager` | Distributed işlemlerde klasik transaction yerine Saga/Kompansasyon dayatan ajan. |
 | `document-and-asset-manager` | Document & Asset Manager: Optimizes, compresses, and manages document pipelines (PDFs, images, CSVs, file size limits). |
 | `dotnet-enterprise-architect` | Kurumsal düzeyde .NET Core, C# mimarisi ve Entity Framework optimizasyonları için teknik rehber. |
 | `edge-and-gateway-architect` | API Gateway, Load Balancing, Rate Limiting ve dış dünyaya açılan kapıların (Edge) güvenliğini tasarlayan mimar. |
+| `forensic-detective` | Hata logu geldiğinde 3 hipotez üreterek kök neden analizi yapacak uzman. |
 | `legacy-code-migrator-specialist` | Farklı programlama dilleri (Örn: Django'dan .NET'e) arası kod dönüşümü, mimari eşleştirme ve refactoring uzmanı. |
+| `outbox-pattern-enforcer` | DB kaydı ve RabbitMQ event'inin aynı anda atılmasını sağlayıp mesaj kaybını önleyen ajan. |
+| `recon-specialist` | Kod yazılmadan önce grep ile projeyi tarayıp DRY prensibini uygulayacak ajan. |
 | `schema` | İlişkisel veri tabanları, NoSQL ve API'ler için ölçeklenebilir ve güvenli şema tasarım kalıpları. |
+| `tech-debt-collector` | Kullanılmayan kodları (dead code) silmekle görevli uzman. |
 
 ### Devops And Cloud
 | Skill / Role Name | Description |
@@ -40,12 +49,15 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `ci-cd-engineer` | Sürekli entegrasyon ve dağıtım (CI/CD) pipeline'ları kurma uzmanı. GitHub Actions, GitLab CI ve Jenkins için yapılandırmalar oluşturur. |
 | `cloud-deployer` | Vercel, Netlify, Cloudflare, Serverless Framework gibi platformlara hızlı ve zero-config dağıtım süreçlerini yönetir. |
 | `container-master` | Konteynerleştirme ve orkestrasyon uzmanı. Dockerfile yazımı, optimizasyonu ve Kubernetes (K8s) / Helm yapılandırmaları. |
+| `correlation-id-specialist` | İsteklere X-Correlation-ID ekletip tüm loglarda izlenebilirliği sağlayan uzman. |
+| `finops-architect` | LLM'in pahalı bulut çözümlerini engelleyip, en ucuz mimariyi dayatan ajan. |
 | `git-conventional-commits-workflow` | Git commit mesajları ve branch isimlendirme standartlarını belirler. Conventional Commits kurallarını uygular. |
 | `git-repo-setup-workflow` | GitHub repo kurulumu ve topluluk standartları için en iyi uygulamalar (README, CONTRIBUTING, kurallar). |
 | `gitops-manager` | ArgoCD ve Flux ile Kubernetes üzerinde GitOps tabanlı sürekli dağıtım (CD) süreçlerini yönetir. |
 | `iac-architect` | Altyapının kod olarak yönetimi (IaC). Terraform, Pulumi ve Ansible kullanarak bulut ve sunucu altyapısını tasarlar. |
 | `observability-setup` | Sistem izleme, loglama ve metrik toplama (Prometheus, Grafana, ELK, Datadog) altyapılarını kurar. |
 | `update-changelog-workflow` | Release & Changelog Manager: Manages version bumps (x.x.x SemVer) and CHANGELOG.md generation ONLY during the Release/Deployment phase, never during active coding. |
+| `zero-downtime-deployment-strategist` | Güncellemelerde Expand & Contract desenini dayatan kesintisiz deployment uzmanı. |
 
 ### Frontend And Mobile
 | Skill / Role Name | Description |
@@ -68,6 +80,7 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `brandkit` | Marka tutarlılığını sağlamak için marka kimliği, logo kullanımı, tipografi, renk paletleri ve görsel kuralların yönetimi. |
 | `cavecrew` | > |
 | `copywriting` | Açık ve anlaşılır eyleme çağrı (CTA), hata mesajları ve kullanıcı arayüzü metinleri yazma kuralları. |
+| `corporate-memory-specialist` | Proje mimari kararlarını docs/ADR altına yazacak kalıcı hafıza uzmanı. |
 | `feature-ideator` | Yeni ürün özellikleri, fikir geliştirme ve feature backlog oluşturmak için yetenek. |
 | `git-issue-manager` | GitHub/GitLab issue yönetimi için en iyi uygulamalar. Etkili hata raporları, özellik istekleri yazma ve etiketleme. |
 | `make-plan` | Yazılım geliştirme projeleri için detaylı planlama ve görev dağılımı (breakdown) yeteneği. |
@@ -111,21 +124,34 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | Skill / Role Name | Description |
 |-------------------|-------------|
 | `adversarial-code-reviewer` | Yazılan kodu teslim etmeden önce 'Şeytanın Avukatı' gözüyle gizli bug, showstopper, bellek kaçağı ve mimari açıkları arayan denetçi. |
+| `audit-trail-guardian-gate` | Veritabanı tablolarında denetim izlerini zorunlu kılan kapı. |
+| `chaos-engineer-gate` | Kodun mutlu yoluna değil, kötümser senaryolarına odaklanan paranoyak kapı. |
 | `clean-code-reviewer` | SOLID, DRY, YAGNI ve Addy Osmani üretim seviyesi mühendislik ilkeleri ile kod kalitesini denetleyen yetenek. |
 | `critical-critique-gate` | Yapay zekanın kullanıcı fikirlerini ve hatalı kod yönlendirmelerini körü körüne onaylamasını engeller. Yapıcı itiraz eder, riskleri gösterir ve doğru alternatifi sunar. |
+| `ddd-ubiquitous-language-gate` | Yanlış domain isimlendirmelerini (Ubiquitous Language ihlallerini) reddeden kapı. |
 | `dependency-audit-gate` | Proje bağımlılıklarındaki (npm, pip vb.) CVE zafiyetlerinin taranması, supply chain güvenliği ve versiyon güncellemeleri. |
 | `design-taste-frontend-gate` | Frontend tasarım zevki rehberi: modern web ve mobil arayüzler için tipografi, renk, boşluk, düzen kalıpları ve görsel kalite standartları. |
 | `e2e-tester` | Cypress, Playwright veya Appium ile uçtan uca (E2E) kullanıcı senaryoları ve entegrasyon testleri yazma yeteneği. |
+| `fail-fast-config-gate` | Ayarları IOptions kullanarak okumayı dayatan ve uygulamanın patlamasını engelleyen kapı. |
+| `finite-state-machine-gate` | Kompleks durum geçişleri için matematiksel Durum Makinesi (FSM) dayatan kapı. |
 | `git-pr-reviewer` | Pull Request (PR) oluşturma ve kod inceleme (code review) süreçleri için standartlar ve yapıcı geri bildirim. |
+| `graceful-degradation-gate` | Backend çöktüğünde Frontend'i Fallback UI çizmeye zorlayan kapı. |
+| `llm-hallucination-firewall-gate` | Dış yapay zekalardan gelen JSON yanıtlarını denetleyip halüsinasyonları durduran kapı. |
 | `main-thread-and-performance-gate` | Main Thread & Performance Gate: Raises a red flag if frontend code blocks the UI thread, enforcing Web Workers and Streams for heavy operations (like large file parsing). |
 | `no-truncation-gate` | Yapay zeka asistanının kod üretimi ve açıklamalarında hiçbir zaman kısaltma, atlama veya eksik bilgi vermemesini sağlayan meta-yetenek. "Geri kalanı aynı", "..." gibi tembel çıktıları engeller. |
 | `performance-tester` | Yük (load) testi, memory leak (bellek kaçağı) tespiti, benchmark analizleri ve performans optimizasyonu. |
+| `pre-flight-security-gate` | Kod yazılmadan önce, Master Orchestrator'un planındaki zararlı istekleri denetleyen kapı. |
 | `pre-mortem-stress-test-gate` | Mimari ve sistem kararlarında 'Bu sistem canlıda patlarsa nereden patlar?' analizi yapan stres testi skill'i. |
+| `privacy-pii-masking-gate` | TCKN, kredi kartı ve şifre gibi PII verilerinin loglanmasını yasaklayan kapı. |
+| `problem-details-gate` | Hataların RFC 7807 standartlarına uygun JSON dönmesini zorunlu kılan kapı. |
 | `smoke-monkey-tester` | Sistemin temel fonksiyonlarını kontrol eden smoke testler ve rastgele girdilerle sistemi çökertmeyi hedefleyen monkey/chaos testleri. |
 | `socratic-clarification-gate` | Eksik veya varsayımlı taleplerde doğrudan kod yazmak yerine Sokratik sorularla gereksinimleri netleştiren güvenlik kapısı. |
+| `stateless-architecture-gate` | Bellekte durum tutulmasını yasaklayıp yatay ölçeklenebilirliği zorunlu kılan kapı. |
 | `structured-logging-audit-gate` | Sistemde optimum maliyetli yapısal loglama, asenkron exception takibi ve temiz denetim izi (Audit Trail) kurallarını zorunlu tutan kapı. |
 | `swagger-and-xml-doc-gate` | Backend kodunda (özellikle .NET) yazılan her endpoint için XML Doc, Summary ve profesyonel Swagger yapılandırmasını zorunlu kılan kapı. |
+| `tenant-isolation-gate` | B2B projelerde TenantId filtresini mecburi kılan kapı. |
 | `test-driven-development-gate` | Kod üretildikten sonra AI'ın ilgili birim testlerini (Unit Test) yazıp terminalde çalıştırmasını zorunlu kılan kapı. |
+| `timezone-enforcer-gate` | DateTime.Now kullanımını yasaklayıp UtcNow veya TimeProvider zorunluluğu getiren kapı. |
 | `turkish-language-enforcer-gate` | Yapay zekanın İngilizce talimat alsa bile kullanıcıya her zaman Türkçe yanıt vermesini zorunlu kılan güvenlik kapısı. |
 | `validation-and-integrity-gate` | Dual-Validation & Integrity Gate: Strictly enforces defensive programming, null-checks at the DB level, FluentValidation at the API, and UX-friendly client-side validations. |
 
@@ -133,6 +159,7 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | Skill / Role Name | Description |
 |-------------------|-------------|
 | `api-handoff-workflow` | Backend'de bir değişiklik yapıldığında otomatik Changelog çıkaran ve Frontend takımı için eski/yeni API karşılaştırma (Devir-Teslim) dokümanı üreten iş akışı. |
+| `escalation-workflow` | Kalite kapısında 3 kez takılan işi Baş Mimara havale eden kriz iş akışı. |
 | `generate-standup-workflow` | Günlük standup (geliştirme) raporlarını kısa, öz ve yapılandırılmış bir şekilde oluşturma kuralları. |
 
 ## 05 Capabilities
@@ -142,29 +169,22 @@ This document lists all the active orchestrators, specialists, quality gates, an
 | `caveman-compress` | > |
 | `caveman-help` | > |
 | `docx-tool` | Word (.docx) belgeleri oluşturmak, okumak ve düzenlemek için yetenek. |
+| `focus-budget-tool` | LLM bağlamı şiştiğinde, alakasız dosyaları bellekten temizleme kapasitesi. |
 | `graphify-tool` | Use for any question about a codebase, its architecture, file relationships, or project content — especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools. |
 | `humanizer-tool` | | |
 | `image-to-code-tool` | Ekran görüntüleri, mockup'lar veya tasarım dosyalarını (Figma vb.) analiz ederek piksel mükemmelliğinde, duyarlı (responsive) ve temiz koda dönüştürme. |
 | `imagegen-frontend-tool` | Frontend projeleri için yapay zeka görsel oluşturma rehberi: web hero görselleri, mobil varlıklar, ikonlar ve pazarlama görselleri. |
 | `learn-codebase-tool` | Bilinmeyen veya büyük kod tabanlarını hızlıca anlama, analiz etme ve gezinme yeteneği. |
 | `mcp-builder-tool` | MCP (Model Context Protocol) sunucuları geliştirmek ve bağlamak için yetenek. |
+| `mentor-mode-tool` | teach-me tetikleyicisi geldiğinde alınan mimari kararın açıklamasını yapan eğitim aracı. |
 | `pdf-tool` | PDF belgeleri oluşturmak, okumak ve dönüştürmek için yetenek. |
 | `pptx-tool` | PowerPoint (.pptx) sunumları oluşturmak ve düzenlemek için yetenek. |
 | `skill-creator-tool` | Yeni yetenekler (Skill) ve entegrasyonlar geliştirmek için yetenek. |
 | `smart-explore-tool` | Büyük ve karmaşık kod tabanlarında akıllı gezinme, giriş noktalarını bulma ve kod yapısını anlama taktikleri. |
 | `xlsx-tool` | Excel (.xlsx) tabloları ve veri hesaplama dosyaları oluşturmak/okumak için yetenek. |
 
-## 🗺️ Orchestrator Deep-Dive Diagrams
-Explore the delegation hierarchy of each orchestrator (with detailed Mermaid diagrams):
-* [Master Orchestrator](../orchestrators/master-orchestrator.md)
-* [Code Orchestrator](../orchestrators/code-orchestrator.md)
-* [Security Orchestrator](../orchestrators/security-orchestrator.md)
-* [Design Orchestrator](../orchestrators/design-orchestrator.md)
-* [Test Orchestrator](../orchestrators/test-orchestrator.md)
-* [Business Analysis (BA) Orchestrator](../orchestrators/ba-orchestrator.md)
-* [Deployment Orchestrator](../orchestrators/deployment-orchestrator.md)
-* [Project Bootstrap Orchestrator](../orchestrators/project-bootstrap-orchestrator.md)
-* [Marketing Orchestrator](../orchestrators/marketing-orchestrator.md)
+## 06 MCP Connectors
+| Skill / Role Name | Description |
+|-------------------|-------------|
+| `mcp-integration-guidelines` | Veritabanı, GitHub, Jira gibi MCP bağlantılarını otonom sisteme dahil eden kural seti. |
 
-## ⚖️ System Rules & Protocols
-* [Hierarchy & Delegation Protocol](../core/HIERARCHY_PROTOCOL.md)

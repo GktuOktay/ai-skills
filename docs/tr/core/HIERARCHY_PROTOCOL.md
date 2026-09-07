@@ -26,6 +26,11 @@ Bu doküman, `v2.0` Otonom Ajans mimarisindeki departmanların birbiriyle ileti�
 `05_capabilities` (Örn: PDF ayrıştırıcı, Graphify) sadece pasif araçlardır.
 - **Kısıtlama:** Kendi başlarına otonom kararlar alamazlar. Sadece bir Uzman veya Orkestratör tarafından tetiklenirler ve işlenmiş saf (raw) datayı geri dönerler. Yorumlama yetkileri yoktur.
 
+
+
+### Kural 5: MCP Konnektörleri Güvenli Alan Dışına Çıkamaz (Sandboxing)
+`06_mcp_connectors` katmanı, doğrudan veritabanı şeması veya GitHub loglarını okur ancak otonom olarak (insan onayı olmadan) yazma/silme (`DROP TABLE`) işlemi yapamaz. Mutlak Read-Only veya Onaylı-Write kurallarına tabidir.
+
 ## 2. Yetki Devri (Delegation) Yaşam Döngüsü
 
 ```mermaid

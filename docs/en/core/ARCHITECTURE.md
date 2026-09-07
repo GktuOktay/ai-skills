@@ -49,3 +49,7 @@ flowchart LR
     style Reject3 fill:#5c1a1b,color:#fff
     style Reject4 fill:#5c1a1b,color:#fff
 ```
+
+
+## 4. Token-Optimized Enterprise Architecture
+The system runs over 130+ advanced Principal Engineer rules (Outbox Pattern, Circuit Breaker, Stateless Architecture, Zero-Downtime Deployment, CRDT, etc.) while protecting IDE limits (Context Window) in a **Token-Optimized** format. Every rule is defined with pure imperative commands (`FORCE`, `REJECT`).
